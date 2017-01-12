@@ -20,17 +20,21 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_file(array('normalize','style'));
+    queue_css_file(array('normalize','jquery.mmenu', 'jquery.mmenu.positioning','style'));
+    queue_css_url('https://fonts.googleapis.com/css?family=Hind|Caudex:400,400i,700,700i');
     echo head_css();
     ?>
 
     <!-- JavaScripts -->
-    <?php echo head_js(); ?>
+    <?php 
+    queue_js_file(array('jquery.mmenu.min','bigpicture'), 'js');
+    echo head_js(); 
+    ?>
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
-    <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <div id="wrap">
+        <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
         <header role="banner">
 
@@ -44,6 +48,7 @@
 
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
             
+            <a href="#top-nav" class="menu-toggle" aria-label="<?php echo __('Menu'); ?>"></a>
             <nav id="top-nav">
                 <?php echo public_nav_main(); ?>
             </nav>
