@@ -26,8 +26,19 @@ echo head(array(
     </div>
 </div>
 
-<nav id="exhibit-pages">
-    <h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
-    <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
-</nav>
+<div id="other-exhibits">
+    <h2><?php echo link_to('exhibits', 'browse', __('Browse Exhibits')); ?></h2>
+    <?php $exhibits = get_records('exhibit'); ?>
+    <?php foreach ($exhibits as $exhibit): ?>
+    <?php set_current_record('exhibit', $exhibit); ?>
+    <div class="exhibit">
+        <?php if ($exhibitImage = record_image($exhibit, 'square_thumbnail')): ?>
+            <?php echo exhibit_builder_link_to_exhibit($exhibit, $exhibitImage, array('class' => 'image')); ?>
+        <?php endif; ?>
+
+        <h3><?php echo link_to_exhibit(); ?></h3>
+    </div>
+    <?php endforeach; ?>
+</div>
+
 <?php echo foot(); ?>

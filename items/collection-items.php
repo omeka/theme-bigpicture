@@ -1,5 +1,5 @@
 <?php 
-$collection = get_record('collection', array('id' => $collectionID)); 
+$collection = get_record_by_id('collection', $collectionID); 
 set_current_record('collection', $collection);
 ?>
 <div class="flex">

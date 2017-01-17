@@ -17,40 +17,21 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
     <?php echo pagination_links(); ?>
 </div>
 
-<?php foreach (loop('collections') as $collection): ?>
-
-<div class="collection">
-
-    <?php if ($collectionImage = record_image('collection')): ?>
-        <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
-    <?php endif; ?>
-
-    <div class="collection-meta">
-        <h2><?php echo link_to_items_browse(metadata($collection, array('Dublin Core', 'Title')), array('collection' =>  metadata($collection, 'id'))); ?></h2>
-    
-        <?php if (metadata('collection', array('Dublin Core', 'Description'))): ?>
-        <div class="collection-description">
-            <?php echo text_to_paragraphs(metadata('collection', array('Dublin Core', 'Description'))); ?>
-        </div>
+<div class="records">
+    <?php foreach (loop('collections') as $collection): ?>
+    <div class="collection record">
+        <?php if ($collectionImage = record_image('collection', 'fullsize')): ?>
+            <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
         <?php endif; ?>
     
-        <?php if ($collection->hasContributor()): ?>
-        <div class="collection-contributors">
-            <p>
-            <strong><?php echo __('Contributors'); ?>:</strong>
-            <?php echo metadata('collection', array('Dublin Core', 'Contributor'), array('all'=>true, 'delimiter'=>', ')); ?>
-            </p>
+        <div class="record-meta">
+            <h2><?php echo link_to_items_browse(metadata($collection, array('Dublin Core', 'Title')), array('collection' =>  metadata($collection, 'id'))); ?></h2>
         </div>
-        <?php endif; ?>
     
-        <p class="view-items-link"><?php echo link_to_items_browse(__('View the items in %s', metadata('collection', array('Dublin Core', 'Title'))), array('collection' => metadata('collection', 'id'))); ?></p>
-    </div>
-
-    <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
-
-</div><!-- end class="collection" -->
-
-<?php endforeach; ?>
+        <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>
+    </div><!-- end class="collection" -->
+    <?php endforeach; ?>
+</div>
 
 <?php echo pagination_links(); ?>
 

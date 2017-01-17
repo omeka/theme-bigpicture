@@ -42,12 +42,17 @@
 
             <?php echo theme_header_image(); ?>
 
-            <div id="search-container">
-                <?php echo search_form(); ?>
-            </div><!-- end search -->
-
             <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
             
+            <a href="#" class="search-toggle" aria-label="<?php echo __('Search'); ?>"></a>
+            <div id="search-container">
+                <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
+                <?php echo search_form(array('show_advanced' => true, 'form_attributes' => array('role' => 'search', 'class' => 'closed'))); ?>
+                <?php else: ?>
+                <?php echo search_form(array('form_attributes' => array('role' => 'search', 'class' => 'closed'))); ?>
+                <?php endif; ?>
+            </div><!-- end search -->
+
             <a href="#top-nav" class="menu-toggle" aria-label="<?php echo __('Menu'); ?>"></a>
             <nav id="top-nav">
                 <?php echo public_nav_main(); ?>

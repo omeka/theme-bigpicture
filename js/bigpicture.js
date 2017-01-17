@@ -12,5 +12,9 @@
                 $('#query').focus();
             }
         });
+
+        $('.advanced-toggle').click(function() {
+            $('#advanced-form').toggleClass('closed').toggleClass('open');
+        });
     });
 })(jQuery)
