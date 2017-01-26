@@ -19,10 +19,12 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
 
 <div class="records">
     <?php foreach (loop('collections') as $collection): ?>
-    <div class="collection record">
-        <?php if ($collectionImage = record_image('collection', 'fullsize')): ?>
-            <?php echo link_to_collection($collectionImage, array('class' => 'image')); ?>
-        <?php endif; ?>
+    <?php $background = ''; ?>
+    <?php if ($collectionImage = $collection->getFile()): ?>
+        <?php $imageUrl = file_display_url($collectionImage, 'fullsize'); ?>
+        <?php $background = sprintf('style="background-image:url(%s)"', $imageUrl); ?>
+    <?php endif; ?>
+    <div class="collection record" <?php echo $background; ?>>
     
         <div class="record-meta">
             <h2><?php echo link_to_items_browse(metadata($collection, array('Dublin Core', 'Title')), array('collection' =>  metadata($collection, 'id'))); ?></h2>

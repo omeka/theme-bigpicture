@@ -2,6 +2,7 @@
 $title = metadata('item', 'display_title');
 $hasFiles = metadata('item', 'has files');
 queue_css_file('chocolat');
+queue_js_file('modernizr', 'javascripts/vendor');
 queue_js_file('jquery.chocolat.min', 'js');
 queue_js_string('
     jQuery(document).ready(function(){
@@ -23,13 +24,18 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasFiles) ?
 <!-- The following returns all of the files associated with an item. -->
 <?php if ($hasFiles): ?>
 <?php $itemFiles = $item->Files; ?>
+<?php $nonImages = array(); ?>
 <div id="itemfiles" <?php echo (count($itemFiles) == 1) ? 'class="solo"' : ''; ?>>
     <div id="itemfiles-stage"></div>
     <div id="itemfiles-nav">
         <?php foreach ($itemFiles as $itemFile): ?>
+            <?php if ($itemFile->has_derivative_image): ?>
             <a href="<?php echo $itemFile->getWebPath('original'); ?>" class="chocolat-image">
                 <?php echo file_image('square_thumbnail', array(), $itemFile); ?>
             </a>
+            <?php else: ?>
+            <?php $nonImages[] = $itemFile; ?>
+            <?php endif; ?>
         <?php endforeach; ?>
     </div>
 </div>
@@ -54,6 +60,14 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasFiles) ?
         <div class="element-text"><?php echo tag_string('item'); ?></div>
     </div>
     <?php endif;?>
+
+    <?php if (count($nonImages) > 0): ?>
+    <div id+"other-media" class="element">
+        <h3>Other Media</h3>
+        <?php foreach ($nonImages as $nonImage): ?>
+        <div class="element-text"><a href="<?php echo file_display_url($nonImage, 'original'); ?>"><?php echo metadata($nonImage, 'display_title'); ?></a></div>
+        <?php endforeach; ?>
+    <?php endif; ?>
     
     <!-- The following prints a citation for this item. -->
     <div id="item-citation" class="element">

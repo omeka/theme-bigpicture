@@ -1,3 +1,22 @@
+<?php
+queue_css_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css');
+queue_js_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js');
+queue_js_string('
+    jQuery(document).ready(function(){
+      jQuery("#featured").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        centerMode: true,
+        fade: true,
+        dots: false
+      });
+    });
+');
+?>
+
 <?php echo head(array('bodyid'=>'home')); ?>
 
 <div id="featured">
@@ -6,13 +25,13 @@
     <?php endif; ?>
 
     <?php if ((get_theme_option('Display Featured Collection') !== '0') && (get_random_featured_collection())): ?>
-        <?php echo random_featured_collection(); ?>
+        <?php echo bigpicture_random_featured('collection'); ?>
     <?php endif; ?>
 
     <?php if ((get_theme_option('Display Featured Exhibit') !== '0')
             && plugin_is_active('ExhibitBuilder')
             && function_exists('exhibit_builder_display_random_featured_exhibit')): ?>
-        <?php echo exhibit_builder_display_random_featured_exhibit(); ?>
+        <?php echo bigpicture_random_featured('exhibit'); ?>
     <?php endif; ?>
 </div>
 

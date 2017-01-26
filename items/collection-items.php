@@ -5,7 +5,10 @@ set_current_record('collection', $collection);
 <div class="flex">
     <div class="collection-meta">
         <h1><?php echo metadata('collection', array('Dublin Core', 'Title')); ?></h1>
-        <?php echo all_element_texts($collection); ?>
+        <a href="#" class="mobile-toggle closed">Collection Metadata</a>
+        <div class="closed">
+            <?php echo all_element_texts($collection); ?>
+        </div>
     </div>
     <div id="collection-items" class="records">
 

@@ -16,5 +16,10 @@
         $('.advanced-toggle').click(function() {
             $('#advanced-form').toggleClass('closed').toggleClass('open');
         });
+
+        $('.collection-meta .mobile-toggle').click(function(e) {
+            e.preventDefault();
+            $('.collection-meta .closed, .collection-meta .open').toggleClass('closed').toggleClass('open');
+        });
     });
 })(jQuery)
