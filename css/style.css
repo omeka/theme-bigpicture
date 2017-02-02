@@ -650,7 +650,7 @@
 
   /* line 528, sass/_screen.scss */
   .admin-bar.items.show.gallery #content {
-    margin-top: calc(-41px - -73.5px);
+    margin-top: calc(-41px - 73.5px);
   }
 
   /* line 532, sass/_screen.scss */

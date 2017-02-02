@@ -526,7 +526,7 @@ footer {
 }
 
 .admin-bar.items.show.gallery #content {
-    margin-top: calc(-41px - #{-3.5 * $spacing-l});
+    margin-top: calc(-41px - #{3.5 * $spacing-l});
 }
 
 .items.show #itemfiles {
