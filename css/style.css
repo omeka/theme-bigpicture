@@ -1612,4 +1612,98 @@
   }
 
   /* @end */
+  /* @group ----- Exhibits/Page ----- */
+  /* line 231, sass/_max800.scss */
+  #exhibit-page-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+  }
+
+  /* line 237, sass/_max800.scss */
+  #exhibit-page-navigation #exhibit-nav-prev,
+  #exhibit-page-navigation #exhibit-nav-next {
+    position: relative;
+    width: 33%;
+    -webkit-transform: none;
+            transform: none;
+    border: 0;
+    padding: 9.5px 5.25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  /* line 248, sass/_max800.scss */
+  #exhibit-page-navigation #exhibit-nav-prev {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    text-align: right;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    left: auto;
+  }
+
+  /* line 255, sass/_max800.scss */
+  #exhibit-page-navigation #exhibit-nav-up {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 9.5px 0;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* line 265, sass/_max800.scss */
+  #exhibit-page-navigation #exhibit-nav-next {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    right: auto;
+  }
+
+  /* line 272, sass/_max800.scss */
+  #other-exhibits {
+    width: 100%;
+  }
+
+  /* line 276, sass/_max800.scss */
+  #other-exhibits .exhibit {
+    width: 100%;
+    margin: 21px 0;
+  }
+
+  /* line 281, sass/_max800.scss */
+  #other-exhibits h3:only-child {
+    position: relative;
+  }
+
+  /* line 285, sass/_max800.scss */
+  #other-exhibits .exhibit h3 a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  /* @end */
 }

@@ -225,3 +225,65 @@ header {
 }
 
 /* @end */
+
+/* @group ----- Exhibits/Page ----- */
+
+#exhibit-page-navigation {
+    display: flex;
+    border-top: 1px solid $border-gray;
+    border-bottom: 1px solid $border-gray;
+}
+
+#exhibit-page-navigation #exhibit-nav-prev,
+#exhibit-page-navigation #exhibit-nav-next {
+    position: relative;
+    width: 33%;
+    transform: none;
+    border: 0;
+    padding: ($spacing-m - 1px) $spacing-s;
+    display: flex;
+    align-items: center;
+}
+
+#exhibit-page-navigation #exhibit-nav-prev {
+    justify-content: flex-end;
+    text-align: right;
+    order: 1;
+    left: auto;
+}
+
+#exhibit-page-navigation #exhibit-nav-up {
+    order: 2;
+    padding: ($spacing-m - 1px) 0;
+    border-left: 1px solid $border-gray;
+    border-right: 1px solid $border-gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#exhibit-page-navigation #exhibit-nav-next {
+    justify-content: flex-start;
+    text-align: left;
+    order: 3;
+    right: auto;
+}
+
+#other-exhibits {
+    width: 100%;
+}
+
+#other-exhibits .exhibit {
+    width: 100%;
+    margin: $spacing-l 0;
+}
+
+#other-exhibits h3:only-child {
+    position: relative;
+}
+
+#other-exhibits .exhibit h3 a {
+    justify-content: center;
+}
+
+/* @end */
