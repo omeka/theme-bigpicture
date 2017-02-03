@@ -109,6 +109,10 @@ header {
 
 /* @group ----- Items/Show ----- */
 
+.items.show:not(.gallery) .item-metadata {
+    columns: 1;
+}
+
 .items.show.gallery .flex {
     display: block;
     margin-right: 0;

@@ -1,44 +1,49 @@
 <?php
 $title = metadata('item', 'display_title');
-$hasFiles = metadata('item', 'has files');
-queue_css_file('chocolat');
-queue_js_file('modernizr', 'javascripts/vendor');
-queue_js_file('jquery.chocolat.min', 'js');
-queue_js_string('
-    jQuery(document).ready(function(){
-        var inContainer = jQuery("#itemfiles-nav").Chocolat({
-        imageSize: "default",
-        loop: true,
-        fullscreen: true,
-        container: "#itemfiles-stage"
-        }).data("chocolat");
-
-        inContainer.api().open()
-    });
-');
-echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasFiles) ? ' gallery' : '')));
+$itemFiles = $item->Files;
+$images = array();
+$nonImages = array();
+foreach ($itemFiles as $itemFile) {
+    if ($itemFile->has_derivative_image) {
+        $images[] = $itemFile;
+    } else {
+        $nonImages[] = $itemFile;
+    }
+}
+$hasImages = (count($images) > 0);
+if ($hasImages) {
+    queue_css_file('chocolat');
+    queue_js_file('modernizr', 'javascripts/vendor');
+    queue_js_file('jquery.chocolat.min', 'js');
+    queue_js_string('
+        jQuery(document).ready(function(){
+            var inContainer = jQuery("#itemfiles-nav").Chocolat({
+            imageSize: "default",
+            loop: true,
+            fullscreen: true,
+            container: "#itemfiles-stage"
+            }).data("chocolat");
+    
+            inContainer.api().open()
+        });
+    ');
+}
+echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) ? ' gallery' : '')));
 ?>
 
 <div class="flex">
-
 <!-- The following returns all of the files associated with an item. -->
-<?php if ($hasFiles): ?>
-<?php $itemFiles = $item->Files; ?>
-<?php $nonImages = array(); ?>
-<div id="itemfiles" <?php echo (count($itemFiles) == 1) ? 'class="solo"' : ''; ?>>
-    <div id="itemfiles-stage"></div>
-    <div id="itemfiles-nav">
-        <?php foreach ($itemFiles as $itemFile): ?>
-            <?php if ($itemFile->has_derivative_image): ?>
-            <a href="<?php echo $itemFile->getWebPath('original'); ?>" class="chocolat-image">
-                <?php echo file_image('square_thumbnail', array(), $itemFile); ?>
-            </a>
-            <?php else: ?>
-            <?php $nonImages[] = $itemFile; ?>
-            <?php endif; ?>
-        <?php endforeach; ?>
+<?php if ($hasImages): ?>
+    <div id="itemfiles" <?php echo (count($images) == 1) ? 'class="solo"' : ''; ?>>
+        <div id="itemfiles-stage"></div>
+        <div id="itemfiles-nav">
+            <?php foreach ($images as $image): ?>
+                <a href="<?php echo $image->getWebPath('original'); ?>" class="chocolat-image">
+                    <?php echo file_image('square_thumbnail', array(), $image); ?>
+                </a>
+            <?php endforeach; ?>
+        </div>
     </div>
-</div>
 <?php endif; ?>
 
 <div class="item-metadata">
@@ -62,11 +67,12 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasFiles) ?
     <?php endif;?>
 
     <?php if (count($nonImages) > 0): ?>
-    <div id+"other-media" class="element">
+    <div id="other-media" class="element">
         <h3>Other Media</h3>
         <?php foreach ($nonImages as $nonImage): ?>
         <div class="element-text"><a href="<?php echo file_display_url($nonImage, 'original'); ?>"><?php echo metadata($nonImage, 'display_title'); ?></a></div>
         <?php endforeach; ?>
+    </div>
     <?php endif; ?>
     
     <!-- The following prints a citation for this item. -->
