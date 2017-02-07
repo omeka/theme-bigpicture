@@ -4,7 +4,8 @@ $itemFiles = $item->Files;
 $images = array();
 $nonImages = array();
 foreach ($itemFiles as $itemFile) {
-    if ($itemFile->has_derivative_image) {
+    $mimeType = $itemFile->mime_type;
+    if (strpos($mimeType, 'image') !== false) {
         $images[] = $itemFile;
     } else {
         $nonImages[] = $itemFile;
@@ -77,7 +78,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     <div id="other-media" class="element">
         <h3>Other Media</h3>
         <?php foreach ($nonImages as $nonImage): ?>
-        <div class="element-text"><a href="<?php echo file_display_url($nonImage, 'original'); ?>"><?php echo metadata($nonImage, 'display_title'); ?></a></div>
+        <div class="element-text"><a href="<?php echo file_display_url($nonImage, 'original'); ?>"><?php echo metadata($nonImage, 'display_title'); ?> - <?php echo $nonImage->mime_type; ?></a></div>
         <?php endforeach; ?>
     </div>
     <?php endif; ?>
