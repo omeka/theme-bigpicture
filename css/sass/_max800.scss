@@ -125,6 +125,7 @@ header {
 .items.show #itemfiles,
 .items.show.gallery .item-metadata {
     width: calc(100% + #{2 * $spacing-l});
+    overflow: visible;
 }
 
 .items.show.gallery .item-metadata {
@@ -136,8 +137,11 @@ header {
     margin: (-1.5 * $spacing-l) (-$spacing-l) 0;
 }
 
+.items.show #itemfiles-stage {
+    min-height: 500px;
+}
+
 .admin-bar.items.show.gallery .flex {
-    padding-top: 0;
     height: auto;
     min-height: 75vh;
 }
