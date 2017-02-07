@@ -1413,6 +1413,18 @@
   }
 
   /* @end */
+  /* @group ----- Plugins ----- */
+  /* line 1129, sass/_screen.scss */
+  #geolocation-browse {
+    margin-top: 10.5px;
+  }
+
+  /* line 1133, sass/_screen.scss */
+  #geolocation-browse #map-links li {
+    background-color: #eee;
+  }
+
+  /* @end */
 }
 @media screen and (max-width: 800px) {
   /* @group ----- Header ----- */
@@ -1469,26 +1481,32 @@
   }
 
   /* line 46, sass/_max800.scss */
+  .items-nav + .pagination-nav {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* line 51, sass/_max800.scss */
   #sort-links-list,
   .page-input {
     padding: 10.5px 0;
   }
 
-  /* line 51, sass/_max800.scss */
+  /* line 56, sass/_max800.scss */
   #sort-links-list {
     margin-left: 5.25px;
   }
 
-  /* line 55, sass/_max800.scss */
+  /* line 60, sass/_max800.scss */
   #sort-links-list li {
     margin-right: 0;
   }
-  /* line 58, sass/_max800.scss */
+  /* line 63, sass/_max800.scss */
   #sort-links-list li:not(:first-child) {
     margin-left: 10.5px;
   }
 
-  /* line 63, sass/_max800.scss */
+  /* line 68, sass/_max800.scss */
   #sort-links-list li a {
     text-indent: -9999px;
     display: inline-block;
@@ -1496,7 +1514,7 @@
     padding-left: 15.75px;
     width: 15.75px;
   }
-  /* line 70, sass/_max800.scss */
+  /* line 75, sass/_max800.scss */
   #sort-links-list li a:before, #sort-links-list li a:after {
     text-indent: 0;
     position: absolute;
@@ -1504,35 +1522,35 @@
     text-align: center;
     width: 15.75px;
   }
-  /* line 79, sass/_max800.scss */
+  /* line 84, sass/_max800.scss */
   #sort-links-list li a:before {
     left: 0;
     line-height: 21px;
   }
 
-  /* line 85, sass/_max800.scss */
+  /* line 90, sass/_max800.scss */
   #sort-links-list .sorting a {
     padding-right: 15.75px;
     width: 31.5px;
   }
 
-  /* line 90, sass/_max800.scss */
+  /* line 95, sass/_max800.scss */
   #sort-links-list .sorting a:after {
     right: 0;
     line-height: 21px;
   }
 
-  /* line 95, sass/_max800.scss */
+  /* line 100, sass/_max800.scss */
   .pagination-nav {
     text-align: right;
   }
 
-  /* line 99, sass/_max800.scss */
+  /* line 104, sass/_max800.scss */
   .records .item {
     width: 100%;
   }
 
-  /* line 103, sass/_max800.scss */
+  /* line 108, sass/_max800.scss */
   .browse.collections .record,
   .browse.exhibits .record {
     width: 100%;
@@ -1540,65 +1558,65 @@
 
   /* @end */
   /* @group ----- Items/Show ----- */
-  /* line 112, sass/_max800.scss */
+  /* line 117, sass/_max800.scss */
   .items.show:not(.gallery) .item-metadata {
     -webkit-columns: 1;
        -moz-columns: 1;
             columns: 1;
   }
 
-  /* line 116, sass/_max800.scss */
+  /* line 121, sass/_max800.scss */
   .items.show.gallery .flex {
     display: block;
     margin-right: 0;
   }
 
-  /* line 121, sass/_max800.scss */
+  /* line 126, sass/_max800.scss */
   .items.show #itemfiles-nav {
     display: none;
   }
 
-  /* line 125, sass/_max800.scss */
+  /* line 130, sass/_max800.scss */
   .items.show #itemfiles,
   .items.show.gallery .item-metadata {
     width: calc(100% + 42px);
     overflow: visible;
   }
 
-  /* line 131, sass/_max800.scss */
+  /* line 136, sass/_max800.scss */
   .items.show.gallery .item-metadata {
     padding: 0;
     max-width: 100%;
   }
 
-  /* line 136, sass/_max800.scss */
+  /* line 141, sass/_max800.scss */
   .items.show #itemfiles {
     margin: -31.5px -21px 0;
   }
 
-  /* line 140, sass/_max800.scss */
+  /* line 145, sass/_max800.scss */
   .items.show #itemfiles-stage {
     min-height: 500px;
   }
 
-  /* line 144, sass/_max800.scss */
+  /* line 149, sass/_max800.scss */
   .admin-bar.items.show.gallery .flex {
     height: auto;
     min-height: 75vh;
   }
 
-  /* line 149, sass/_max800.scss */
+  /* line 154, sass/_max800.scss */
   .items.show.gallery .flex {
     position: relative;
     margin: 0;
   }
 
-  /* line 154, sass/_max800.scss */
+  /* line 159, sass/_max800.scss */
   .touch .chocolat-fullscreen {
     display: none;
   }
 
-  /* line 158, sass/_max800.scss */
+  /* line 163, sass/_max800.scss */
   .touch .chocolat-wrapper .chocolat-pagination {
     margin-right: 0;
     padding-right: 0;
@@ -1606,13 +1624,13 @@
 
   /* @end */
   /* @group ----- Collections/Show ----- */
-  /* line 167, sass/_max800.scss */
+  /* line 172, sass/_max800.scss */
   .items.browse .flex {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 
-  /* line 171, sass/_max800.scss */
+  /* line 176, sass/_max800.scss */
   .collection-meta {
     width: 100%;
     -webkit-box-ordinal-group: 2;
@@ -1622,7 +1640,7 @@
     border-left: 0;
   }
 
-  /* line 178, sass/_max800.scss */
+  /* line 183, sass/_max800.scss */
   .collection-meta .mobile-toggle {
     display: block;
     text-transform: uppercase;
@@ -1631,7 +1649,7 @@
     border: solid #eee;
     border-width: 1px 0;
   }
-  /* line 186, sass/_max800.scss */
+  /* line 191, sass/_max800.scss */
   .collection-meta .mobile-toggle:after {
     font-family: 'Linearicons-Free';
     speak: none;
@@ -1651,17 +1669,17 @@
     height: 21px;
     text-align: center;
   }
-  /* line 197, sass/_max800.scss */
+  /* line 202, sass/_max800.scss */
   .collection-meta .mobile-toggle.open:after {
     content: "";
   }
 
-  /* line 202, sass/_max800.scss */
+  /* line 207, sass/_max800.scss */
   .collection-meta .mobile-toggle + .closed {
     display: none;
   }
 
-  /* line 206, sass/_max800.scss */
+  /* line 211, sass/_max800.scss */
   #collection-items {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1671,7 +1689,7 @@
 
   /* @end */
   /* @group ----- Advanced Search ----- */
-  /* line 215, sass/_max800.scss */
+  /* line 220, sass/_max800.scss */
   .field > label,
   .field > .label,
   .field > .two.columns,
@@ -1680,25 +1698,25 @@
     width: 100%;
   }
 
-  /* line 223, sass/_max800.scss */
+  /* line 228, sass/_max800.scss */
   .add_search {
     margin-left: 0;
   }
 
-  /* line 227, sass/_max800.scss */
+  /* line 232, sass/_max800.scss */
   .search-entry {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
 
-  /* line 231, sass/_max800.scss */
+  /* line 236, sass/_max800.scss */
   .search-entry > * {
     margin-bottom: 5.25px;
   }
 
   /* @end */
   /* @group ----- Exhibits/Page ----- */
-  /* line 239, sass/_max800.scss */
+  /* line 244, sass/_max800.scss */
   #exhibit-page-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1707,7 +1725,7 @@
     border-bottom: 1px solid #eee;
   }
 
-  /* line 245, sass/_max800.scss */
+  /* line 250, sass/_max800.scss */
   #exhibit-page-navigation #exhibit-nav-prev,
   #exhibit-page-navigation #exhibit-nav-next {
     position: relative;
@@ -1724,7 +1742,7 @@
             align-items: center;
   }
 
-  /* line 256, sass/_max800.scss */
+  /* line 261, sass/_max800.scss */
   #exhibit-page-navigation #exhibit-nav-prev {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -1736,7 +1754,7 @@
     left: auto;
   }
 
-  /* line 263, sass/_max800.scss */
+  /* line 268, sass/_max800.scss */
   #exhibit-page-navigation #exhibit-nav-up {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1755,7 +1773,7 @@
             justify-content: center;
   }
 
-  /* line 273, sass/_max800.scss */
+  /* line 278, sass/_max800.scss */
   #exhibit-page-navigation #exhibit-nav-next {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1767,23 +1785,23 @@
     right: auto;
   }
 
-  /* line 280, sass/_max800.scss */
+  /* line 285, sass/_max800.scss */
   #other-exhibits {
     width: 100%;
   }
 
-  /* line 284, sass/_max800.scss */
+  /* line 289, sass/_max800.scss */
   #other-exhibits .exhibit {
     width: 100%;
     margin: 21px 0;
   }
 
-  /* line 289, sass/_max800.scss */
+  /* line 294, sass/_max800.scss */
   #other-exhibits h3:only-child {
     position: relative;
   }
 
-  /* line 293, sass/_max800.scss */
+  /* line 298, sass/_max800.scss */
   #other-exhibits .exhibit h3 a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

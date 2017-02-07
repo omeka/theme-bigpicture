@@ -43,6 +43,11 @@ header {
     }
 }
 
+.items-nav + .pagination-nav {
+    text-align: center;
+    width: 100%;
+}
+
 #sort-links-list,
 .page-input {
     padding: $spacing-m 0;

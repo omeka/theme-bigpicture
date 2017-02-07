@@ -1123,3 +1123,15 @@ ul.item-pagination.navigation {
 }
 
 /* @end */
+
+/* @group ----- Plugins ----- */
+
+#geolocation-browse {
+    margin-top: $spacing-m;
+}
+
+#geolocation-browse #map-links li {
+    background-color: $border-gray;
+}
+
+/* @end */
