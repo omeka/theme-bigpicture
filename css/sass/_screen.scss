@@ -178,7 +178,7 @@ header {
     padding: $spacing-l $spacing-l ($spacing-l - 1px) $spacing-l;
     border-bottom: 1px solid $border-gray;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     position: relative;
     z-index: 9999;
