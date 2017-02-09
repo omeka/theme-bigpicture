@@ -27,7 +27,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 <?php foreach (loop('exhibit') as $exhibit): ?>
     <?php $exhibitCount++; ?>
     <?php $exhibitImage = $exhibit->getFile(); ?>
-    <?php $imageUrl = (isset($exhibtImage)) ? file_display_url($exhibitImage, 'fullsize') : ''; ?>
+    <?php $imageUrl = (isset($exhibitImage)) ? file_display_url($exhibitImage, 'fullsize') : ''; ?>
     <div class="exhibit record" style="background-image:url(<?php echo $imageUrl; ?>)">
         <div class="record-meta">
             <h2><?php echo link_to_exhibit(); ?></h2>
