@@ -21,4 +21,21 @@ function bigpicture_random_featured($type = null, $num = 5, $hasImage = true)
 
     return $html;
 }
+
+function bigpicture_featured_html() {
+    $html = '';
+    if ((get_theme_option('Display Featured Item') !== '0') && (get_random_featured_items())) {
+        $html .= bigpicture_random_featured('item');
+    }
+    if ((get_theme_option('Display Featured Collection') !== '0') && (get_random_featured_collection())) {
+        $html .= bigpicture_random_featured('collection');
+    }
+
+    if ((get_theme_option('Display Featured Exhibit') !== '0')
+            && plugin_is_active('ExhibitBuilder')
+            && function_exists('exhibit_builder_display_random_featured_exhibit')) {
+        $html .= bigpicture_random_featured('exhibit');
+    }
+    return $html;
+}
 ?>
