@@ -3,7 +3,7 @@ function bigpicture_random_featured($type = null, $num = 5, $hasImage = true)
 {
     $html = '';
 
-    $featured = get_records(strtoupper($type), array('featured' => 1,
+    $featured = get_records($type, array('featured' => 1,
                     'sort_field' => 'random',
                     'hasImage' => $hasImage), $num
                 );
@@ -25,16 +25,16 @@ function bigpicture_random_featured($type = null, $num = 5, $hasImage = true)
 function bigpicture_featured_html() {
     $html = '';
     if ((get_theme_option('Display Featured Item') !== '0') && (get_random_featured_items())) {
-        $html .= bigpicture_random_featured('item');
+        $html .= bigpicture_random_featured('Item');
     }
     if ((get_theme_option('Display Featured Collection') !== '0') && (get_random_featured_collection())) {
-        $html .= bigpicture_random_featured('collection');
+        $html .= bigpicture_random_featured('Collection');
     }
 
     if ((get_theme_option('Display Featured Exhibit') !== '0')
             && plugin_is_active('ExhibitBuilder')
             && function_exists('exhibit_builder_display_random_featured_exhibit')) {
-        $html .= bigpicture_random_featured('exhibit');
+        $html .= bigpicture_random_featured('Exhibit');
     }
     return $html;
 }
