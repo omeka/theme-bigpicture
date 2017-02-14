@@ -10,6 +10,7 @@ function bigpicture_random_featured($type = null, $num = 5, $hasImage = true)
 
     $html = '';
     foreach ($featured as $featuredRecord) {
+        $type = strtolower($type);
         if ($type !== 'exhibit') {
             $path = $type . 's/featured.php';
         } else {
