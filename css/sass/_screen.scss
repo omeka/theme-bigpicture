@@ -197,6 +197,12 @@ header {
     margin-right: auto;
 }
 
+#site-title img {
+    max-height: 1.5 * $spacing-l;
+    width: auto;
+    vertical-align: top;
+}
+
 .search-toggle:before,
 .menu-toggle:before,
 .advanced-toggle:before {
