@@ -16,18 +16,7 @@ if ($hasImages) {
     queue_css_file('chocolat');
     queue_js_file('modernizr', 'javascripts/vendor');
     queue_js_file('jquery.chocolat.min', 'js');
-    queue_js_string('
-        jQuery(document).ready(function(){
-            var inContainer = jQuery("#itemfiles-nav").Chocolat({
-            imageSize: "default",
-            loop: true,
-            fullscreen: true,
-            container: "#itemfiles-stage"
-            }).data("chocolat");
-    
-            inContainer.api().open()
-        });
-    ');
+    queue_js_file('items-show', 'js');
 }
 echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) ? ' gallery' : '')));
 ?>
