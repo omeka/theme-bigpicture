@@ -189,6 +189,7 @@ header {
     position: relative;
     z-index: 2;
     background-color: #fff;
+    overflow-x: hidden;
 }
 
 #site-title {
@@ -228,7 +229,7 @@ header {
 }
 
 #top-nav {
-    z-index: 1;
+    z-index: 10;
 }
 
 #search-container,
@@ -585,7 +586,7 @@ footer {
 
 .items.show.gallery .item-metadata {
     width: 25%;
-    padding: 0 (2 * $spacing-l) 0 $spacing-l;
+    padding: 0 $spacing-l;
     overflow-y: scroll;
     word-wrap: break-word;
 }
@@ -976,8 +977,32 @@ ul.item-pagination.navigation {
 
 /* @group ----- Exhibits/Page ----- */
 
-.exhibits.show #content > h1,
-.exhibits.summary #content > h1 {
+.exhibits.summary .summary-header {
+    color: #fff;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    width: 70%;
+    margin: auto;
+
+    &:before {
+        content: "";
+        background-color: rgba(0,0,0,.5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    h1 {
+        position: relative;
+        z-index: 1;
+        padding: (2* $spacing-l) $spacing-l;
+    }
+}
+
+.exhibits.show #content > h1 {
     text-align: center;
     width: 70%;
     margin: $spacing-l auto;
