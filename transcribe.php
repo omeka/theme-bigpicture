@@ -354,11 +354,9 @@ jQuery(document).ready(function() {
 <h3><?php echo $this->doc->getPageName(); ?></h3>
 
 <!-- document viewer -->
-<div id="transcription-image" style="display: inline-block">
 <?php echo file_markup($this->file, array('imageSize' => 'fullsize')); ?>
-</div>
 <!-- pagination -->
-<div id="transcription-block" style="display: inline-block">
+<div id="transcription-block" style="display: none">
 			<!-- transcription -->
 <p>
 <?php if (isset($this->paginationUrls['previous'])): ?><a href="<?php echo html_escape($this->paginationUrls['previous']); ?>">&#171; <?php echo __('previous page'); ?></a><?php else: ?>&#171; <?php echo __('previous page'); ?><?php endif; ?>
