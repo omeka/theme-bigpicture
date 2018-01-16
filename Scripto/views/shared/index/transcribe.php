@@ -354,12 +354,9 @@ jQuery(document).ready(function() {
 <h3><?php echo $this->doc->getPageName(); ?></h3>
 
 <!-- document viewer -->
-<div id="transcription-image" style="display: inline-block">
 <?php echo file_markup($this->file, array('imageSize' => 'fullsize')); ?>
-</div>
+
 <!-- pagination -->
-<div id="transcription-block" style="display: inline-block">
-			<!-- transcription -->
 <p>
 <?php if (isset($this->paginationUrls['previous'])): ?><a href="<?php echo html_escape($this->paginationUrls['previous']); ?>">&#171; <?php echo __('previous page'); ?></a><?php else: ?>&#171; <?php echo __('previous page'); ?><?php endif; ?>
  | <?php if (isset($this->paginationUrls['next'])): ?><a href="<?php echo html_escape($this->paginationUrls['next']); ?>"><?php echo __('next page'); ?> &#187;</a><?php else: ?><?php echo __('next page'); ?> &#187;<?php endif; ?>
@@ -369,10 +366,10 @@ jQuery(document).ready(function() {
 <!-- transcription -->
 <div id="scripto-transcription">
     <?php if ($this->doc->canEditTranscriptionPage()): ?>
-    <div id="scripto-transcription-edit" > 
+    <div id="scripto-transcription-edit" style="display: none;">
         <div><?php echo $this->formTextarea('scripto-transcription-page-wikitext', $this->doc->getTranscriptionPageWikitext(), array('cols' => '76', 'rows' => '16')); ?></div>
         <div>
-            <?php echo $this->formButton('scripto-transcription-page-edit', __('Edit transcription'), array('class' => 'btn btn-primary')); ?> 
+            <?php echo $this->formButton('scripto-transcription-page-edit', __('Edit transcription'), array('style' => 'display:inline; float:none;')); ?> 
         </div>
         <p><a href="http://www.mediawiki.org/wiki/Help:Formatting" target="_blank"><?php echo __('wiki formatting help'); ?></a></p>
     </div><!-- #scripto-transcription-edit -->
@@ -413,7 +410,7 @@ jQuery(document).ready(function() {
     </div>
     <div id="scripto-talk-page-html"><?php echo $this->talkPageHtml; ?></div>
 </div><!-- #scripto-talk -->
-</div> <!-- #transcription-block
+
 </div><!-- #scripto-transcribe -->
 </div>
 <?php echo foot(); ?>
