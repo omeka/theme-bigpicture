@@ -1,7 +1,7 @@
 {
-  "name": "berlin",
-  "version": "2.6.0",
-  "description": "\"Abstraction of the Making the History of 1989 theme.\"",
+  "name": "bigpicture",
+  "version": "1.1.0",
+  "description": "\"An image-centric theme geared towards art historians and students.\"",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -16,17 +16,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omeka/theme-berlin.git"
+    "url": "git+https://github.com/omeka/theme-bigpicture.git"
   },
   "keywords": [
     "\"white",
     "blue",
-    "sans-serif\""
+    "serif\""
   ],
   "author": "\"Roy Rosenzweig Center for History and New Media\"",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/omeka/theme-berlin/issues"
+    "url": "https://github.com/omeka/theme-bigpicture/issues"
   },
-  "homepage": "https://github.com/omeka/theme-berlin#readme"
+  "homepage": "https://github.com/omeka/theme-bigpicture#readme"
 }
