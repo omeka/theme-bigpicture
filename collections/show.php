@@ -36,9 +36,7 @@ $perPagePublic = get_option('per_page_public')
                 </div>
             </div>
             <?php endforeach; ?>
-            <?php if ($collectionItemsTotal > $perPagePublic): ?>
-            <p class="view-items-link"><?php echo link_to_items_in_collection(__('View all items in collection')); ?></p>
-            <?php endif; ?>
+            <?php echo link_to_items_browse(__(plural('View item', 'View all %s items', $collectionItemsTotal), $collectionItemsTotal), array('collection' => metadata('collection', 'id')), array('class' => 'view-items-link')); ?>
         <?php else: ?>
             <p><?php echo __("There are currently no items within this collection."); ?></p>
         <?php endif; ?>
