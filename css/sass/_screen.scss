@@ -852,6 +852,19 @@ ul.pagination {
     margin-top: 3 * $spacing-l;
 }
 
+.hTagcloud ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hTagcloud li {
+    background-color: $border-gray;
+    padding: $spacing-s;
+    margin: 0 $spacing-s $spacing-s 0;
+    list-style-type: none;
+}
+
 /* @end */
 
 /* @group ----- Collections/Browse and Exhibits/Browse----- */

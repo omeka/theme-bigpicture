@@ -657,6 +657,17 @@
   .hTagcloud {
     clear: both;
     margin-top: 63px; }
+  .hTagcloud ul {
+    padding-left: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .hTagcloud li {
+    background-color: #eee;
+    padding: 5.25px;
+    margin: 0 5.25px 5.25px 0;
+    list-style-type: none; }
   /* @end */
   /* @group ----- Collections/Browse and Exhibits/Browse----- */
   .browse.collections .records,
