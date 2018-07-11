@@ -431,7 +431,9 @@ footer {
     align-items: center;
 }
 
-.records .item {
+.records .item,
+.records .file,
+.records .collection {
     width: calc(50% - #{2 * $spacing-l});
     padding: $spacing-l;
     margin: $spacing-l;
@@ -440,6 +442,11 @@ footer {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .records h3 {
@@ -465,11 +472,6 @@ footer {
     width: 100%;
     text-transform: uppercase;
     color: #777;
-}
-
-.records .item img {
-    max-width: 100%;
-    height: auto;
 }
 
 .records .creator:not(:last-child):after {
@@ -638,6 +640,11 @@ ul.item-pagination.navigation {
 
 /* @group ----- Items/Search ----- */
 
+#advanced-search-form {
+    clear: both;
+    margin-top: $spacing-l;
+}
+
 .search-entry {
     display: flex;
     width: 100%;
@@ -724,11 +731,18 @@ ul.item-pagination.navigation {
     align-items: center;
 }
 
-.browse-header ul {
+.items-nav {
+    max-width: 50%;
+    float: left;
+}
+
+.browse-header ul,
+.items-nav ul {
     margin: 0;
 }
 
 .browse-header li,
+.items-nav li,
 #sort-links-list 
  {
     display: inline-block;
@@ -794,10 +808,16 @@ ul.item-pagination.navigation {
 .pagination-nav {
     color: #999;
     margin-left: 2 * $spacing-l;
+    float: right;
+}
+
+ul.pagination {
+    margin: 0;
 }
 
 .pagination li {
     margin-left: $spacing-m;
+    display: inline-block;
 }
 
 .pagination a:before {
@@ -825,6 +845,11 @@ ul.item-pagination.navigation {
 
 .browse .records {
     margin: 0 (-$spacing-l);
+}
+
+.hTagcloud {
+    clear: both;
+    margin-top: 3 * $spacing-l;
 }
 
 /* @end */
@@ -1149,7 +1174,8 @@ ul.item-pagination.navigation {
 /* @group ----- Plugins ----- */
 
 #geolocation-browse {
-    margin-top: $spacing-m;
+    margin-top: 3 * $spacing-l;
+    clear: both;
 }
 
 #geolocation-browse #map-links li {

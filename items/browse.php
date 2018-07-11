@@ -2,7 +2,7 @@
 $pageTitle = __('Browse Items');
 echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
-<?php if (isset($_GET['collection'])): ?>
+<?php if (isset($_GET['collection']) && ($_GET['collection'] !== '')): ?>
 
 <?php $collectionID = $_GET['collection']; ?>
 

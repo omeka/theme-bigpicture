@@ -336,7 +336,9 @@
         flex-wrap: wrap;
     -ms-flex-align: center;
         align-items: center; }
-  .records .item {
+  .records .item,
+  .records .file,
+  .records .collection {
     width: calc(50% - 42px);
     padding: 21px;
     margin: 21px;
@@ -349,6 +351,11 @@
         align-content: center;
     -ms-flex-pack: center;
         justify-content: center; }
+    .records .item img,
+    .records .file img,
+    .records .collection img {
+      max-width: 100%;
+      height: auto; }
   .records h3 {
     margin-bottom: 10.5px;
     font-size: 17.5px;
@@ -368,9 +375,6 @@
     width: 100%;
     text-transform: uppercase;
     color: #777; }
-  .records .item img {
-    max-width: 100%;
-    height: auto; }
   .records .creator:not(:last-child):after {
     content: ","; }
   /* @end */
@@ -479,6 +483,9 @@
       display: inline-block; }
   /* @end */
   /* @group ----- Items/Search ----- */
+  #advanced-search-form {
+    clear: both;
+    margin-top: 21px; }
   .search-entry {
     display: -ms-flexbox;
     display: flex;
@@ -551,9 +558,14 @@
         justify-content: flex-end;
     -ms-flex-align: center;
         align-items: center; }
-  .browse-header ul {
+  .items-nav {
+    max-width: 50%;
+    float: left; }
+  .browse-header ul,
+  .items-nav ul {
     margin: 0; }
   .browse-header li,
+  .items-nav li,
   #sort-links-list {
     display: inline-block; }
   .secondary-nav li {
@@ -609,9 +621,13 @@
     transform: scaleY(-1); }
   .pagination-nav {
     color: #999;
-    margin-left: 42px; }
+    margin-left: 42px;
+    float: right; }
+  ul.pagination {
+    margin: 0; }
   .pagination li {
-    margin-left: 10.5px; }
+    margin-left: 10.5px;
+    display: inline-block; }
   .pagination a:before {
     font-family: 'Linearicons-Free';
     speak: none;
@@ -638,6 +654,9 @@
     margin: 0; }
   .browse .records {
     margin: 0 -21px; }
+  .hTagcloud {
+    clear: both;
+    margin-top: 63px; }
   /* @end */
   /* @group ----- Collections/Browse and Exhibits/Browse----- */
   .browse.collections .records,
@@ -872,7 +891,8 @@
   /* @end */
   /* @group ----- Plugins ----- */
   #geolocation-browse {
-    margin-top: 10.5px; }
+    margin-top: 63px;
+    clear: both; }
   #geolocation-browse #map-links li {
     background-color: #eee; }
   /* @end */ }
