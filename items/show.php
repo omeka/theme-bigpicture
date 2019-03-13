@@ -65,7 +65,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
 
     <?php if (count($nonImages) > 0): ?>
     <div id="other-media" class="element">
-        <h3>Other Media</h3>
+        <h3><?php echo __('Files'); ?></h3>
         <?php foreach ($nonImages as $nonImage): ?>
         <div class="element-text"><a href="<?php echo file_display_url($nonImage, 'original'); ?>"><?php echo metadata($nonImage, 'display_title'); ?> - <?php echo $nonImage->mime_type; ?></a></div>
         <?php endforeach; ?>
