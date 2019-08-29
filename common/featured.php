@@ -1,4 +1,13 @@
-<div class="<?php echo $recordType; ?> record" style="background-image:url(<?php echo file_display_url($featuredRecord->getFile(0), 'fullsize'); ?>)">
+<?php 
+$backgroundFile = $featuredRecord->getFile(0);
+if ($backgroundFile) {
+  $background = "background-image:url(" . file_display_url($backgroundFile, 'fullsize') . ")";
+} else {
+  $background = "background-color: #666";
+}
+?>
+
+<div class="<?php echo $recordType; ?> record" style="<?php echo $background; ?>">
     <div class="record-meta">
     <?php if ($recordType == 'exhibit'): ?>
         <?php set_current_record('exhibit', $featuredRecord); ?>
