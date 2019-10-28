@@ -31,13 +31,7 @@ if ($hasImages) {
       queue_js_file('lightgallery-all.min', 'js');
       queue_js_string('
           jQuery(document).ready(function() {
-              jQuery("#itemfiles").lightSlider({
-                  gallery: true,
-                  item: 1,
-                  loop:true,
-                  slideMargin: 0,
-                  responsive: [],
-              });
+              BigPicture.useLightslider(' . count($images) . ');
           });
       ');
     }
@@ -64,7 +58,9 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     </nav>
 
     <h1><?php echo metadata('item', 'display_title'); ?></h1>
-
+    
+    <div class="item-metadata-content">
+      
     <?php echo all_element_texts('item'); ?>
     
     <?php if (metadata('item', 'Collection Name')): ?>
@@ -103,6 +99,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     </div>
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+    </div>
 </div>
 
 </div>

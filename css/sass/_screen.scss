@@ -320,7 +320,7 @@ header {
 /* @group ----- Footer ----- */
 
 footer {
-    padding: 0 $spacing-l $spacing-l;
+    padding: $spacing-l;
 }
 
 /* @end */
@@ -500,7 +500,7 @@ footer {
 /* @group ----- Items/Show ----- */
 
 
-.items.show:not(.gallery) .item-metadata {
+.items.show:not(.gallery) .item-metadata-content {
     columns: 2;
     column-gap: $spacing-l;
 }
@@ -543,11 +543,15 @@ footer {
     margin-top: calc(-41px - #{3.5 * $spacing-l});
 }
 
-.items.show #itemfiles,
+.items.show div#itemfiles,
 .items.show .lSSlideOuter {
     width: 75%;
     height: 100%;
     background: #333;
+    position: relative;
+}
+
+.items.show div#itemfiles {
     margin-left: $spacing-l;
 }
 
@@ -588,9 +592,44 @@ footer {
     max-width: none;
 }
 
-.items.show .lslide img {
-  max-height: 100%;
-  width: auto;
+ul#itemfiles {
+  height: calc(100% - #{4 * $spacing-l}) !important;
+  padding-bottom: 0 !important;
+}
+
+.count-1 ul#itemfiles {
+  height: 100% !important;
+}
+
+.lSSlideWrapper,
+.lSSlideWrapper .lSFade > * {
+    height: 100%;
+}
+
+.lSSlideOuter .media-render {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lSSlideOuter .media-render img {
+    max-height: 100%;
+    width: auto;
+}
+
+.lSSlideOuter .lSPager.lSGallery {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    padding: $spacing-s;
+}
+
+.count-1.lSSlideOuter .lSPager.lSGallery {
+    display: none;
 }
 
 .items.show.gallery .item-metadata {
@@ -615,7 +654,6 @@ footer {
 
 
 .item-metadata nav {
-    column-span: all;
     margin: 0 (-$spacing-l);
     border-bottom: 1px solid $border-gray;
 }
@@ -641,6 +679,10 @@ ul.item-pagination.navigation {
         padding: $spacing-m;
         display: inline-block;
     }
+}
+
+.element-set {
+    display: table;
 }
 
 /* @end */
