@@ -1,5 +1,9 @@
+if (!BigPicture) {
+    var BigPicture = {};
+}
+
 (function($) {
-    $(document).ready(function(){
+    BigPicture.useChocolat = function() {
         var inContainer = $("#itemfiles-nav").Chocolat({
         imageSize: "default",
         loop: true,
@@ -19,5 +23,5 @@
                 }
             }
         });
-    });
+    };
 })(jQuery)

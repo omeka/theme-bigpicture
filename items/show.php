@@ -12,11 +12,35 @@ foreach ($itemFiles as $itemFile) {
     }
 }
 $hasImages = (count($images) > 0);
+$imageViewer = get_theme_option('image_viewer');
 if ($hasImages) {
-    queue_css_file('chocolat');
-    queue_js_file('modernizr', 'javascripts/vendor');
-    queue_js_file('jquery.chocolat.min', 'js');
     queue_js_file('items-show', 'js');
+    if (!isset($imageViewer) || ($imageViewer == 'chocolat')) {
+        queue_css_file('chocolat');
+        queue_js_file('modernizr', 'javascripts/vendor');
+        queue_js_file('jquery.chocolat.min', 'js');
+        queue_js_string('
+            jQuery(document).ready(function() {
+                BigPicture.useChocolat();
+            });
+        ');
+    } else {
+      queue_css_file('lightslider.min');
+      queue_css_file('lightgallery.min');
+      queue_js_file('lightslider.min', 'js');
+      queue_js_file('lightgallery-all.min', 'js');
+      queue_js_string('
+          jQuery(document).ready(function() {
+              jQuery("#itemfiles").lightSlider({
+                  gallery: true,
+                  item: 1,
+                  loop:true,
+                  slideMargin: 0,
+                  responsive: [],
+              });
+          });
+      ');
+    }
 }
 echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) ? ' gallery' : '')));
 ?>
@@ -24,16 +48,11 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
 <div class="flex">
 <!-- The following returns all of the files associated with an item. -->
 <?php if ($hasImages): ?>
-    <div id="itemfiles" <?php echo (count($images) == 1) ? 'class="solo"' : ''; ?>>
-        <div id="itemfiles-stage"></div>
-        <div id="itemfiles-nav">
-            <?php foreach ($images as $image): ?>
-                <a href="<?php echo $image->getWebPath('original'); ?>" class="chocolat-image">
-                    <?php echo file_image('square_thumbnail', array(), $image); ?>
-                </a>
-            <?php endforeach; ?>
-        </div>
-    </div>
+    <?php if (!isset($imageViewer) || ($imageViewer == 'chocolat')): ?>
+        <?php echo $this->partial('items/show-chocolat.php', array('images' => $images)); ?>
+    <?php else: ?>
+        <?php echo $this->partial('items/show-lightgallery.php', array('images' => $images)); ?>
+    <?php endif; ?>
 <?php endif; ?>
 
 <div class="item-metadata">
