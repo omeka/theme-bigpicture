@@ -34,7 +34,7 @@ if (!BigPicture) {
                 gallery:true,
                 item:1,
                 loop:true,
-                thumbItem:15,
+                thumbItem:10,
                 slideMargin:0,
                 addClass: 'count-' + imageCount,
                 enableDrag: false,

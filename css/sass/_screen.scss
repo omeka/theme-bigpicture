@@ -626,6 +626,8 @@ ul#itemfiles {
     display: flex;
     justify-content: center;
     padding: $spacing-s;
+    z-index: 10;
+    height: (4 * $spacing-l);
 }
 
 .count-1.lSSlideOuter .lSPager.lSGallery {
