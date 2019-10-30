@@ -19,7 +19,8 @@ $searchRecordTypes = get_search_record_types();
     <?php set_current_record($recordType, $record); ?>
     <div class="<?php echo strtolower($filter->filter($recordType)); ?>">
         <div class="record">
-            <?php if ($recordImage = record_image($recordType, 'fullsize')): ?>
+            <?php $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize'; ?>
+            <?php if ($recordImage = record_image($recordType, $imageSize)): ?>
                 <?php echo link_to($record, 'show', $recordImage, array('class' => 'image')); ?>
             <?php endif; ?>
             <div class="record-type"><?php echo $searchRecordTypes[$recordType]; ?></div>

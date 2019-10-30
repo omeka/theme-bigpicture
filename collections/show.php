@@ -21,7 +21,8 @@ $perPagePublic = get_option('per_page_public')
             <div class="item hentry">
                 <?php if (metadata('item', 'has thumbnail')): ?>
                 <div class="item-img">
-                    <?php echo link_to_item(item_image('fullsize', array('alt' => $itemTitle))); ?>
+                    <?php $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize'; ?>
+                    <?php echo link_to_item(item_image($imageSize, array('alt' => $itemTitle))); ?>
                 </div>
                 <?php endif; ?>
                 <div class="item-meta">

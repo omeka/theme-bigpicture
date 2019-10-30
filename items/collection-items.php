@@ -34,7 +34,8 @@ set_current_record('collection', $collection);
             <div class="item-meta">
             <?php if (metadata('item', 'has files')): ?>
             <div class="item-img">
-                <?php echo link_to_item(item_image('fullsize')); ?>
+                <?php $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize'; ?>
+                <?php echo link_to_item(item_image($imageSize)); ?>
             </div>
             <?php endif; ?>
     
