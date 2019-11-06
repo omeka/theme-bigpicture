@@ -392,6 +392,11 @@
     margin-bottom: 21px; }
   /* @end */
   /* @group ----- Items/Show ----- */
+  .show #content > h1:first-child {
+    word-wrap: break-word; }
+  .show .download-file > img {
+    max-width: 100%;
+    height: auto; }
   .items.show:not(.gallery) .item-metadata-content {
     columns: 2;
     column-gap: 21px; }
