@@ -446,18 +446,8 @@
     border-top: 1px solid #333; }
   .items.show .solo #itemfiles-stage {
     height: 100%; }
-  .items.show .solo #itemfiles-nav,
-  .items.show .solo .chocolat-left,
-  .items.show .solo .chocolat-right,
-  .chocolat-close {
+  .items.show .lSSlideOuter .media-link {
     display: none; }
-  .chocolat-overlay {
-    background-color: #333;
-    opacity: 1; }
-  .items.show #itemfiles-nav img {
-    height: 100%;
-    width: auto;
-    max-width: none; }
   ul#itemfiles {
     height: calc(100% - 84px) !important;
     padding-bottom: 0 !important; }
