@@ -157,15 +157,6 @@ header {
     margin: 0;
 }
 
-.touch .chocolat-fullscreen {
-    display: none;
-}
-
-.touch .chocolat-wrapper .chocolat-pagination {
-    margin-right: 0;
-    padding-right: 0;
-}
-
 .items.show .lSSlideOuter {
   height: 70vh;
   width: calc(100% + #{2 * $spacing-l});
