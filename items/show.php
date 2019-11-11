@@ -12,11 +12,18 @@ foreach ($itemFiles as $itemFile) {
     }
 }
 $hasImages = (count($images) > 0);
+$imageViewer = get_theme_option('image_viewer');
 if ($hasImages) {
-    queue_css_file('chocolat');
-    queue_js_file('modernizr', 'javascripts/vendor');
-    queue_js_file('jquery.chocolat.min', 'js');
     queue_js_file('items-show', 'js');
+    queue_css_file('lightslider.min');
+    queue_css_file('lightgallery.min');
+    queue_js_file('lightslider.min', 'js');
+    queue_js_file('lightgallery-all.min', 'js');
+    queue_js_string('
+        jQuery(document).ready(function() {
+            BigPicture.useLightslider(' . count($images) . ');
+        });
+    ');
 }
 echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) ? ' gallery' : '')));
 ?>
@@ -24,16 +31,25 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
 <div class="flex">
 <!-- The following returns all of the files associated with an item. -->
 <?php if ($hasImages): ?>
-    <div id="itemfiles" <?php echo (count($images) == 1) ? 'class="solo"' : ''; ?>>
-        <div id="itemfiles-stage"></div>
-        <div id="itemfiles-nav">
-            <?php foreach ($images as $image): ?>
-                <a href="<?php echo $image->getWebPath('original'); ?>" class="chocolat-image">
-                    <?php echo file_image('square_thumbnail', array(), $image); ?>
-                </a>
-            <?php endforeach; ?>
-        </div>
-    </div>
+    <?php $linkToFileMetadata = get_option('link_to_file_metadata'); ?>
+    <ul id="itemfiles" <?php echo (count($images) == 1) ? 'class="solo"' : ''; ?>>
+        <?php foreach ($images as $image): ?>
+        <?php $fileUrl = ($linkToFileMetadata) ? record_url($image) : $image->getWebPath('original'); ?>
+        <li 
+            data-src="<?php echo $image->getWebPath('original'); ?>" 
+            data-thumb="<?php echo $image->getWebPath('square_thumbnail'); ?>" 
+            data-sub-html=".media-link"
+            class="media resource"
+        >
+            <div class="media-render">
+            <?php echo file_image('original', array(), $image); ?>
+            </div>
+            <div class="media-link">
+            <a href="<?php echo $fileUrl; ?>"><?php echo metadata($image, 'display_title'); ?></a>
+            </div>
+        </li>
+        <?php endforeach; ?>
+    </ul>
 <?php endif; ?>
 
 <div class="item-metadata">
@@ -45,7 +61,9 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     </nav>
 
     <h1><?php echo metadata('item', 'display_title'); ?></h1>
-
+    
+    <div class="item-metadata-content">
+      
     <?php echo all_element_texts('item'); ?>
     
     <?php if (metadata('item', 'Collection Name')): ?>
@@ -84,6 +102,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     </div>
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+    </div>
 </div>
 
 </div>
