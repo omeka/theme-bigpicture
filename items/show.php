@@ -34,7 +34,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
 <?php if ($hasImages): ?>
     <ul id="itemfiles" <?php echo (count($images) == 1) ? 'class="solo"' : ''; ?>>
         <?php foreach ($images as $image): ?>
-        <?php $fileUrl = ($linkToFileMetadata !== 1) ? record_url($image) : $image->getWebPath('original'); ?>
+        <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($image) : $image->getWebPath('original'); ?>
         <li 
             data-src="<?php echo $image->getWebPath('original'); ?>" 
             data-thumb="<?php echo $image->getWebPath('square_thumbnail'); ?>" 
@@ -85,7 +85,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     <div id="other-media" class="element">
         <h3><?php echo __('Files'); ?></h3>
         <?php foreach ($nonImages as $nonImage): ?>
-        <?php $fileUrl = ($linkToFileMetadata !== 1) ? record_url($nonImage) : $nonImage->getWebPath('original'); ?>
+        <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($nonImage) : $nonImage->getWebPath('original'); ?>
         <div class="element-text"><a href="<?php echo $fileUrl; ?>"><?php echo metadata($nonImage, 'display_title'); ?> - <?php echo $nonImage->mime_type; ?></a></div>
         <?php endforeach; ?>
     </div>
