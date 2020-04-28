@@ -50,6 +50,10 @@ p, ol, ul, dl, blockquote {
     margin: $spacing-l 0;
 }
 
+img {
+    image-orientation:from-image;
+}
+
 nav ul {
     list-style: none;
     padding-left: 0;
