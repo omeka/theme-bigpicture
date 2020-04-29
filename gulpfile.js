@@ -8,11 +8,9 @@ gulp.task('css', function() {
     return gulp.src('./css/sass/*.scss')
         .pipe(sass({
             outputStyle: 'nested',
-            includePaths: ['../../node_modules/susy/sass']
+            includePaths: ['./node_modules/susy/sass']
         }).on('error', sass.logError))
-        .pipe(postcss([
-            autoprefixer({browsers: ['> 5%', '> 5% in US', 'last 2 versions']})
-        ]))
+        .pipe(postcss([autoprefixer]))
         .pipe(gulp.dest('./css'));
 });
 
