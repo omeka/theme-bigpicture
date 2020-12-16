@@ -45,7 +45,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
             <?php echo file_image('original', array(), $image); ?>
             </div>
             <div class="media-link">
-            <a href="<?php echo $fileUrl; ?>"><?php echo metadata($image, 'display_title'); ?></a>
+            <a href="<?php echo $fileUrl; ?>"><?php echo metadata($image, 'rich_title', array('no_escape' => true)); ?></a>
             </div>
         </li>
         <?php endforeach; ?>
@@ -60,7 +60,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     </ul>
     </nav>
 
-    <h1><?php echo metadata('item', 'display_title'); ?></h1>
+    <h1><?php echo metadata('item', 'rich_title', array('no_escape' => true)); ?></h1>
     
     <div class="item-metadata-content">
       
@@ -86,7 +86,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
         <h3><?php echo __('Files'); ?></h3>
         <?php foreach ($nonImages as $nonImage): ?>
         <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($nonImage) : $nonImage->getWebPath('original'); ?>
-        <div class="element-text"><a href="<?php echo $fileUrl; ?>"><?php echo metadata($nonImage, 'display_title'); ?> - <?php echo $nonImage->mime_type; ?></a></div>
+        <div class="element-text"><a href="<?php echo $fileUrl; ?>"><?php echo metadata($nonImage, 'rich_title', array('no_escape' => true)); ?> - <?php echo $nonImage->mime_type; ?></a></div>
         <?php endforeach; ?>
     </div>
     <?php endif; ?>

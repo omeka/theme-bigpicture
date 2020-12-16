@@ -27,7 +27,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'collections browse'));
     <div class="collection record" <?php echo $background; ?>>
     
         <div class="record-meta">
-            <h2><?php echo link_to_items_browse(metadata($collection, array('Dublin Core', 'Title')), array('collection' =>  metadata($collection, 'id'))); ?></h2>
+            <h2><?php echo link_to_items_browse(metadata($collection, 'rich_title', array('no_escape' => true)), array('collection' =>  metadata($collection, 'id'))); ?></h2>
         </div>
     
         <?php fire_plugin_hook('public_collections_browse_each', array('view' => $this, 'collection' => $collection)); ?>

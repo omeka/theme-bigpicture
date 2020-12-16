@@ -4,7 +4,7 @@ set_current_record('collection', $collection);
 ?>
 <div class="flex">
     <div class="collection-meta">
-        <h1><?php echo metadata('collection', array('Dublin Core', 'Title')); ?></h1>
+        <h1><?php echo metadata('collection', 'rich_title', array('no_escape' => true)); ?></h1>
         <a href="#" class="mobile-toggle closed">Collection Metadata</a>
         <div class="closed">
             <?php echo all_element_texts($collection); ?>
@@ -39,7 +39,7 @@ set_current_record('collection', $collection);
             </div>
             <?php endif; ?>
     
-            <h3><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h3>
+            <h3><?php echo link_to_item(metadata('item', 'rich_title', array('no_escape' => true)), array('class'=>'permalink')); ?></h3>
     
             <?php if ($creator = metadata('item', array('Dublin Core', 'Creator'))): ?>
             <span class="creator"><?php echo $creator; ?></span>
