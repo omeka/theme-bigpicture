@@ -39,7 +39,7 @@ set_current_record('collection', $collection);
             </div>
             <?php endif; ?>
     
-            <h3><?php echo link_to_item(metadata('item', 'rich_title', array('no_escape' => true)), array('class'=>'permalink')); ?></h3>
+            <h3><?php echo link_to_item(null, array('class'=>'permalink')); ?></h3>
     
             <?php if ($creator = metadata('item', array('Dublin Core', 'Creator'))): ?>
             <span class="creator"><?php echo $creator; ?></span>
