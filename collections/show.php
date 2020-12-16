@@ -17,7 +17,7 @@ $perPagePublic = get_option('per_page_public')
         <h2><?php echo link_to_items_browse(__('Items in the %s Collection' . ' (%s/%s)', $collectionTitle, $currentTotal, $collectionItemsTotal), array('collection' => metadata('collection', 'id'))); ?></h2>
         <?php if (metadata('collection', 'total_items') > 0): ?>
             <?php foreach (loop('items') as $item): ?>
-            <?php $itemTitle = metadata('item', 'rich_title', array('no_escape' => true)); ?>
+            <?php $itemTitle = metadata('item', 'display_title'); ?>
             <div class="item hentry">
                 <?php if (metadata('item', 'has thumbnail')): ?>
                 <div class="item-img">
@@ -26,7 +26,7 @@ $perPagePublic = get_option('per_page_public')
                 </div>
                 <?php endif; ?>
                 <div class="item-meta">
-                    <h3><?php echo link_to_item($itemTitle, array('class'=>'permalink')); ?></h3>
+                    <h3><?php echo link_to_item(null, array('class'=>'permalink')); ?></h3>
         
                     <?php if ($creator = metadata('item', array('Dublin Core', 'Creator'))): ?>
                     <span class="creator"><?php echo $creator; ?></span>
