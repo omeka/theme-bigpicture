@@ -452,6 +452,10 @@
     padding: 5.25px;
     z-index: 10;
     height: 84px; }
+  .lSPager li a {
+    display: flex;
+    align-items: center;
+    height: 100%; }
   .count-1.lSSlideOuter .lSPager.lSGallery {
     display: none; }
   .items.show.gallery .item-metadata {

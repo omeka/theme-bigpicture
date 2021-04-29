@@ -633,6 +633,12 @@ ul#itemfiles {
     height: (4 * $spacing-l);
 }
 
+.lSPager li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
 .count-1.lSSlideOuter .lSPager.lSGallery {
     display: none;
 }
