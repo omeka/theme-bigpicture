@@ -1,0 +1,78 @@
+#wrap {
+  background: black !important;
+  color: #cccccc !important;
+}
+
+#wrap > header {
+  background: black !important;
+}
+
+#site-title > a {
+  color: white !important;
+  text-decoration: none;
+}
+
+.item-meta a {
+  text-decoration: none;
+}
+
+html, a, h1, h2, h3, h4, h5 {
+  font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+header {
+  border: none !important;
+}
+
+header > a {
+  text-decoration: none;
+}
+
+a {
+  color: white !important;
+  opacity: 0.9 !important;
+  font-weight: bold !important;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+a:hover {
+  opacity: 1 !important;
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: normal !important;
+  color: white;
+}
+
+.mm-listview a {
+  color: #333333;
+}
+
+#search-form {
+  border-top: none;
+  background: black;
+}
+
+#query {
+  background: black;
+}
+
+#search-container button[type="submit"] {
+  color: white;
+}
+
+html {
+  background: black;
+}
+
+ul.item-pagination.navigation a, ul a {
+  color: #cccccc !important;
+}
+
+.mm-offcanvas {
+  background: #737373;
+}
+/*# sourceMappingURL=override.css.map */
