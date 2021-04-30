@@ -1,22 +1,30 @@
 <?php
+$linkToFileMetadata = get_option('link_to_file_metadata');
 $title = metadata('item', 'display_title');
 $itemFiles = $item->Files;
 $images = array();
 $nonImages = array();
 foreach ($itemFiles as $itemFile) {
     $mimeType = $itemFile->mime_type;
-    if (strpos($mimeType, 'image') !== false) {
+    if ((strpos($mimeType, 'image') !== false) || (strpos($mimeType, 'video') !== false)) {
         $images[] = $itemFile;
     } else {
         $nonImages[] = $itemFile;
     }
 }
 $hasImages = (count($images) > 0);
+$imageViewer = get_theme_option('image_viewer');
 if ($hasImages) {
-    queue_css_file('chocolat');
-    queue_js_file('modernizr', 'javascripts/vendor');
-    queue_js_file('jquery.chocolat.min', 'js');
     queue_js_file('items-show', 'js');
+    queue_css_file('lightslider.min');
+    queue_css_file('lightgallery.min');
+    queue_js_file('lightslider.min', 'js');
+    queue_js_file('lightgallery-all.min', 'js');
+    queue_js_string('
+        jQuery(document).ready(function() {
+            BigPicture.useLightslider(' . count($images) . ');
+        });
+    ');
 }
 echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) ? ' gallery' : '')));
 ?>
@@ -24,16 +32,48 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
 <div class="flex">
 <!-- The following returns all of the files associated with an item. -->
 <?php if ($hasImages): ?>
-    <div id="itemfiles" <?php echo (count($images) == 1) ? 'class="solo"' : ''; ?>>
-        <div id="itemfiles-stage"></div>
-        <div id="itemfiles-nav">
-            <?php foreach ($images as $image): ?>
-                <a href="<?php echo $image->getWebPath('original'); ?>" class="chocolat-image">
-                    <?php echo file_image('square_thumbnail', array(), $image); ?>
-                </a>
-            <?php endforeach; ?>
-        </div>
-    </div>
+    <ul id="itemfiles" <?php echo (count($images) == 1) ? 'class="solo"' : ''; ?>>
+        <?php $imageCount = 0; ?>
+        <?php foreach ($images as $image): ?> 
+        <?php $imageCount++; ?>
+        <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($image) : $image->getWebPath('original'); ?>
+        <?php if (strpos($image->mime_type, 'image') !== false): ?>
+            <li 
+                data-src="<?php echo $image->getWebPath('original'); ?>" 
+                data-thumb="<?php echo $image->getWebPath('square_thumbnail'); ?>" 
+                data-sub-html=".media-link"
+                class="media resource"
+            >
+                <div class="media-render">
+                <?php echo file_image('original', array(), $image); ?>
+                </div>
+                <div class="media-link">
+                <a href="<?php echo $fileUrl; ?>"><?php echo metadata($image, 'rich_title', array('no_escape' => true)); ?></a>
+                </div>
+            </li>
+        <?php else: ?>
+            <li 
+                data-thumb="<?php echo file_display_url($image, 'square_thumbnail'); ?>" 
+                data-html="#video-<?php echo $imageCount; ?>"
+                data-sub-html=".media-link" 
+                class="media resource"
+            >
+                <div style="display: none;" id="video-<?php echo $imageCount; ?>">
+                    <video class="lg-video-object lg-html5" controls preload="none">
+                        <source src="<?php echo file_display_url($image, 'original'); ?>" type="<?php echo $image->mime_type; ?>">
+                        <?php echo __('Your browser does not support HTML5 video.'); ?>
+                    </video>
+                </div>
+                <div class="media-render">
+                    <?php echo file_image('fullsize', array(), $image); ?>
+                </div>
+                <div class="media-link">
+                    <a href="<?php echo $fileUrl; ?>"><?php echo metadata($image, 'rich_title', array('no_escape' => true)); ?></a>
+                </div>
+            </li>
+        <?php endif; ?>
+        <?php endforeach; ?>
+    </ul>
 <?php endif; ?>
 
 <div class="item-metadata">
@@ -44,8 +84,10 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     </ul>
     </nav>
 
-    <h1><?php echo metadata('item', 'display_title'); ?></h1>
-
+    <h1><?php echo metadata('item', 'rich_title', array('no_escape' => true)); ?></h1>
+    
+    <div class="item-metadata-content">
+      
     <?php echo all_element_texts('item'); ?>
     
     <?php if (metadata('item', 'Collection Name')): ?>
@@ -65,9 +107,10 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
 
     <?php if (count($nonImages) > 0): ?>
     <div id="other-media" class="element">
-        <h3>Other Media</h3>
+        <h3><?php echo __('Files'); ?></h3>
         <?php foreach ($nonImages as $nonImage): ?>
-        <div class="element-text"><a href="<?php echo file_display_url($nonImage, 'original'); ?>"><?php echo metadata($nonImage, 'display_title'); ?> - <?php echo $nonImage->mime_type; ?></a></div>
+        <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($nonImage) : $nonImage->getWebPath('original'); ?>
+        <div class="element-text"><a href="<?php echo $fileUrl; ?>"><?php echo metadata($nonImage, 'rich_title', array('no_escape' => true)); ?> - <?php echo $nonImage->mime_type; ?></a></div>
         <?php endforeach; ?>
     </div>
     <?php endif; ?>
@@ -84,6 +127,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
     </div>
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
+    </div>
 </div>
 
 </div>

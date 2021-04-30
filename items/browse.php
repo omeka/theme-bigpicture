@@ -40,11 +40,12 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
         <div class="item-meta">
         <?php if (metadata('item', 'has files')): ?>
         <div class="item-img">
-            <?php echo link_to_item(item_image('fullsize')); ?>
+            <?php $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize'; ?>
+            <?php echo link_to_item(item_image($imageSize)); ?>
         </div>
         <?php endif; ?>
 
-        <h3><?php echo link_to_item(metadata('item', array('Dublin Core', 'Title')), array('class'=>'permalink')); ?></h3>
+        <h3><?php echo link_to_item(null, array('class'=>'permalink')); ?></h3>
 
         <?php if ($creator = metadata('item', array('Dublin Core', 'Creator'))): ?>
         <span class="creator"><?php echo $creator; ?></span>
