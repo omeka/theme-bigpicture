@@ -19,8 +19,10 @@
     font-weight: 400i; }
   strong {
     font-weight: 700; }
-  a {
+  header a {
     text-decoration: none;
+  }
+  a {
     color: #3e8bff; }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Caudex", serif;
@@ -1137,7 +1139,7 @@
     color: white !important;
     opacity: 0.9 !important;
     font-weight: bold !important;
-    /* text-decoration: underline; */
+    text-decoration: underline dotted;
   }
 
   a:hover {
