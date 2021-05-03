@@ -1176,3 +1176,31 @@
   button, select, .submit {
     color: black;
   }
+
+  .hTagcloud li a {
+    color: black !important;
+  }
+  .popular {
+    font-size: 1em;
+  }
+  .v-popular {
+    font-size: 1.2em;
+  }
+  .vv-popular {
+    font-size: 1.4em;
+  }
+  .vvv-popular {
+    font-size: 1.6em;
+  }
+  .vvvv-popular {
+    font-size: 1.8em;
+  }
+  .vvvvv-popular {
+    font-size: 2em;
+  }
+  .vvvvvv-popular {
+    font-size: 2.2em;
+  }
+  .vvvvvvv-popular {
+    font-size: 2.4em;
+  }
