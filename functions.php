@@ -43,4 +43,53 @@ function bigpicture_featured_html() {
            
     return $html;
 }
+
+function bigpicture_find_text_track_files($media, $item) {
+    $settings = unserialize(get_option('html5_media_settings'));
+    $extensions = $settings['text']['extensions'];
+
+    $mediaName = pathinfo($media->original_filename,
+        PATHINFO_FILENAME);
+
+    $trackFiles = array();
+    foreach ($item->Files as $file) {
+        if ($file->id == $mediaFile->id) {
+            continue;
+        }
+        $pathInfo = pathinfo($file->original_filename);
+        if ($pathInfo['filename'] == $mediaName
+            && isset($pathInfo['extension'])
+            && in_array($pathInfo['extension'], $extensions)
+        ) {
+            $trackFiles[] = $file;
+        }
+    }
+    return $trackFiles;
+}
+
+function bigpicture_output_text_track_file($textFile) {
+    $kind = metadata($textFile, array('Dublin Core', 'Type'));
+    $language = metadata($textFile, array('Dublin Core', 'Language'));
+    $label = metadata($textFile, array('Dublin Core', 'Title'));
+
+    if (!$kind) {
+        $kind = 'subtitles';
+    }
+
+    if (!$language) {
+        $language = 'en';
+    }
+
+    $trackSrc = html_escape($textFile->getWebPath('original'));
+
+    if ($label) {
+        $labelPart = ' label="' . $label . '"';
+    } else {
+        $labelPart = '';
+    }
+
+    $track .= '<track kind="' . $kind . '" src="' . $trackSrc . '" srclang="' . $language . '"' . $labelPart . '>';
+
+    return $track;
+}
 ?>

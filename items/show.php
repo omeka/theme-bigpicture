@@ -8,6 +8,11 @@ foreach ($itemFiles as $itemFile) {
     $mimeType = $itemFile->mime_type;
     if ((strpos($mimeType, 'image') !== false) || (strpos($mimeType, 'video') !== false)) {
         $images[] = $itemFile;
+    } else if (strpos($mimeType, 'text/plain') !== false) {
+        $kind = metadata($itemFile, array('Dublin Core', 'Type'));
+        if ($kind == 'subtitles') {
+            continue;
+        }
     } else {
         $nonImages[] = $itemFile;
     }
@@ -62,6 +67,10 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasImages) 
                     <video class="lg-video-object lg-html5" controls preload="none">
                         <source src="<?php echo file_display_url($image, 'original'); ?>" type="<?php echo $image->mime_type; ?>">
                         <?php echo __('Your browser does not support HTML5 video.'); ?>
+                        <?php $subtitles = bigpicture_find_text_track_files($image, $item); ?>
+                        <?php foreach ($subtitles as $subtitleTrack): ?>
+                            <?php echo bigpicture_output_text_track_file($subtitleTrack); ?>
+                        <?php endforeach; ?>
                     </video>
                 </div>
                 <div class="media-render">
