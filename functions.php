@@ -45,9 +45,6 @@ function bigpicture_featured_html() {
 }
 
 function bigpicture_find_text_track_files($media, $item) {
-    $settings = unserialize(get_option('html5_media_settings'));
-    $extensions = $settings['text']['extensions'];
-
     $mediaName = pathinfo($media->original_filename,
         PATHINFO_FILENAME);
 
@@ -56,11 +53,7 @@ function bigpicture_find_text_track_files($media, $item) {
         if ($file->id == $mediaFile->id) {
             continue;
         }
-        $pathInfo = pathinfo($file->original_filename);
-        if ($pathInfo['filename'] == $mediaName
-            && isset($pathInfo['extension'])
-            && in_array($pathInfo['extension'], $extensions)
-        ) {
+        if ($file->original_filename == "$mediaName.vtt") {
             $trackFiles[] = $file;
         }
     }
@@ -77,7 +70,7 @@ function bigpicture_output_text_track_file($textFile) {
     }
 
     if (!$language) {
-        $language = 'en';
+        $language = get_html_lang();
     }
 
     $trackSrc = html_escape($textFile->getWebPath('original'));
