@@ -44,22 +44,6 @@ function bigpicture_featured_html() {
     return $html;
 }
 
-function bigpicture_find_text_track_files($media, $item) {
-    $mediaName = pathinfo($media->original_filename,
-        PATHINFO_FILENAME);
-
-    $trackFiles = array();
-    foreach ($item->Files as $file) {
-        if ($file->id == $mediaFile->id) {
-            continue;
-        }
-        if ($file->original_filename == "$mediaName.vtt") {
-            $trackFiles[] = $file;
-        }
-    }
-    return $trackFiles;
-}
-
 function bigpicture_output_text_track_file($textFile) {
     $kind = metadata($textFile, array('Dublin Core', 'Type'));
     $language = metadata($textFile, array('Dublin Core', 'Language'));
