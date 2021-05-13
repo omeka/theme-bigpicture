@@ -65,7 +65,7 @@ function bigpicture_output_text_track_file($textFile) {
         $labelPart = '';
     }
 
-    $track .= '<track kind="' . $kind . '" src="' . $trackSrc . '" srclang="' . $language . '"' . $labelPart . '>';
+    $track = '<track kind="' . $kind . '" src="' . $trackSrc . '" srclang="' . $language . '"' . $labelPart . '>';
 
     return $track;
 }
