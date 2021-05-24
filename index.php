@@ -296,7 +296,7 @@
                 <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
                   <div class="object-title">Launch Checklist</div>
                   <a class="object-action uk-button uk-button-default"
-                    href="https://readux2.ecdsdev.org/volume/tz844/page/tz844_004.jpg" target="_blank">
+                    href="https://readux.io/volume/tz844/page/tz844_004.jpg" target="_blank">
                     <!--<span uk-icon="link"></span>-->
                     view
                   </a>
@@ -369,7 +369,7 @@
                 <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
                   <div class="object-title">Abort Mission Card</div>
                   <a class="object-action uk-button uk-button-default"
-                    href="https://readux2.ecdsdev.org/volume/v016s/page/v016s_04F.jpg" target="_blank">
+                    href="https://readux.io/volume/v016s/page/v016s_04F.jpg" target="_blank">
                     <!--<span uk-icon="link"></span>-->
                     view
                   </a>
@@ -445,12 +445,12 @@
                 <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
                   <div class="object-title">LM Landing Cue Card</div>
                   <a class="object-action uk-button uk-button-default"
-                    href="https://readux2.ecdsdev.org/volume/v016s/page/v016s_12F.jpg" target="_blank">
+                    href="https://readux.io/volume/v016s/page/v016s_12F.jpg" target="_blank">
                     <!--<span uk-icon="link"></span>-->
                     view
                   </a>
                 </figcaption>
-                <a href="https://readux2.ecdsdev.org/volume/v016s/page/v016s_12F.jpg">
+                <a href="https://readux.io/volume/v016s/page/v016s_12F.jpg">
                   <img class="uk-width-1-1"
                     src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v016s_12F.jpg/full/full/0/default.jpg">
                 </a>
@@ -464,12 +464,12 @@
                 <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
                   <div class="object-title">Handwritten Note about the Proclus Crater</div>
                   <a class="object-action uk-button uk-button-default"
-                    href="https://readux2.ecdsdev.org/volume/spj23/page/spj23_00000029.jpg" target="_blank">
+                    href="https://readux.io/volume/spj23/page/spj23_00000029.jpg" target="_blank">
                     <!--<span uk-icon="link"></span>-->
                     view
                   </a>
                 </figcaption>
-                <a href="https://readux2.ecdsdev.org/volume/spj23/page/spj23_00000029.jpg">
+                <a href="https://readux.io/volume/spj23/page/spj23_00000029.jpg">
                   <img class="uk-width-1-1"
                     src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/spj23_00000029.jpg/full/full/0/default.jpg">
                 </a>
@@ -685,10 +685,10 @@
                 <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
                   <div class="object-title">CSM Flight Plan</div>
                   <a class="object-action uk-button uk-button-default"
-                    href="https://readux2.ecdsdev.org/volume/tsnhf/page/tsnhf_00000113.jpg" target="_blank">
+                    href="https://readux.io/volume/tsnhf/page/tsnhf_00000113.jpg" target="_blank">
                     <!--<span uk-icon="link"></span>--> view </a>
                 </figcaption>
-                <a data-aos="fade-in" href="https://readux2.ecdsdev.org/volume/tsnhf/page/tsnhf_00000113.jpg">
+                <a data-aos="fade-in" href="https://readux.io/volume/tsnhf/page/tsnhf_00000113.jpg">
                   <img class="uk-width-1-1"
                     src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/tsnhf_00000113.jpg/full/full/0/default.jpg">
                 </a>
