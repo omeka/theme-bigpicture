@@ -34,7 +34,7 @@
               <ul class="uk-nav uk-nav-default">
                 <li><a class="ap-menu-item" href="#flight-path">Flight Path</a></li>
                 <li><a class="ap-menu-item"
-                    href="https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/">Data
+                    href="https://readux.io/collection/apollo-15/">Data
                     File</a></li>
                 <li><a class="ap-menu-item" href="https://apollo15hub.org/items/browse">Exhibition</a></li>
                 <li><a class="ap-menu-item" href="https://apollo15hub.org/lunarmodule">Inside the Ship</a></li>
@@ -57,7 +57,7 @@
             <ul class="uk-navbar-nav">
               <li><a class="ap-menu-item" href="#flight-path">Flight Path</a></li>
               <li><a class="ap-menu-item"
-                  href="https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/">Data File</a></li>
+                  href="https://readux.io/collection/apollo-15/">Data File</a></li>
               <li><a class="ap-menu-item" href="https://apollo15hub.org/items/browse">Exhibition</a></li>
               <li><a class="ap-menu-item" href="https://apollo15hub.org/lunarmodule">Inside the Ship</a></li>
               <li><a class="ap-menu-item" href="https://apollo15hub.org/about">About</a></li>
@@ -92,7 +92,7 @@
                 </div>
               </div>
             </a>
-            <a href="https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/"
+            <a href="https://readux.io/collection/apollo-15/"
               class="ap-home-card ap-z-index">
               <div class="uk-inline a15-card">
                 <img src="/themes/bigpicture/images/manual-1.jpg" alt="">
@@ -175,7 +175,7 @@
                 <ul class="uk-navbar-nav uk-visible@m">
                   <li><a class="uk-padding-remove-left uk-text-capitalize" href="/">Flight Path</a></li>
                   <li><a class="uk-text-capitalize"
-                      href="https://readux.ecds.emory.edu/collections/emory-control:LSDI-Apollo15/">Data File</a>
+                      href="https://readux.io/collection/apollo-15/">Data File</a>
                   </li>
                   <li><a class="uk-text-capitalize" href="https://apollo15hub.org/items/browse">Exhibition</a></li>
                 </ul>
