@@ -635,7 +635,7 @@
                   its magnetic field for over a year (Scott & Leonov, 2004:p.277).
                 </blockquote>
               </p>
-              <--! the sub satellite launch photos are not included in the latest version of the digital story -->
+              <!-- the sub satellite launch photos are not included in the latest version of the digital story -->
               <div class="margin-v2">
                 <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
                   <div class="object-title">Subsatellite Launch</div>
