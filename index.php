@@ -479,6 +479,7 @@
               The importance of the geological study of the Lunar surface was highlighted by the intense training in geology that the Apollo crew members had to undergo
               <blockquote data-aos="fade-in">
 	              Among the 30 original astronauts, none (0) had any formal geology training - NASA had to teach pilots how to be proficient planetary field geologists; adding science to engineering as a primary discipline. Again, the NASA training was superb; and because of their previous spaceflight experience, the mission Commanders had a major role in planning the training. And after many hours of practical and effective geology training (classroom, laboratory, and field), the results justified the selection and training process (Scott, 2011:p.XXX)
+              </blockquote>
               <div id="trigger-show-surface">
               <p data-aos="fade-in">
                 The Apollo 15 mission was the first one that provided astronauts with a vehicle to facilitate movement across the landscape of the Moon.
