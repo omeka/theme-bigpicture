@@ -258,9 +258,7 @@
               </p>
               <blockquote data-aos="fade-in">
               The planning and preparation for our mission had been so thorough that there was no doubt in our minds that we really knew "how to fly to the Moon" -- and in any conceivable situation. (Scott, 2008:p.1)           </blockquote>
-              <p class="note">Col. David R. Scott, <span>"Two Sides of the Moon"</span>, 244. All quotations are by Col.
-              Scott from <a class="ap-inline-link" href="https://books.google.com/books?id=Sb9RAQAAQBAJ">"Two sides of
-              the Moon"</a>.
+              <p class="note">Col. David R. Scott, <span>"Two Sides of the Moon"</span>, 244.
               </p>
               <p data-aos="fade-in">
                 The Apollo 15 crew and their backups had been placed in quarantine for two weeks before the launch to
