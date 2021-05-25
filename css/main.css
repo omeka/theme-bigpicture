@@ -117,7 +117,8 @@ article {
 .moon {
   bottom: 10vh;
   position: fixed;
-  right: 15vw;
+  right: 17vw;
+  top: 3vh;
   transform: scale(1, 1) translate(0, 0);
   z-index: 1; }
 
@@ -156,8 +157,8 @@ article {
 
 .earth {
   position: fixed;
-  right: 15vw;
-  top: 0;
+  right: 18vw;
+  top: 5vh;
   transform: scale(1, 1) translate(0, 0);
   z-index: 1;
 }
