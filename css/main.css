@@ -67,7 +67,10 @@ iframe.uk-width-1-1 {
 article {
   z-index: 3; }
   article img {
-    z-index: 1; }
+    z-index: 1;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+  }
 
 .embed-container {
   position: relative;

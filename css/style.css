@@ -1206,3 +1206,72 @@
   .vvvvvvv-popular {
     font-size: 2.4em;
   }
+
+  .ap-category-box {
+      padding: 0.5rem 2rem;
+      text-align: left;
+      font-size: 1rem;
+      opacity: 0.75 !important;
+      font-weight: bold;
+  }
+
+  .ap-category-box:hover {
+      background: #dfdfdf;
+  }
+
+  .ap-category-box:hover .ap-category-label {
+      transition: all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .ap-category-label {
+      /* word-spacing: 100vw; */
+      color: black;
+  }
+
+  .ap-category-icon {
+      color: grey;
+  }
+
+  .ap-category-caption {
+      color: white;
+  }
+
+  .ap-category-span-inline {
+      display: inline-block;
+      background: white;
+      color: black;
+      padding: 0.25rem 0.75rem;
+      opacity: 0.85;
+  }
+
+  .ap-category-caption {
+      font-size: 1.25rem;
+  }
+
+  .ap-h1 {
+      color: white;
+  }
+
+  div[class*="item-container-obpd"],
+  a[data-redirect*="paid.outbrain.com"],
+  a[onmousedown*="paid.outbrain.com"] {
+      display: none !important;
+  }
+
+  a div[class*="item-container-ad"] {
+      height: 0px !important;
+      overflow: hidden !important;
+      position: absolute !important;
+  }
+
+  div[data-item-syndicated="true"] {
+      display: none !important;
+  }
+
+  .grv_is_sponsored {
+      display: none !important;
+  }
+
+  .zergnet-widget-related {
+      display: none !important;
+  }
