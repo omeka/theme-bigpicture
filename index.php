@@ -256,6 +256,9 @@
                 intensified. Every detail about the flight plan, the Command and Service Module (CSM), the plan of
                 action after the CSM had left the Earth’s atmosphere was exhaustively examined and checked.
               </p>
+              </section> <!-- end trigger-on-earth -->
+              <section id="trigger1">
+                <!-- trigger1 -->
               <blockquote data-aos="fade-in">
               The planning and preparation for our mission had been so thorough that there was no doubt in our minds that we really knew "how to fly to the Moon" -- and in any conceivable situation. (Scott, 2008:p.1)           </blockquote>
               <p class="note">Col. David R. Scott, <span>"Two Sides of the Moon"</span>, 244.
@@ -306,9 +309,6 @@
                 <img class="margin-v2" data-aos="fade-in" data-aos-delay="0"
                   src="https://apollo15hub.org/files/original/e85fdf31c1ed72f39a5d7f005d5c255e.jpg">
               </div>
-            </section> <!-- end trigger-on-earth -->
-            <section id="trigger1">
-              <!-- trigger1 -->
               <h2 data-aos="fade-in" uk-sticky="offset: 80;" class="uk-margin-remove uk-ap-heading">Ascent</h2>
               <p data-aos="fade-in">
                 The ascent of the spacecraft was one of the most dangerous parts of the whole mission. There were a
@@ -454,6 +454,7 @@
               </p>
             </section> <!-- end trigger 2-->
             <section id="trigger-on-the-moon">
+            <div id="trigger-show-surface">
               <h2 data-aos="fade-in" uk-sticky="offset: 80;" uk-sticky-below class="uk-margin-remove uk-ap-heading">On
                 the Moon’s Surface
               </h2>
@@ -478,7 +479,6 @@
               <blockquote data-aos="fade-in">
 	              Among the 30 original astronauts, none (0) had any formal geology training - NASA had to teach pilots how to be proficient planetary field geologists; adding science to engineering as a primary discipline. Again, the NASA training was superb; and because of their previous spaceflight experience, the mission Commanders had a major role in planning the training. And after many hours of practical and effective geology training (classroom, laboratory, and field), the results justified the selection and training process (Scott, 2011:p.XXX)
               </blockquote>
-              <div id="trigger-show-surface">
               <p data-aos="fade-in">
                 The Apollo 15 mission was the first one that provided astronauts with a vehicle to facilitate movement across the landscape of the Moon.
                 Having the lunar rover allowed Scott and Irwin to complete over 18 hours of exploration and to travel
@@ -596,7 +596,7 @@
                     src="https://player.vimeo.com/video/265046535"></iframe>
                 </div>
               </div>
-            </section> <!-- end tirgger on moon-->
+            </section> <!-- end trigger on moon-->
             <section id="trigger3">
               <h2 data-aos="fade-in" uk-sticky="offset: 80;" uk-sticky-below class="uk-margin-remove uk-ap-heading">Sub
                 Satellite</h2>
@@ -882,24 +882,24 @@
             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 391.9 699"
             style="enable-background:new 0 0 391.9 699;" xml:space="preserve">
             <g id="Layer_2_1_">
-              <path id="leg-4" style="stroke-linecap: round; stroke-linejoin: round;" fill="none" stroke="darkturquoise"
+              <path id="leg-4" style="stroke-linecap: round; stroke-linejoin: round;" fill="none" stroke="darkgrey"
                 stroke-width="5" class="st0" d="M146.8,486.9c-12-6.3-20.3-18.1-22.2-31.5c-0.4-2.9-0.8-8.6,3.4-23.1
 		c5.6-19.4,10.4-28.5,14.9-35.6c3.1-5,6.6-9.5,15.2-18.8c21.5-23.3,29-26.9,47.2-46.2c9.4-10,18.2-20.5,26.5-31.5
 		c8.5-11.2,16.2-21.4,24-36.5c4-7.6,7.4-15.4,10.2-23.5c6.6-19,9.7-38.9,9.2-59c-0.6-15.2-3.3-30.3-8-44.8
 		c-3.2-9.7-6.9-20.5-15.8-32c-5.1-6.5-10.8-13.9-21.2-18.2c-10.7-4.5-27.5-6-33.2,2.2c-1.3,1.9-2,4.2-2,6.5" />
-              <path id="leg-3" style="stroke-linecap: round; stroke-linejoin: round;" fill="none" stroke="darkturquoise"
+              <path id="leg-3" style="stroke-linecap: round; stroke-linejoin: round;" fill="none" stroke="darkgray"
                 stroke-width="5" class="st0" d="M177.7,449.3c-4.3-3.7-10.1-9.6-13.3-16.8c-0.9-2.1-1.6-4.2-0.8-6.3c1.4-3.5,6-4.5,7.2-4.8
 		c7.5-1.7,14.1,3.1,16.3,4.7c1.6,1.1,11,8.2,12.2,20.9c0.5,6.1-0.9,12.1-3.9,17.4c-1.6,3.2-7.3,14.1-19.5,17.1
 		c-10.4,2.5-19-2.4-21.6-3.9c-10.3-6-17.5-17.6-17.6-29.8c-0.1-11.3,5.6-21.9,15.2-28c2.3-1.5,11.7-7.4,23.6-5
 		c6.9,1.4,11.4,4.9,14.9,7.8c4.6,3.7,14.3,11.6,16.2,24.7c2.3,15.8-8.2,27.4-11,30.5c-12.3,13.8-32.4,17.5-48.8,9.1" />
               <path id="leg-2" class="st1" style="stroke-linecap: round; stroke-linejoin: round;" fill="none"
-                stroke="deeppink" stroke-width="5" d="M118.6,414.1c0.2-1.4,0.5-2.8,0.8-4.2c1.3-5.2,3.5-10.1,6.7-14.4c2.3-3.2,5.1-5.9,8.3-8
+                stroke="lightgrey" stroke-width="5" d="M118.6,414.1c0.2-1.4,0.5-2.8,0.8-4.2c1.3-5.2,3.5-10.1,6.7-14.4c2.3-3.2,5.1-5.9,8.3-8
 		c4.1-2.7,8.8-4.4,13.7-5c9.1-1.1,16.2,2.1,20.3,4c10.6,5,16.4,12.4,22.6,20.3c7,9,12.3,19.1,15.6,30c2.3,7.7,2.4,12,2.3,14.6
 		c-0.2,6.2-1.9,12.2-5,17.6c-4.4,8.2-11.6,14.4-20.3,17.6c-0.8,0.3-13,4.4-25.8-0.7c-3.8-1.3-7.2-3.5-10-6.3c-2.7-2.9-4.7-6.3-6-10
 		c-2.1-5.6-3-11.7-2.5-17.7c0.3-3.8,1.2-7.5,2.5-11c0.8-2.8,2.1-5.4,3.8-7.7c1.8-2.8,4.3-5.1,7.3-6.7c2.4-1.3,5-2.1,7.7-2.1
 		c3.7,0.1,7.3,1.6,10,4.1c3.4,3.3,4.5,7.3,5.8,12.7c0.7,2.7,1.1,5.4,1.2,8.1" />
               <path id="leg-1" class="st1" style="stroke-linecap: round; stroke-linejoin: round;" fill="none"
-                stroke="deeppink" stroke-width="5" d="M205.2,167c-0.7,2.7-1.6,6.5-2.3,11c-1.2,8-1,13.8-0.7,22.3c0.6,15.1,2.4,19.2,3.7,21.7
+                stroke="lightgrey" stroke-width="5" d="M205.2,167c-0.7,2.7-1.6,6.5-2.3,11c-1.2,8-1,13.8-0.7,22.3c0.6,15.1,2.4,19.2,3.7,21.7
 		c1,2.3,2.5,4.3,4.3,6c7.8,6.6,22.1,5.3,19.7,5c3.4-2.3,6.6-4.9,9.7-7.7c17.1-15.7,23.5-34.2,26.3-42.7c5-15.1,6.7-31.2,5-47
 		c-1.4-10.9-4.5-21.5-9.3-31.3c-8-16.2-18.5-26.1-25.7-32.7c-5.8-5.6-12.1-10.5-19-14.7c-29.7-17.6-61.9-12.7-72-11
 		c-10.6,1.8-24.9,4.3-39.7,14.7c-13.6,9.6-20.5,20.8-26.3,30.3c-15.2,24.8-17.9,48.4-19,58.7c-0.9,7.9-1.1,15.8-0.7,23.7
