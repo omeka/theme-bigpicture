@@ -22,7 +22,7 @@
 
   <div id="content">
     <section class="uk-child-width-1-1 uk-margin-remove uk-text-center ap-intro" uk-grid>
-      <div class="uk-flex-row a15-landing-section">
+      <div class="uk-flex-row a15-landing-section" style="padding-left:inherit !important;">
         <nav class="uk-navbar-container uk-padding ap-nav ap-z-index" uk-navbar
           style="background: none; overflow: hidden;">
           <div class="uk-hidden@m" uk-toggle="target: #offcanvas-nav">
