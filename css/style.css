@@ -1166,7 +1166,7 @@
   }
 
   html {
-      background: black;
+      background: black !important;
   }
 
   ul.item-pagination.navigation a, ul a {
