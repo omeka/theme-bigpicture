@@ -16,7 +16,9 @@
     line-height: 21px;
     color: #555; }
   em {
-    font-weight: 400i; }
+    font-weight: 400i;
+    color: #cccccc !important;
+  }
   strong {
     font-weight: 700; }
   header a {
@@ -26,7 +28,9 @@
     color: #3e8bff; }
   h1, h2, h3, h4, h5, h6 {
     font-family: "Caudex", serif;
-    margin: 21px 0; }
+    margin: 21px 0;
+    color: #cccccc !important;
+  }
   h1 {
     font-size: 24.5px;
     line-height: 31.5px; }
