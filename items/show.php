@@ -59,16 +59,19 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasVisualMe
                 class="media resource"
             >
                 <div style="display: none;" id="video-<?php echo $visualMediaCount; ?>">
-                    <video class="lg-video-object lg-html5" controls preload="none">
+                    <?php $tracksPresent = bigpicture_check_for_tracks($otherFiles); ?>
+                    <video class="lg-video-object lg-html5" controls preload="none" <?php echo ($tracksPresent) ? 'crossorigin="anonymous"' : ''; ?>>
                         <source src="<?php echo file_display_url($mediaFile, 'original'); ?>" type="<?php echo $mediaFile->mime_type; ?>">
                         <?php echo __('Your browser does not support HTML5 video.'); ?>
                         <?php $mediaName = pathinfo($mediaFile->original_filename, PATHINFO_FILENAME); ?>
+                        <?php if ($tracksPresent): ?>
                         <?php foreach ($otherFiles as $key => $otherFile): ?>
                             <?php if ($otherFile->original_filename == "$mediaName.vtt"): ?>
                                 <?php echo bigpicture_output_text_track_file($otherFile); ?>
                                 <?php unset($otherFiles[$key]); ?>
                             <?php endif; ?>
                         <?php endforeach; ?>
+                        <?php endif; ?>
                     </video>
                 </div>
                 <div class="media-render">

@@ -69,4 +69,13 @@ function bigpicture_output_text_track_file($textFile) {
 
     return $track;
 }
+
+function bigpicture_check_for_tracks($files) {
+    foreach ($files as $file) {
+        if ($file->getExtension() == "vtt") {
+            return true;
+        }
+    }
+    return false;
+}
 ?>
