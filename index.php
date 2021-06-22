@@ -356,7 +356,20 @@
               <p data-aos="fade-in">
               The cue cards inside the LM and CSM were used to provide necessary information to the astronauts regarding the operation of the spacecrafts in different situations and under different conditions. For example, the following cue card, also provided by Commander Scott, shows the steps that the crew had to follow in case communication was lost with mission control back in Houston (NASA, 1971e:p.2)
               </p>
-              <!-- link to cue card Loss of Comm https://readux.ecds.emory.edu/books/readux:v016s/pages/readux:v0182/ -->
+              <div class="margin-v2" data-aos="fade-in">
+                <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                  <div class="object-title"><em>Loss of Comm</em> Cue Card</div>
+                  <a class="object-action uk-button uk-button-default" href="https://readux.io/volume/v016s/page/v016s_01R.jpg"
+                    target="_blank">
+                    <!--<span uk-icon="link"></span>-->
+                    view
+                  </a>
+                </figcaption>
+                <a href="https://readux.io/volume/v016s/page/v016s_01R.jpg">
+                  <img class="uk-width-1-1"
+                    src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v016s_01R.jpg/full/full/0/default.jpg">
+                </a>
+              </div>
               <p data-aos="fade-in">
                 The Apollo 15 space craft safely went through the various stages of the ascent from earth without
                 encountering any issues that could jeopardize the safety of the crew. When the space craft was out of
@@ -409,7 +422,7 @@
               </p>
               <div class="margin-v2" data-aos="fade-in">
                 <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                  <div class="object-title">Handwritten Note about the Proclus Crater</div>
+                  <div class="object-title">Handwritten Note about the Proclus Crater and Photographs</div>
                   <a class="object-action uk-button uk-button-default"
                     href="https://readux.io/volume/spj23/page/spj23_00000029.jpg" target="_blank">
                     <!--<span uk-icon="link"></span>-->
@@ -417,8 +430,12 @@
                   </a>
                 </figcaption>
                 <a href="https://readux.io/volume/spj23/page/spj23_00000029.jpg">
-                  <img class="uk-width-1-1"
+                  <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
                     src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/spj23_00000029.jpg/full/full/0/default.jpg">
+                </a>
+                <a href="https://readux.io/volume/spj23/page/spj23_00000030.jpg">
+                  <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                    src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/spj23_00000030.jpg/full/full/0/default.jpg">
                 </a>
               </div>
               <p data-aos="fade-in">
@@ -489,8 +506,42 @@
               <p data-aos="fade-in">
               The following pictures show photos and descriptions of specific types of rocks that the astronauts were supposed to look for while on their EVAs on the surface of the Moon. The photos were part of the Lunar Surface Checklist booklet that the astronauts had with them in the LM.
               </p>
-              <!-- The next 4 photos that appear in sequence are - https://readux.io/volume/v3mrz/page/v3mrz_227.jpg ; https://readux.io/volume/v3mrz/page/v3mrz_228.jpg ; https://readux.io/volume/v3mrz/page/v3mrz_235.jpg ;
-              https://readux.io/volume/v3mrz/page/v3mrz_236.jpg -->
+              <div class="margin-v2" data-aos="fade-in">
+                <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                  <div class="object-title">Geology Example from the Lunar Surface Checklist</div>
+                  <a class="object-action uk-button uk-button-default"
+                    href="https://readux.io/volume/v3mrz/page/v3mrz_227.jpg" target="_blank">
+                    <!--<span uk-icon="link"></span>-->
+                    view
+                  </a>
+                </figcaption>
+                <a href="https://readux.io/volume/v3mrz/page/v3mrz_227.jpg">
+                  <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                    src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_227.jpg/full/full/0/default.jpg">
+                </a>
+                <a href="https://readux.io/volume/v3mrz/page/v3mrz_228.jpg">
+                  <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                    src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_228.jpg/full/full/0/default.jpg">
+                </a>
+              </div>
+              <div class="margin-v2" data-aos="fade-in">
+                <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                  <div class="object-title">Geology Example from the Lunar Surface Checklist</div>
+                  <a class="object-action uk-button uk-button-default"
+                    href="https://readux.io/volume/v3mrz/page/v3mrz_235.jpg" target="_blank">
+                    <!--<span uk-icon="link"></span>-->
+                    view
+                  </a>
+                </figcaption>
+                <a href="https://readux.io/volume/v3mrz/page/v3mrz_235.jpg">
+                  <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                    src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_235.jpg/full/full/0/default.jpg">
+                </a>
+                <a href="https://readux.io/volume/v3mrz/page/v3mrz_236.jpg">
+                  <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                    src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_236.jpg/full/full/0/default.jpg">
+                </a>
+              </div>
               <p data-aos="fade-in">
                 In this photo that is part of the Apollo 15 Learning Hub’s collection, Commander David Scott tests the
                 steering mechanisms of the Lunar Rover before the EVA-2 traverse. The lunar module was controlled by a
@@ -525,7 +576,7 @@
                       view
                     </a>
                   </figcaption>
-                  <iframe class="uk-width-1-1" src="https://www.youtube.com/embed/BTq9jtTg89E frameborder=" 0"
+                  <iframe class="uk-width-1-1" src="https://www.youtube.com/embed/BTq9jtTg89E" frameborder="0"
                     allowfullscreen></iframe>
                 </div>
                 <p data-aos="fade-in">
@@ -554,13 +605,27 @@
                 </p>
                 <div class="margin-v2">
                   <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                    <div class="object-title">EVA 2: 2 - Genesis Rock</div>
-                    <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/9"
-                      target="_blank"> <span uk-icon="link"></span>
+                    <div class="object-title">Photo of the Solar-Wind Spectrometer Experiment, prior to removal of the instrument’s dust cover. This is one of the components of the ALSEP, or the Apollo Lunar Surface Experiments Package. The Solar-Wind Spectrometer measured the fluxes and spectra of the electrons and protons that emanate from the Sun and reach the lunar surface (NASA, 1971i)</div>
+                    <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/25"
+                      target="_blank">
+                      <!--<span
+                        uk-icon="link"></span>-->
                       view </a>
                   </figcaption>
-                  <iframe data-aos="fade-in" class="uk-width-1-1"
-                    src="https://player.vimeo.com/video/265046072"></iframe>
+                  <img data-aos="fade-in" class="uk-width-1-1" data-aos="fade-in"
+                    src="https://apollo15hub.org/files/original/7ef1b6e5dc13dccd8f5073757f1a4777.jpg" />
+                </div>
+                <div class="margin-v2">
+                  <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                    <div class="object-title">Jim Irwin breaks off a sample of the Genesis Rock during EVA 2 (NASA, 1971k)</div>
+                    <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/62"
+                      target="_blank">
+                      <!--<span
+                        uk-icon="link"></span>-->
+                      view </a>
+                  </figcaption>
+                  <img data-aos="fade-in" class="uk-width-1-1" data-aos="fade-in"
+                    src="https://apollo15hub.org/files/original/463a2593a7fa9dcad86e118bb9c43a22.jpg" />
                 </div>
                 </div>
                 <div id="trigger-show-surface3">
@@ -692,20 +757,16 @@
                 deployed parachutes are visible (NASA, 1971p).
               </p>
               <div class="margin-v2">
-                <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                  <div class="object-title">Return to Earth</div>
-                  <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/78"
-                    target="_blank">
-                    <!--<span
-                      uk-icon="link"></span>-->
-                    view </a>
-                </figcaption>
-                <img data-aos="fade-in" class="uk-width-1-1" data-aos="fade-in"
-                  src="https://apollo15hub.org/files/original/cd4a3795f1de2bec062903347441f6de.jpg" />
-              </div>
-              <div class="margin-v2">
+              <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                <div class="object-title">Splashdown</div>
+                <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/78"
+                  target="_blank">
+                  <!--<span
+                    uk-icon="link"></span>-->
+                  view </a>
+              </figcaption>
                 <div class="embed-container" data-aos="fade-in">
-                  <iframe src="https://www.youtube.com/embed/E-Vd75Ptg9I" frameborder="0" allowfullscreen></iframe>
+                  <iframe src="https://www.youtube.com/embed/m7GkWfgRwg4" frameborder="0" allowfullscreen></iframe>
                 </div>
               </div>
               <p data-aos="fade-in">
@@ -716,7 +777,7 @@
               <div class="margin-v2">
                 <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
                   <div class="object-title">Astronauts</div>
-                  <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/25"
+                  <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/75"
                     target="_blank">
                     <!--<span
                       uk-icon="link"></span>-->
