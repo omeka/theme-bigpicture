@@ -36,7 +36,7 @@
                 <li><a class="ap-menu-item"
                     href="https://readux.io/collection/apollo-15/">Data
                     File</a></li>
-                <li><a class="ap-menu-item" href="https://apollo15hub.org/items/browse">Exhibition</a></li>
+                <li><a class="ap-menu-item" href="https://apollo15hub.org/exhibit-media">Exhibition</a></li>
                 <li><a class="ap-menu-item" href="https://apollo15hub.org/lunarmodule">Inside the Ship</a></li>
                 <li><a class="ap-menu-item" href="https://apollo15hub.org/about">About</a></li>
               </ul>
@@ -58,7 +58,7 @@
               <li><a class="ap-menu-item" href="#flight-path">Flight Path</a></li>
               <li><a class="ap-menu-item"
                   href="https://readux.io/collection/apollo-15/">Data File</a></li>
-              <li><a class="ap-menu-item" href="https://apollo15hub.org/items/browse">Exhibition</a></li>
+              <li><a class="ap-menu-item" href="https://apollo15hub.org/exhibit-media">Exhibition</a></li>
               <li><a class="ap-menu-item" href="https://apollo15hub.org/lunarmodule">Inside the Ship</a></li>
               <li><a class="ap-menu-item" href="https://apollo15hub.org/about">About</a></li>
             </ul>
@@ -177,7 +177,7 @@
                   <li><a class="uk-text-capitalize"
                       href="https://readux.io/collection/apollo-15/">Data File</a>
                   </li>
-                  <li><a class="uk-text-capitalize" href="https://apollo15hub.org/items/browse">Exhibition</a></li>
+                  <li><a class="uk-text-capitalize" href="https://apollo15hub.org/exhibit-media">Exhibition</a></li>
                 </ul>
               </div>
               <div class="uk-navbar-right uk-visible@m" id="navbar-logo">
@@ -259,8 +259,8 @@
               <blockquote data-aos="fade-in">
               The planning and preparation for our mission had been so thorough that there was no doubt in our minds that we really knew "how to fly to the Moon" -- and in any conceivable situation. (Scott, 2008:p.1)
               </blockquote>
-            </section> <!-- end trigger-on-earth -->
-            <section id="trigger1">
+              </section> <!-- end trigger-on-earth -->
+              <section id="trigger1">
                 <!-- trigger1 -->
               <p data-aos="fade-in">
                 The Apollo 15 crew and their backups had been placed in quarantine for two weeks before the launch to
@@ -468,199 +468,195 @@
               When we descend the ladder of the LM and step onto the moons surface, Jim and I feel a gratifying sense of freedom. For five days we have been crammed into the tight confines of the spacecraft that brought us here. Now, all at once, we regain the luxury of movement (Scott, 1973:p.327)
               </blockquote>
               </p>
-              </section> <!-- end trigger 2-->
-              <section id="trigger-on-the-moon">
-                <div id="trigger-show-surface">
-                  <h2 data-aos="fade-in" uk-sticky="offset: 80;" uk-sticky-below class="uk-margin-remove uk-ap-heading">On
-                    the Moon’s Surface
-                  </h2>
-                  <p data-aos="fade-in">
-                    After they had taken some rest following their landing on the Moon, Scott and Irwin unfolded and
-                    deployed their Lunar Roving Vehicle (LRV) or simply "lunar rover" the following day. Specially designed for operation at 1/6 Earth’s gravity, it could carry 180 pounds of astronauts, gear and samples on the Moon (which would weigh 1,080 pounds on
-                    Earth), more than twice the rover’s weight, but risked collapse if accidentally sat upon while still on
-                    Earth. Though its range was 40 miles at speeds up to 11 mph, the astronauts were restricted to an area 3
-                    miles from the lunar module so they could walk back if the rover broke down (NASA, 2019).
-                    <blockquote data-aos="fade-in">
-                    We quickly discover, locomotion on the moon has its own peculiar restrictions. At one-sixth of earths gravity, we weigh only a sixth our normal poundage. Our gait quickly evolves into a rhythmic, bouncing motion that possesses all the lightness and ease of strolling on a trampoline (Scott, 1973:p.327).
-                    </blockquote>
-                  </p>
-                  <p data-aos="fade-in">
-                    Describing his experience driving the lunar rover on the Moon’s surface, Commander Scott writes:
-                    <blockquote data-aos="fade-in">
-                      the Lunar Roving Vehicle (LRV) ... meant significanlty greater exploration capability, especially the capability to range to several different geologic areas from the Lunar Module, significanlty more scientific equipment and experiments, and quite importantly, a mobile TV camera to view and record the distant activities of the crew. As a result, using a rover to explore multiple geologic areas at one landing site became almost equivalent to exploring multiple landing sites without a rover. Correspondingly, subsequent Apollo crews became even more proficient in "planetary field geology." (Scott, 2008:p.XXIX)
-                    </blockquote>
-                  </p>
-                  <p data-aos="fade-in">
-                    The importance of the geological study of the Lunar surface was highlighted by the intense training in geology that the Apollo crew members had to undergo
-                    <blockquote data-aos="fade-in">
-    	              Among the 30 original astronauts, none (0) had any formal geology training - NASA had to teach pilots how to be proficient planetary field geologists; adding science to engineering as a primary discipline. Again, the NASA training was superb; and because of their previous spaceflight experience, the mission Commanders had a major role in planning the training. And after many hours of practical and effective geology training (classroom, laboratory, and field), the results justified the selection and training process (Scott, 2011:p.XXX)
-                    </blockquote>
-                  <p data-aos="fade-in">
-                    The Apollo 15 mission was the first one that provided astronauts with a vehicle to facilitate movement across the landscape of the Moon.
-                    Having the lunar rover allowed Scott and Irwin to complete over 18 hours of exploration and to travel
-                    17.5 miles on the Moon’s surface during the 3 days (from July 31 to August 2) they spent on the Moon.
-                    Also, the two astronauts were able to collect more than 170 pounds of lunar samples and to provide
-                    extensive oral descriptions and photographic documentation of geologic features in the vicinity of the
-                    landing site (NASA, 2009).
-                  </p>
-                  <p data-aos="fade-in">
-                    The following pictures show photos and descriptions of specific types of rocks that the astronauts were supposed to look for while on their EVAs on the surface of the Moon. The photos were part of the Lunar Surface Checklist booklet that the astronauts had with them in the LM.
-                  </p>
-                  <div class="margin-v2" data-aos="fade-in">
-                    <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                      <div class="object-title">Geology Example from the Lunar Surface Checklist</div>
-                      <a class="object-action uk-button uk-button-default"
-                        href="https://readux.io/volume/v3mrz/page/v3mrz_227.jpg" target="_blank">
-                        <!--<span uk-icon="link"></span>-->
-                        view
-                      </a>
-                    </figcaption>
-                    <a href="https://readux.io/volume/v3mrz/page/v3mrz_227.jpg">
-                      <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
-                        src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_227.jpg/full/full/0/default.jpg">
+            </section> <!-- end trigger 2-->
+            <section id="trigger-on-the-moon">
+              <div id="trigger-show-surface">
+                <h2 data-aos="fade-in" uk-sticky="offset: 80;" uk-sticky-below class="uk-margin-remove uk-ap-heading">On
+                  the Moon’s Surface
+                </h2>
+                <p data-aos="fade-in">
+                  After they had taken some rest following their landing on the Moon, Scott and Irwin unfolded and
+                  deployed their Lunar Roving Vehicle (LRV) or simply "lunar rover" the following day. Specially designed for operation at 1/6 Earth’s gravity, it could carry 180 pounds of astronauts, gear and samples on the Moon (which would weigh 1,080 pounds on
+                  Earth), more than twice the rover’s weight, but risked collapse if accidentally sat upon while still on
+                  Earth. Though its range was 40 miles at speeds up to 11 mph, the astronauts were restricted to an area 3
+                  miles from the lunar module so they could walk back if the rover broke down (NASA, 2019).
+                  <blockquote data-aos="fade-in">
+                  We quickly discover, locomotion on the moon has its own peculiar restrictions. At one-sixth of earths gravity, we weigh only a sixth our normal poundage. Our gait quickly evolves into a rhythmic, bouncing motion that possesses all the lightness and ease of strolling on a trampoline (Scott, 1973:p.327).
+                  </blockquote>
+                </p>
+                <p data-aos="fade-in">
+                  Describing his experience driving the lunar rover on the Moon’s surface, Commander Scott writes:
+                  <blockquote data-aos="fade-in">
+                    the Lunar Roving Vehicle (LRV) ... meant significanlty greater exploration capability, especially the capability to range to several different geologic areas from the Lunar Module, significanlty more scientific equipment and experiments, and quite importantly, a mobile TV camera to view and record the distant activities of the crew. As a result, using a rover to explore multiple geologic areas at one landing site became almost equivalent to exploring multiple landing sites without a rover. Correspondingly, subsequent Apollo crews became even more proficient in "planetary field geology." (Scott, 2008:p.XXIX)
+                  </blockquote>
+                </p>
+                <p data-aos="fade-in">
+                  The importance of the geological study of the Lunar surface was highlighted by the intense training in geology that the Apollo crew members had to undergo
+                  <blockquote data-aos="fade-in">
+  	              Among the 30 original astronauts, none (0) had any formal geology training - NASA had to teach pilots how to be proficient planetary field geologists; adding science to engineering as a primary discipline. Again, the NASA training was superb; and because of their previous spaceflight experience, the mission Commanders had a major role in planning the training. And after many hours of practical and effective geology training (classroom, laboratory, and field), the results justified the selection and training process (Scott, 2011:p.XXX)
+                  </blockquote>
+                <p data-aos="fade-in">
+                  The Apollo 15 mission was the first one that provided astronauts with a vehicle to facilitate movement across the landscape of the Moon.
+                  Having the lunar rover allowed Scott and Irwin to complete over 18 hours of exploration and to travel
+                  17.5 miles on the Moon’s surface during the 3 days (from July 31 to August 2) they spent on the Moon.
+                  Also, the two astronauts were able to collect more than 170 pounds of lunar samples and to provide
+                  extensive oral descriptions and photographic documentation of geologic features in the vicinity of the
+                  landing site (NASA, 2009).
+                </p>
+                <p data-aos="fade-in">
+                  The following pictures show photos and descriptions of specific types of rocks that the astronauts were supposed to look for while on their EVAs on the surface of the Moon. The photos were part of the Lunar Surface Checklist booklet that the astronauts had with them in the LM.
+                </p>
+                <div class="margin-v2" data-aos="fade-in">
+                  <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                    <div class="object-title">Geology Example from the Lunar Surface Checklist</div>
+                    <a class="object-action uk-button uk-button-default"
+                      href="https://readux.io/volume/v3mrz/page/v3mrz_227.jpg" target="_blank">
+                      <!--<span uk-icon="link"></span>-->
+                      view
                     </a>
-                    <a href="https://readux.io/volume/v3mrz/page/v3mrz_228.jpg">
-                      <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
-                        src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_228.jpg/full/full/0/default.jpg">
-                    </a>
-                  </div>
-                  <div class="margin-v2" data-aos="fade-in">
-                    <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                      <div class="object-title">Geology Example from the Lunar Surface Checklist</div>
-                      <a class="object-action uk-button uk-button-default"
-                        href="https://readux.io/volume/v3mrz/page/v3mrz_235.jpg" target="_blank">
-                        <!--<span uk-icon="link"></span>-->
-                        view
-                      </a>
-                    </figcaption>
-                    <a href="https://readux.io/volume/v3mrz/page/v3mrz_235.jpg">
-                      <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
-                        src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_235.jpg/full/full/0/default.jpg">
-                    </a>
-                    <a href="https://readux.io/volume/v3mrz/page/v3mrz_236.jpg">
-                      <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
-                        src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_236.jpg/full/full/0/default.jpg">
-                    </a>
-                  </div>
-                  <p data-aos="fade-in">
-                    In this photo that is part of the Apollo 15 Learning Hub’s collection, Commander David Scott tests the
-                    steering mechanisms of the Lunar Rover before the EVA-2 traverse. The lunar module was controlled by a
-                    joystick instead of a steering wheel because it would have been difficult for the astronauts to grasp in
-                    their spacesuits (NASA, 1971k).
-                  </p>
-                  <div class="margin-v2">
-                      <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                        <div class="object-title">James Irwin on the Lunar Rover</div>
-                        <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/86"
-                          target="_blank">
-                          <!--<span uk-icon="link"></span>--> view </a>
-                      </figcaption>
-                      <a data-aos="fade-in" href="https://apollo15hub.org/items/show/86">
-                        <img class="uk-width-1-1"
-                          src="https://apollo15hub.org/files/original/f765d7419062f4c99bb93b436f65f45b.jpg">
-                      </a>
-                  </div>
-                  <p data-aos="fade-in">
-                      Thanks to the television camera mounted on the rover, scientists back on Earth could for the first
-                      time see live coverage everywhere the astronauts went, not just at the landing site. The camera could
-                      be controlled from Earth, enabling scientists to look around for interesting features while the
-                      astronauts conducted their tasks (Apollo 15 - Apollo Flight Journal).
-                  </p>
-                  <div class="margin-v2" data-aos="fade-in">
-                      <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                        <div class="object-title">Video from the Rover Camera</div>
-                        <a class="object-action uk-button uk-button-default"
-                          href="https://www.youtube.com/watch?v=BTq9jtTg89E&feature=emb_logo&ab_channel=Apollo15-ApolloFlightJournal"
-                          target="_blank">
-                          <!--<span uk-icon="link"></span>-->
-                          view
-                        </a>
-                      </figcaption>
-                      <iframe class="uk-width-1-1" src="https://www.youtube.com/embed/BTq9jtTg89E" frameborder="0"
-                        allowfullscreen></iframe>
-                  </div>
-                  <p data-aos="fade-in">
-                      Despite the usefulness of the lunar rover, the astronauts conducted most of their geology exploration
-                      of the Moon’s surface walking, which turned out be rather challenging given the lower gravity of the
-                      Moon.
-                  </p>
-                  <p data-aos="fade-in">
-                      One of the most important aspects of the Apollo 15 mission was the study of the Moon’s geology, which
-                      was still not well understood at the time of the mission. Astronauts Scott and Irwin collected several
-                      samples during their EVAs. Among the rocks they collected was one that was later dubbed the “Genesis
-                      Rock.” It was a very pure specimen of anorthosite, a type of rock believed to have floated like
-                      icebergs in the magma oceans that constituted the Moon’s outer layers early in its history. It was
-                      found to be more than 4 billion years old and was the most ancient whole rock recovered from the lunar
-                      surface to that point. The prospect of finding such rocks was one reason the landing site had been
-                      selected (NASA, 2019)
-                  </p>
-              <!--  </div>
-                <div id="trigger-show-surface2">-->
-                    <p data-aos="fade-in">
-                      Another important objective of the mission was the experiments conducted on the surface of the Moon with the help of the Apollo Lunar Surface Experiments Package (ALSEP). The ALSEP consisted of a set of scientific instruments placed at the landing site by the astronauts. The instruments were arrayed around a central station which supplied power to run the instruments and communications so data collected by the experiments could be relayed to Earth.
-                    </p>
-                    <p data-aos="fade-in">
-                      Data collected from the instruments were converted into a telemetry format and transmitted to Earth. The ALSEP system and instruments were controlled by commands from Earth (NASA, 2021).
-                    </p>
-                    <div class="margin-v2">
-                      <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                        <div class="object-title">Photo of the Solar-Wind Spectrometer Experiment, prior to removal of the instrument’s dust cover. This is one of the components of the ALSEP, or the Apollo Lunar Surface Experiments Package. The Solar-Wind Spectrometer measured the fluxes and spectra of the electrons and protons that emanate from the Sun and reach the lunar surface (NASA, 1971i)</div>
-                        <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/25"
-                          target="_blank">
-                          <!--<span
-                            uk-icon="link"></span>-->
-                          view </a>
-                      </figcaption>
-                      <img data-aos="fade-in" class="uk-width-1-1" data-aos="fade-in"
-                        src="https://apollo15hub.org/files/original/7ef1b6e5dc13dccd8f5073757f1a4777.jpg" />
-                    </div>
-                    <div class="margin-v2">
-                      <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                        <div class="object-title">Jim Irwin breaks off a sample of the Genesis Rock during EVA 2 (NASA, 1971k)</div>
-                        <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/62"
-                          target="_blank">
-                          <!--<span
-                            uk-icon="link"></span>-->
-                          view </a>
-                      </figcaption>
-                      <img data-aos="fade-in" class="uk-width-1-1" data-aos="fade-in"
-                        src="https://apollo15hub.org/files/original/463a2593a7fa9dcad86e118bb9c43a22.jpg" />
-                    </div>
-                <!--</div>-->
-                <!--<div id="trigger-show-surface3">-->
-                    <p data-aos="fade-in">
-                      At the end of the final EVA, Scott performed a televised sequel to the experiment Galileo is purported
-                      to have conducted at the Tower of Pisa. He dropped a hammer and a feather together in the lunar vacuum
-                      and observed that they struck the ground at the same time (NASA, 2019). Commander Scott describes how he conducted
-                      the experiment:
-                      <blockquote data-aos="fade-in">
-                        I wanted to prove the law, proposed more than there centuries before by the Italian astronomer and
-                        mathematician Galileo Galilei, that all objects fall with equal speed in a vacuum. Taking into one
-                        hand a falcon feather I had brought along for the purpose and in the other my trusty aluminium
-                        geology hammer, I positioned myself in front of the cameras, raised my arms and let both objects
-                        fall (Scott & Leonov, 2004:p.273)
-                      </blockquote>
-                    </p>
-                    <p data-aos="fade-in">
-                      This video that is part of the Apollo 15 Learning Hub’s collection shows how the feather and hammer
-                      experiment was shown on TV back on earth (NASA, 1971l).
-                    </p>
-                    <div class="margin-v2">
-                      <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                        <div class="object-title">EVA 3: 2 - The Hammer and Feather experiment on the surface of the Moon as
-                          shown on TV</div>
-                        <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/11"
-                          target="_blank">
-                          <!--<span uk-icon="link"></span>-->
-                          view
-                        </a>
-                      </figcaption>
-                      <iframe data-aos="fade-in" class="uk-width-1-1"
-                        src="https://player.vimeo.com/video/265046535"></iframe>
-                    </div>
+                  </figcaption>
+                  <a href="https://readux.io/volume/v3mrz/page/v3mrz_227.jpg">
+                    <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                      src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_227.jpg/full/full/0/default.jpg">
+                  </a>
+                  <a href="https://readux.io/volume/v3mrz/page/v3mrz_228.jpg">
+                    <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                      src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_228.jpg/full/full/0/default.jpg">
+                  </a>
                 </div>
-              </section> <!-- end trigger on moon-->
-              <section id="trigger3">
+                <div class="margin-v2" data-aos="fade-in">
+                  <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                    <div class="object-title">Geology Example from the Lunar Surface Checklist</div>
+                    <a class="object-action uk-button uk-button-default"
+                      href="https://readux.io/volume/v3mrz/page/v3mrz_235.jpg" target="_blank">
+                      <!--<span uk-icon="link"></span>-->
+                      view
+                    </a>
+                  </figcaption>
+                  <a href="https://readux.io/volume/v3mrz/page/v3mrz_235.jpg">
+                    <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                      src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_235.jpg/full/full/0/default.jpg">
+                  </a>
+                  <a href="https://readux.io/volume/v3mrz/page/v3mrz_236.jpg">
+                    <img class="uk-width-1-3" style="padding-left: 1em; padding-right 1em; width: 49% !important;"
+                      src="https://images.readux.ecds.emory.edu:8443/cantaloupe/iiif/2/v3mrz_236.jpg/full/full/0/default.jpg">
+                  </a>
+                </div>
+                <p data-aos="fade-in">
+                  In this photo that is part of the Apollo 15 Learning Hub’s collection, Commander David Scott tests the
+                  steering mechanisms of the Lunar Rover before the EVA-2 traverse. The lunar module was controlled by a
+                  joystick instead of a steering wheel because it would have been difficult for the astronauts to grasp in
+                  their spacesuits (NASA, 1971k).
+                </p>
+                <div class="margin-v2">
+                    <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                      <div class="object-title">James Irwin on the Lunar Rover</div>
+                      <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/86"
+                        target="_blank">
+                        <!--<span uk-icon="link"></span>--> view </a>
+                    </figcaption>
+                    <a data-aos="fade-in" href="https://apollo15hub.org/items/show/86">
+                      <img class="uk-width-1-1"
+                        src="https://apollo15hub.org/files/original/f765d7419062f4c99bb93b436f65f45b.jpg">
+                    </a>
+                </div>
+                <p data-aos="fade-in">
+                    Thanks to the television camera mounted on the rover, scientists back on Earth could for the first
+                    time see live coverage everywhere the astronauts went, not just at the landing site. The camera could
+                    be controlled from Earth, enabling scientists to look around for interesting features while the
+                    astronauts conducted their tasks (Apollo 15 - Apollo Flight Journal).
+                </p>
+                <div class="margin-v2" data-aos="fade-in">
+                    <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                      <div class="object-title">Video from the Rover Camera</div>
+                      <a class="object-action uk-button uk-button-default"
+                        href="https://www.youtube.com/watch?v=BTq9jtTg89E&feature=emb_logo&ab_channel=Apollo15-ApolloFlightJournal"
+                        target="_blank">
+                        <!--<span uk-icon="link"></span>-->
+                        view
+                      </a>
+                    </figcaption>
+                    <iframe class="uk-width-1-1" src="https://www.youtube.com/embed/BTq9jtTg89E" frameborder="0"
+                      allowfullscreen></iframe>
+                </div>
+                <p data-aos="fade-in">
+                    Despite the usefulness of the lunar rover, the astronauts conducted most of their geology exploration
+                    of the Moon’s surface walking, which turned out be rather challenging given the lower gravity of the
+                    Moon.
+                </p>
+                <p data-aos="fade-in">
+                    One of the most important aspects of the Apollo 15 mission was the study of the Moon’s geology, which
+                    was still not well understood at the time of the mission. Astronauts Scott and Irwin collected several
+                    samples during their EVAs. Among the rocks they collected was one that was later dubbed the “Genesis
+                    Rock.” It was a very pure specimen of anorthosite, a type of rock believed to have floated like
+                    icebergs in the magma oceans that constituted the Moon’s outer layers early in its history. It was
+                    found to be more than 4 billion years old and was the most ancient whole rock recovered from the lunar
+                    surface to that point. The prospect of finding such rocks was one reason the landing site had been
+                    selected (NASA, 2019)
+                </p>
+                <p data-aos="fade-in">
+                    Another important objective of the mission was the experiments conducted on the surface of the Moon with the help of the Apollo Lunar Surface Experiments Package (ALSEP). The ALSEP consisted of a set of scientific instruments placed at the landing site by the astronauts. The instruments were arrayed around a central station which supplied power to run the instruments and communications so data collected by the experiments could be relayed to Earth.
+                </p>
+                <p data-aos="fade-in">
+                    Data collected from the instruments were converted into a telemetry format and transmitted to Earth. The ALSEP system and instruments were controlled by commands from Earth (NASA, 2021).
+                </p>
+                <div class="margin-v2">
+                  <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                    <div class="object-title">Photo of the Solar-Wind Spectrometer Experiment, prior to removal of the instrument’s dust cover. This is one of the components of the ALSEP, or the Apollo Lunar Surface Experiments Package. The Solar-Wind Spectrometer measured the fluxes and spectra of the electrons and protons that emanate from the Sun and reach the lunar surface (NASA, 1971i)</div>
+                      <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/25"
+                        target="_blank">
+                        <!--<span
+                          uk-icon="link"></span>-->
+                        view </a>
+                  </figcaption>
+                  <img data-aos="fade-in" class="uk-width-1-1" data-aos="fade-in"
+                      src="https://apollo15hub.org/files/original/7ef1b6e5dc13dccd8f5073757f1a4777.jpg" />
+                </div>
+                <div class="margin-v2">
+                  <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                    <div class="object-title">Jim Irwin breaks off a sample of the Genesis Rock during EVA 2 (NASA, 1971k)</div>
+                      <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/62"
+                        target="_blank">
+                        <!--<span
+                          uk-icon="link"></span>-->
+                        view </a>
+                  </figcaption>
+                  <img data-aos="fade-in" class="uk-width-1-1" data-aos="fade-in"
+                    src="https://apollo15hub.org/files/original/463a2593a7fa9dcad86e118bb9c43a22.jpg" />
+                </div>
+                <p data-aos="fade-in">
+                    At the end of the final EVA, Scott performed a televised sequel to the experiment Galileo is purported
+                    to have conducted at the Tower of Pisa. He dropped a hammer and a feather together in the lunar vacuum
+                    and observed that they struck the ground at the same time (NASA, 2019). Commander Scott describes how he conducted
+                    the experiment:
+                  <blockquote data-aos="fade-in">
+                      I wanted to prove the law, proposed more than there centuries before by the Italian astronomer and
+                      mathematician Galileo Galilei, that all objects fall with equal speed in a vacuum. Taking into one
+                      hand a falcon feather I had brought along for the purpose and in the other my trusty aluminium
+                      geology hammer, I positioned myself in front of the cameras, raised my arms and let both objects
+                      fall (Scott & Leonov, 2004:p.273)
+                  </blockquote>
+                </p>
+                <p data-aos="fade-in">
+                    This video that is part of the Apollo 15 Learning Hub’s collection shows how the feather and hammer
+                    experiment was shown on TV back on earth (NASA, 1971l).
+                </p>
+                <div class="margin-v2">
+                  <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
+                      <div class="object-title">EVA 3: 2 - The Hammer and Feather experiment on the surface of the Moon as
+                        shown on TV</div>
+                      <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/11"
+                        target="_blank">
+                        <!--<span uk-icon="link"></span>-->
+                        view
+                      </a>
+                  </figcaption>
+                  <iframe data-aos="fade-in" class="uk-width-1-1"
+                      src="https://player.vimeo.com/video/265046535"></iframe>
+                </div>
+              </div>
+            </section> <!-- end trigger on moon-->
+            <section id="trigger3">
               <h2 data-aos="fade-in" uk-sticky="offset: 80;" uk-sticky-below class="uk-margin-remove uk-ap-heading">Sub
                 Satellite</h2>
               <p data-aos="fade-in">
@@ -973,8 +969,6 @@
           <object data="/themes/bigpicture/images/Earth2017.svg" class="earth" type="image/svg+xml"></object>
           <object data="/themes/bigpicture/images/moon-color.svg" id="moon" class="moon" type="image/svg+xml"></object>
           <object data="/themes/bigpicture/images/surface_EVA1_lm.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
-          <object data="/themes/bigpicture/images/surface_EVA2_lm.svg" class="surface2 uk-cover-container" type="image/svg+xml"></object>
-          <object data="/themes/bigpicture/images/surface_EVA3_lm.svg" class="surface3 uk-cover-container" type="image/svg+xml"></object>
         </div>
         <!-- right column -->
 

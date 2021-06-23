@@ -116,29 +116,29 @@ var showSurface = new ScrollMagic.Scene({
   })
   .addTo(controller);
 
-var showSurface2 = new ScrollMagic.Scene({
-    triggerElement: "#trigger-show-surface2",
-    duration: $("#trigger-show-surface2").innerHeight()
-  })
-  .on("enter", function (event) {
-    $(".surface2").addClass("surface-show");
-  })
-  .on("leave", function (event) {
-    $(".surface2").removeClass("surface-show");
-  })
-  .addTo(controller);
-
-var showSurface3 = new ScrollMagic.Scene({
-    triggerElement: "#trigger-show-surface3",
-    duration: $("#trigger-show-surface3").innerHeight()
-  })
-  .on("enter", function (event) {
-    $(".surface3").addClass("surface-show");
-  })
-  .on("leave", function (event) {
-    $(".surface3").removeClass("surface-show");
-  })
-  .addTo(controller);
+// var showSurface2 = new ScrollMagic.Scene({
+//     triggerElement: "#trigger-show-surface2",
+//     duration: $("#trigger-show-surface2").innerHeight()
+//   })
+//   .on("enter", function (event) {
+//     $(".surface2").addClass("surface-show");
+//   })
+//   .on("leave", function (event) {
+//     $(".surface2").removeClass("surface-show");
+//   })
+//   .addTo(controller);
+//
+// var showSurface3 = new ScrollMagic.Scene({
+//     triggerElement: "#trigger-show-surface3",
+//     duration: $("#trigger-show-surface3").innerHeight()
+//   })
+//   .on("enter", function (event) {
+//     $(".surface3").addClass("surface-show");
+//   })
+//   .on("leave", function (event) {
+//     $(".surface3").removeClass("surface-show");
+//   })
+//   .addTo(controller);
 
 function createTween(segment) {
   var lineLength = segment.path[0].getTotalLength();
