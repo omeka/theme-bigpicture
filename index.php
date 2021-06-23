@@ -968,7 +968,7 @@
           </svg>
           <object data="/themes/bigpicture/images/Earth2017.svg" class="earth" type="image/svg+xml"></object>
           <object data="/themes/bigpicture/images/moon-color.svg" id="moon" class="moon" type="image/svg+xml"></object>
-          <object data="/themes/bigpicture/images/surface_EVA1_lm.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
+          <object data="/themes/bigpicture/images/surface_EVAs_lm-01.svg" class="surface uk-cover-container" type="image/svg+xml"></object>
         </div>
         <!-- right column -->
 
