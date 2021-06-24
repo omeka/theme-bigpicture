@@ -122,7 +122,7 @@ article {
   position: fixed;
   right: 17vw;
   top: 3vh;
-  transform: scale(1, 1) translate(0, 0);
+  transform: scale(.15, .15) translate(-8vw, 73vh);
   z-index: 1; }
 
 .surface {
@@ -162,7 +162,7 @@ article {
   position: fixed;
   right: 18vw;
   top: 5vh;
-  transform: scale(1, 1) translate(0, 0);
+  transform: scale(.5, .5) translate(-2vw, -11vw);
   z-index: 1;
 }
 
