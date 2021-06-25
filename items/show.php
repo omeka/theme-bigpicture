@@ -37,10 +37,11 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasVisualMe
         <?php foreach ($visualMedia as $mediaFile): ?> 
         <?php $visualMediaCount++; ?>
         <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($mediaFile) : $mediaFile->getWebPath('original'); ?>
+	<?php $squareThumbnail = bigpicture_get_square_thumbnail_url($mediaFile, $this); ?>
         <?php if (strpos($mediaFile->mime_type, 'image') !== false): ?>
             <li 
                 data-src="<?php echo $mediaFile->getWebPath('original'); ?>" 
-                data-thumb="<?php echo $mediaFile->getWebPath('square_thumbnail'); ?>" 
+                data-thumb="<?php echo $squareThumbnail; ?>" 
                 data-sub-html=".media-link"
                 class="media resource"
             >
@@ -53,7 +54,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasVisualMe
             </li>
         <?php else: ?>
             <li 
-                data-thumb="<?php echo file_display_url($mediaFile, 'square_thumbnail'); ?>" 
+                data-thumb="<?php echo $squareThumbnail; ?>" 
                 data-html="#video-<?php echo $visualMediaCount; ?>"
                 data-sub-html=".media-link" 
                 class="media resource"

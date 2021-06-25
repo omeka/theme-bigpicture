@@ -78,4 +78,15 @@ function bigpicture_check_for_tracks($files) {
     }
     return false;
 }
+
+function bigpicture_get_square_thumbnail_url($file, $view) {
+    if ($file->hasThumbnail()) {
+        $squareThumbnail = file_display_url($file, 'square_thumbnail');
+    } else {
+        $mimeType = $file->mime_type;
+        $fileType = (strpos($mimeType, 'image')) ? 'image' : 'video';
+        $squareThumbnail = $view->baseUrl() . '/application/views/scripts/images/fallback-' . $fileType . '.png';
+    }
+    return $squareThumbnail;
+}
 ?>
