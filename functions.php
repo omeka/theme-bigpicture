@@ -85,7 +85,7 @@ function bigpicture_get_square_thumbnail_url($file, $view) {
     } else {
         $mimeType = $file->mime_type;
         $fileType = (strpos($mimeType, 'image')) ? 'image' : 'video';
-        $squareThumbnail = $view->baseUrl() . '/application/view/scripts/images/fallback-' . $fileType . '.png';
+        $squareThumbnail = $view->baseUrl() . '/application/views/scripts/images/fallback-' . $fileType . '.png';
     }
     return $squareThumbnail;
 }

@@ -37,7 +37,7 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasVisualMe
         <?php foreach ($visualMedia as $mediaFile): ?> 
         <?php $visualMediaCount++; ?>
         <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($mediaFile) : $mediaFile->getWebPath('original'); ?>
-        <?php $squareThumbnail = bigpicture_get_square_thumbnail_url($mediaFile, $this);
+	<?php $squareThumbnail = bigpicture_get_square_thumbnail_url($mediaFile, $this); ?>
         <?php if (strpos($mediaFile->mime_type, 'image') !== false): ?>
             <li 
                 data-src="<?php echo $mediaFile->getWebPath('original'); ?>" 
