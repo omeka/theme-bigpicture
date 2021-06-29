@@ -62,6 +62,10 @@ h3 {
   text-decoration: none;
 }
 
+.svg-collection {
+  margin: auto 50%;
+}
+
 .svg-collection svg,
 .svg-collection object {
   height: 90vh;
@@ -69,7 +73,7 @@ h3 {
 
 .svg-collection svg {
   position: fixed;
-  right: 15vw;
+  /* right: 15vw; */
 }
 
 .svg-collection svg path {
@@ -217,7 +221,7 @@ article img {
 
 .flight-path {
   height: 140vh !important;
-  margin: auto -25%;
+  /* margin: auto -25%; */
   top: -5vh;
   z-index: 2;
 }
