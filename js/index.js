@@ -62,6 +62,7 @@ var onEarth = new ScrollMagic.Scene({
     $(".flight-path").removeClass("on-earth");
     if (event.scrollDirection === "REVERSE") {
       $(".ship").removeClass("show-ship");
+      $(".lm").removeClass("show-ship");
       $(".flight-path").removeClass("show");
     }
   })
