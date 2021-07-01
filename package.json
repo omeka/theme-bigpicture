@@ -32,5 +32,8 @@
   "browserslist": [
     "> 5%",
     "> 1% in US"
-  ]
+  ],
+  "dependencies": {
+    "postcss": "^8.3.5"
+  }
 }
