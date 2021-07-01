@@ -85,7 +85,8 @@
   .button,
   button,
   [type="submit"] {
-    background-color: #eee; }
+    background-color: #eee;
+    border: 1px solid #ccc; }
   input[type="radio"],
   input[type="checkbox"] {
     vertical-align: middle;
@@ -456,6 +457,8 @@
     display: flex;
     align-items: center;
     height: 100%; }
+  .lSPager li:only-of-type {
+    display: none; }
   .count-1.lSSlideOuter .lSPager.lSGallery {
     display: none; }
   .items.show.gallery .item-metadata {
@@ -576,6 +579,8 @@
     display: inline-block; }
   .secondary-nav li {
     margin-right: 10.5px; }
+    .secondary-nav li.active {
+      font-weight: bold; }
   .secondary-nav {
     margin-right: auto; }
   #sort-links-list {
@@ -672,6 +677,24 @@
     padding: 5.25px;
     margin: 0 5.25px 5.25px 0;
     list-style-type: none; }
+  .popular {
+    font-size: 100%; }
+  .v-popular {
+    font-size: 140%; }
+  .vv-popular {
+    font-size: 180%; }
+  .vvv-popular {
+    font-size: 190%; }
+  .vvvv-popular {
+    font-size: 200%; }
+  .vvvvv-popular {
+    font-size: 210%; }
+  .vvvvvv-popular {
+    font-size: 220%; }
+  .vvvvvvv-popular {
+    font-size: 230%; }
+  .vvvvvvvv-popular {
+    font-size: 240%; }
   /* @end */
   /* @group ----- Collections/Browse and Exhibits/Browse----- */
   .browse.collections .records,

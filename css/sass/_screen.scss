@@ -120,6 +120,7 @@ input[type="month"]  {
 button,
 [type="submit"] {
     background-color: $border-gray;
+    border: 1px solid #ccc;
 }
 
 input[type="radio"],
@@ -639,6 +640,10 @@ ul#itemfiles {
     height: 100%;
 }
 
+.lSPager li:only-of-type {
+    display: none;
+}
+
 .count-1.lSSlideOuter .lSPager.lSGallery {
     display: none;
 }
@@ -810,6 +815,10 @@ ul.item-pagination.navigation {
 
 .secondary-nav li {
     margin-right: $spacing-m;
+
+    &.active {
+        font-weight: bold;
+    }
 }
 
 .secondary-nav {
@@ -923,6 +932,42 @@ ul.pagination {
     padding: $spacing-s;
     margin: 0 $spacing-s $spacing-s 0;
     list-style-type: none;
+}
+
+.popular {
+    font-size: 100%;
+}
+
+.v-popular {
+font-size: 140%;
+}
+
+.vv-popular {
+font-size: 180%;
+}
+
+.vvv-popular {
+font-size: 190%;
+}
+
+.vvvv-popular {
+font-size: 200%;
+}
+
+.vvvvv-popular {
+font-size: 210%;
+}
+
+.vvvvvv-popular {
+font-size: 220%;
+}
+
+.vvvvvvv-popular {
+font-size: 230%;
+}
+
+.vvvvvvvv-popular {
+font-size: 240%;
 }
 
 /* @end */
