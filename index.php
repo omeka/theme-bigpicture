@@ -202,11 +202,7 @@
                 presented here are part of the Learning Hub’s collection and were provided by Commander David R. Scott.
               </p>
               <p data-aos="fade-in">
-                NASA’s Apollo program started in the 1960s and continued well into the 1970s, achieving several
-                milestones throughout its run with the Moon landing of Apollo 11 being the most famous of them. The
-                Apollo 15 mission was part of that effort, being the ninth crewed mission of the Apollo program. The
-                Apollo 15 mission involved several groundbreaking scientific experiments as well as innovating space
-                travel features.
+                NASA’s Apollo program started in the 1960s and continued into the early 1970s, achieving the first and only human missions around the moon, including six lunar landing missions, with the first moon landing of Apollo 11 being the most famous. The Apollo 15 mission was the fourth lunar landing mission and the first extended scientific exploration of the moon. The Apollo 15 mission involved several groundbreaking scientific experiments as well as innovative space travel features.
               </p>
               <p data-aos="fade-in">
                 The four primary objectives of the Apollo 15 mission in terms of science and engineering were to explore
@@ -243,10 +239,7 @@
                   allowfullscreen></iframe>
               </div>
               <p data-aos="fade-in">
-                Another part of that process was geology training exercises in the Orocopia Mountains and in the Mojave
-                Desert in California and the area around Flagstaff, Arizona. Apollo 15 would be the first mission to
-                utilize the Lunar Roving Vehicle (LRV) to enable the astronauts to travel farther from their Lunar
-                Module to explore areas of geologic interest.
+                Extensive geology training was another part of the process, with training exercises in the Orocopia Mountains and the Mojave Desert in California and the area around Flagstaff, Arizona, among other places. Apollo 15 would also be the first mission to utilize the Lunar Roving Vehicle (LRV) to enable the astronauts to travel farther from their Lunar Module to explore areas of geologic interest.
               </p>
               <h2 data-aos="fade-in" uk-sticky="offset: 80;" class="uk-margin-remove uk-ap-heading">
                 Launch</h2>
@@ -257,7 +250,7 @@
                 action after the CSM had left the Earth’s atmosphere was exhaustively examined and checked.
               </p>
               <blockquote data-aos="fade-in">
-              The planning and preparation for our mission had been so thorough that there was no doubt in our minds that we really knew "how to fly to the Moon" -- and in any conceivable situation. (Scott, 2008:p.1)
+              The planning and preparation for our mission had been so thorough that there was no doubt in our minds that we really knew “how to fly to the Moon” -- and in any conceivable situation. (Scott, 2008:p.1)
               </blockquote>
               </section> <!-- end trigger-on-earth -->
               <section id="trigger1">
@@ -316,7 +309,7 @@
                 of replicating the ascent of the CSM in a flight simulator. The time-frame within which an abort could
                 be activated was less than a second.
                 <blockquote data-aos="fade-in">
-                 And at any point in the mission, the crew had to be prepared to operate on their own without any contact from Earth, using only the equipment and computers on board and some pre-calculated maneuver data.’ (Scott, 2008:p.4).
+                 And at any point in the mission, the crew had to be prepared to operate on their own without any contact from Earth, using only the equipment and computers on board and some pre-calculated maneuver data. (Scott, 2008:p.4).
                 </blockquote>
               </p>
               <p data-aos="fade-in">
@@ -376,9 +369,10 @@
                 the Earth’s atmosphere and into orbit, Mission Control and the Apollo 15 crew realized that they had
                 gone through this dangerous part of the flight without any problems.
               </p>
-              <p data-aos="fade-in">
+              <blockquote data-aos="fade-in">
                 It would take the Command and Service Module three days of free flight – “translunar coast” – to reach a
                 position near the Moon from which they could light our big engine and enter lunar orbit (Scott & Leonov, 2004:p.285)
+              </blockquote>
               </p>
                 </section> <!-- end trigger 1-->
               <section id="trigger2">
@@ -487,7 +481,7 @@
                 <p data-aos="fade-in">
                   Describing his experience driving the lunar rover on the Moon’s surface, Commander Scott writes:
                   <blockquote data-aos="fade-in">
-                    the Lunar Roving Vehicle (LRV) ... meant significanlty greater exploration capability, especially the capability to range to several different geologic areas from the Lunar Module, significanlty more scientific equipment and experiments, and quite importantly, a mobile TV camera to view and record the distant activities of the crew. As a result, using a rover to explore multiple geologic areas at one landing site became almost equivalent to exploring multiple landing sites without a rover. Correspondingly, subsequent Apollo crews became even more proficient in "planetary field geology." (Scott, 2008:p.XXIX)
+                    the Lunar Roving Vehicle (LRV) ... meant significanlty greater exploration capability, especially the capability to range to several different geologic areas from the Lunar Module, significanlty more scientific equipment and experiments, and quite importantly, a mobile TV camera to view and record the distant activities of the crew. As a result, using a rover to explore multiple geologic areas at one landing site became almost equivalent to exploring multiple landing sites without a rover. Correspondingly, subsequent Apollo crews became even more proficient in “planetary field geology.” (Scott, 2008:p.XXIX)
                   </blockquote>
                 </p>
                 <p data-aos="fade-in">
@@ -550,7 +544,7 @@
                 </p>
                 <div class="margin-v2">
                     <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                      <div class="object-title">James Irwin on the Lunar Rover</div>
+                      <div class="object-title">David Scott on the Lunar Rover</div>
                       <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/86"
                         target="_blank">
                         <!--<span uk-icon="link"></span>--> view </a>
@@ -595,14 +589,14 @@
                     selected (NASA, 2019)
                 </p>
                 <p data-aos="fade-in">
-                    Another important objective of the mission was the experiments conducted on the surface of the Moon with the help of the Apollo Lunar Surface Experiments Package (ALSEP). The ALSEP consisted of a set of scientific instruments placed at the landing site by the astronauts. The instruments were arrayed around a central station which supplied power to run the instruments and communications so data collected by the experiments could be relayed to Earth.
+                    Another important objective of the mission was the experiments conducted on the surface of the Moon with the help of the Apollo Lunar Surface Experiments Package (ALSEP). The ALSEP consisted of a set of scientific instruments placed at the landing site by the astronauts.  One of the components of the ALSEP, the Solar-Wind Spectrometer, measured the fluxes and spectra of the electrons and protons that emanate from the Sun and reach the lunar surface (NASA, 1971i). The ALSEP instruments were arrayed around a central station which supplied power to run the instruments and communications so data collected by the experiments could be relayed to Earth.
                 </p>
                 <p data-aos="fade-in">
                     Data collected from the instruments were converted into a telemetry format and transmitted to Earth. The ALSEP system and instruments were controlled by commands from Earth (NASA, 2021).
                 </p>
                 <div class="margin-v2">
                   <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                    <div class="object-title">Photo of the Solar-Wind Spectrometer Experiment, prior to removal of the instrument’s dust cover. This is one of the components of the ALSEP, or the Apollo Lunar Surface Experiments Package. The Solar-Wind Spectrometer measured the fluxes and spectra of the electrons and protons that emanate from the Sun and reach the lunar surface (NASA, 1971i)</div>
+                    <div class="object-title">Photo of the Solar-Wind Spectrometer Experiment, prior to removal of the instrument’s dust cover.</div>
                       <a class="object-action uk-button uk-button-default" href="https://apollo15hub.org/items/show/25"
                         target="_blank">
                         <!--<span
