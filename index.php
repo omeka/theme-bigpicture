@@ -874,19 +874,19 @@
               NASA (1971q) Touchdown - landing video - test · The Apollo 15 Learning Hub. [Online]. 1971. Available from: https://apollo15hub.org/items/show/193
               </p>
               <p data-aos="fade-in">
+              Scott, D. (1970) NASA Antarctic Visit.p.8.
+              </p>
+              <p data-aos="fade-in">
+              Scott, D. (1973) What Is It Like to Walk on the Moon? National Geographic.144 pp.326–329.
+              </p>
+              <p data-aos="fade-in">
               Scott, D. (2008) Foreword to How Apollo Flew to the Moon by W. David Woods 1st Edition (2008). Springer-Praxis. 1st edition. [Online]. 2008. Available from: http://www.hafttm.com/index.htm
               </p>
               <p data-aos="fade-in">
               Scott, D. (2011) Foreword to How Apollo Flew to the Moon by W. David Woods 2nd Edition (2011). Springer-Praxis. 2nd edition. [Online]. 2011. Available from: http://www.hafttm.com/index.htm
               </p>
               <p data-aos="fade-in">
-              Scott, D. (1973) What Is It Like to Walk on the Moon? National Geographic.144 pp.326–329.
-              </p>
-              <p data-aos="fade-in">
               Scott, D. & Leonov, A. (2004) Two Sides of the Moon: Our Story of the Cold War Space Race. New York, Thomas Dunne Books.
-              </p>
-              <p data-aos="fade-in">
-              Scott, D.R. (1970) NASA Antarctic Visit.p.8.
               </p>
 
             </section>
