@@ -283,7 +283,7 @@
               </div>
               <p data-aos="fade-in">
                 Finally, after everything had been checked and had been found OK, the launch process started at 9:34 AM
-                EST at Cape Canaveral, Florida, only 187 milliseconds off schedule (NASA, 2009).
+                EST at Cape Canaveral, Florida, only 187 milliseconds off schedule (NASA 1971, Apollo 15 Mission Report).
               </p>
               <p data-aos="fade-in">
                 The following photograph shows the moment the Saturn V rocket blasted off from the
@@ -388,7 +388,7 @@
                 feet north and east of the targeted landing point. They touched down with two of the Lunar Module’s
                 landing pads just over the edge of a small crater that the astronauts had not been able to see through
                 the dust raised by their rocket engine, causing the lunar module to tilt. But they were stable enough to
-                continue their mission (NASA 2019). Landing approach over the Apennine Range - one of the highest on the moon - was at an angle of 26 degrees, the steepest approach yet used in Apollo missions (NASA 2009).
+                continue their mission (NASA 1971, Apollo 15 Mission Report). Landing approach over the Apennine Range - one of the highest on the moon - was at an angle of 26 degrees, the steepest approach yet used in Apollo missions (NASA 1971, Apollo 15 Mission Report).
               </p>
               <p data-aos="fade-in">
                 The following cue card, which is also part of the Apollo 15 Learning Hub’s collection, contains
@@ -473,7 +473,7 @@
                   deployed their Lunar Roving Vehicle (LRV) or simply "lunar rover" the following day. Specially designed for operation at 1/6 Earth’s gravity, it could carry 180 pounds of astronauts, gear and samples on the Moon (which would weigh 1,080 pounds on
                   Earth), more than twice the rover’s weight, but risked collapse if accidentally sat upon while still on
                   Earth. Though its range was 40 miles at speeds up to 11 mph, the astronauts were restricted to an area 3
-                  miles from the lunar module so they could walk back if the rover broke down (NASA, 2019).
+                  miles from the lunar module so they could walk back if the rover broke down (NASA 1971, Apollo 15 Mission Report).
                   <blockquote data-aos="fade-in">
                   We quickly discover, locomotion on the moon has its own peculiar restrictions. At one-sixth of earths gravity, we weigh only a sixth our normal poundage. Our gait quickly evolves into a rhythmic, bouncing motion that possesses all the lightness and ease of strolling on a trampoline (Scott, 1973:p.327).
                   </blockquote>
@@ -495,7 +495,7 @@
                   17.5 miles on the Moon’s surface during the 3 days (from July 31 to August 2) they spent on the Moon.
                   Also, the two astronauts were able to collect more than 170 pounds of lunar samples and to provide
                   extensive oral descriptions and photographic documentation of geologic features in the vicinity of the
-                  landing site (NASA, 2009).
+                  landing site (NASA 1971, Apollo 15 Mission Report).
                 </p>
                 <p data-aos="fade-in">
                   The following pictures show photos and descriptions of specific types of rocks that the astronauts were supposed to look for while on their EVAs on the surface of the Moon. The photos were part of the Lunar Surface Checklist booklet that the astronauts had with them in the LM.
@@ -586,13 +586,13 @@
                     icebergs in the magma oceans that constituted the Moon’s outer layers early in its history. It was
                     found to be more than 4 billion years old and was the most ancient whole rock recovered from the lunar
                     surface to that point. The prospect of finding such rocks was one reason the landing site had been
-                    selected (NASA, 2019)
+                    selected (NASA 1971, Apollo 15 Mission Report).
                 </p>
                 <p data-aos="fade-in">
                     Another important objective of the mission was the experiments conducted on the surface of the Moon with the help of the Apollo Lunar Surface Experiments Package (ALSEP). The ALSEP consisted of a set of scientific instruments placed at the landing site by the astronauts.  One of the components of the ALSEP, the Solar-Wind Spectrometer, measured the fluxes and spectra of the electrons and protons that emanate from the Sun and reach the lunar surface (NASA, 1971i). The ALSEP instruments were arrayed around a central station which supplied power to run the instruments and communications so data collected by the experiments could be relayed to Earth.
                 </p>
                 <p data-aos="fade-in">
-                    Data collected from the instruments were converted into a telemetry format and transmitted to Earth. The ALSEP system and instruments were controlled by commands from Earth (NASA, 2021).
+                    Data collected from the instruments were converted into a telemetry format and transmitted to Earth. The ALSEP system and instruments were controlled by commands from Earth (NASA 1971, Apollo 15 Mission Report).
                 </p>
                 <div class="margin-v2">
                   <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
@@ -621,7 +621,7 @@
                 <p data-aos="fade-in">
                     At the end of the final EVA, Scott performed a televised sequel to the experiment Galileo is purported
                     to have conducted at the Tower of Pisa. He dropped a hammer and a feather together in the lunar vacuum
-                    and observed that they struck the ground at the same time (NASA, 2019). Commander Scott describes how he conducted
+                    and observed that they struck the ground at the same time (NASA 1971, Apollo 15 Mission Report). Commander Scott describes how he conducted
                     the experiment:
                   <blockquote data-aos="fade-in">
                       I wanted to prove the law, proposed more than there centuries before by the Italian astronomer and
@@ -659,7 +659,7 @@
                 television camera. The two spacecraftsdocked as Endeavor began its 50th lunar orbit. On the 74th
                 revolution, the Particles and Fields sub satellite was spring-launched from the service module bay. On the
                 next revolution, on August 4, a two-minute, 21-second propulsion system burn put Apollo 15 on its path back to
-                Earth (NASA, 2009).
+                Earth (NASA 1971, Apollo 15 Mission Report).
               </p>
               <p data-aos="fade-in">
               This photo shows one page of the flight plan that was used by the crew of Apollo 15 onboard the CSM with handwritten annotations by the crew. It delineates one hour of the schedule that the crew followed after Commander Scott and James Irwin had returned back to the CSM after their lunar landing (NASA, 1971g:p.114).
@@ -715,8 +715,7 @@
                 This small satellite was designed around a hexagonal structure with a diameter of 14 inches that was
                 equipped with three instrument booms. The power supply came from solar panels and chemical batteries.
                 The instruments measured the strength and direction of interplanetary and terrestrial magnetic fields,
-                detected variations in the lunar gravity field, and measured proton and electron flux ("Apollo 15,"
-                https://solarsystem.nasa.gov/missions/apollo-15/in-depth/).
+                detected variations in the lunar gravity field, and measured proton and electron flux (NASA 1971, Apollo 15 Mission Report).
               </p>
               </section> <!-- end trigger 3-->
               <section id="trigger4">
@@ -761,7 +760,7 @@
               <p data-aos="fade-in">
                 At approximately 4:46 p.m. EDT on August 7, Apollo 15 splashed down in the Pacific Ocean, about 335 miles
                 north of Honolulu, ending a flight of 12 days, seven hours. The crew was picked up by helicopters from
-                the prime recovery ship, the USS Okinawa, 6.32 miles from the targeted touchdown point (NASA, 2009).
+                the prime recovery ship, the USS Okinawa, 6.32 miles from the targeted touchdown point (NASA 1971, Apollo 15 Mission Report).
               </p>
               <div class="margin-v2">
                 <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
@@ -818,10 +817,10 @@
               Apollo 15 - Apollo Flight Journal (2019) Apollo 15 - 16-mm magazine 1246-EE. [Online]. Available from: https://www.youtube.com/watch?v=BTq9jtTg89E
               </p>
               <p data-aos="fade-in">
-              NASA (1971a) Aeronautics and Space Report · The Apollo 15 Learning Hub. [Online]. 1971. Available from: https://apollo15hub.org/items/show/176
+              NASA (1971) Launch: ap15-71-HC-977HR · The Apollo 15 Learning Hub. [Online]. 1971. Available from: https://apollo15hub.org/items/show/68
               </p>
               <p data-aos="fade-in">
-              NASA (2009) Apollo 15. [Online]. 8 July 2009. nasa.gov. Available from: http://www.nasa.gov/mission_pages/apollo/missions/apollo15.html
+              NASA (1971a) Aeronautics and Space Report · The Apollo 15 Learning Hub. [Online]. 1971. Available from: https://apollo15hub.org/items/show/176
               </p>
               <p data-aos="fade-in">
               NASA (1971b) Apollo 15 Flight Data File: CSM Launch Checklist (S/N 1002). [Online]. Available from: https://readux.io/volume/tz844/page/tz844_004.jpg
@@ -845,9 +844,6 @@
               NASA (1971h) Apollo 15 Flight Data File: Lunar Surface Checklist. [Online]. Available from: https://readux.io/volume/v3mrz/page/v3mrz_227.jpg
               </p>
               <p data-aos="fade-in">
-              NASA (2021) Apollo 15 Lunar Module /ALSEP. [Online]. 17 May 2021. Available from: https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1971-063C
-              </p>
-              <p data-aos="fade-in">
               NASA (1970i) Apollo in Antarctica (I) · The Apollo 15 Learning Hub. [Online]. 9 January 1970. Available from: https://apollo15hub.org/items/show/175
               </p>
               <p data-aos="fade-in">
@@ -864,12 +860,6 @@
               </p>
               <p data-aos="fade-in">
               NASA (1971m) Film Cassette Retrieval: ap15-S71-43202HR · The Apollo 15 Learning Hub. [Online]. 1971. Available from: https://apollo15hub.org/items/show/43
-              </p>
-              <p data-aos="fade-in">
-              NASA (2019) In Depth | Apollo 15. [Online]. 9 April 2019. NASA Solar System Exploration. Available from: https://solarsystem.nasa.gov/missions/apollo-15/in-depth
-              </p>
-              <p data-aos="fade-in">
-              NASA (1971) Launch: ap15-71-HC-977HR · The Apollo 15 Learning Hub. [Online]. 1971. Available from: https://apollo15hub.org/items/show/68
               </p>
               <p data-aos="fade-in">
               NASA (1971n) LM Interior Forward Panels Detailed · The Apollo 15 Learning Hub. [Online]. 1971. Available from: https://apollo15hub.org/items/show/147
