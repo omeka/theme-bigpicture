@@ -379,7 +379,7 @@
               <h2 data-aos="fade-in" uk-sticky="offset: 80;" uk-sticky-below class="uk-margin-remove uk-ap-heading">Moon
                 Landing</h2>
               <p data-aos="fade-in">
-                When the Apollo 15 Command and Service Module (CSM) “Endeavour” entered the Moon’s orbit, David Scott
+                When the Apollo 15 Command and Service Module (CSM) “Endeavor” entered the Moon’s orbit, David Scott
                 and James Irwin descended to the Moon in their Lunar Module, the vehicle that was designed to transport
                 them from the CSM to the surface of the Moon.
               </p>
