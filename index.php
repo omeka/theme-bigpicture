@@ -351,7 +351,7 @@
               </p>
               <div class="margin-v2" data-aos="fade-in">
                 <figcaption class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
-                  <div class="object-title"><em>Loss of Comm</em> Cue Card</div>
+                  <div class="object-title"><em style="color:white;">Loss of Comm</em> Cue Card</div>
                   <a class="object-action uk-button uk-button-default" href="https://readux.io/volume/v016s/page/v016s_01R.jpg"
                     target="_blank">
                     <!--<span uk-icon="link"></span>-->
@@ -604,7 +604,7 @@
                         view </a>
                   </figcaption>
                   <img data-aos="fade-in" class="uk-width-1-1" data-aos="fade-in"
-                      src="https://apollo15hub.org/files/original/7ef1b6e5dc13dccd8f5073757f1a4777.jpg" />
+                      src="https://apollo15hub.org/files/original/7a9cdcaff6cdbc02680fcbb7a3159bdb.jpg" />
                 </div>
                 <div class="margin-v2">
                   <figcaption data-aos="fade-in" class="uk-flex uk-flex-bottom uk-flex-between uk-margin-small-bottom">
