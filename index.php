@@ -905,6 +905,7 @@
                   Mundy</a>, <a href="https://github.com/jayvarner" class=" ap-inline-link">Jay Varner</a> and <a
                   href="https://github.com/yl5682" class="ap-inline-link">Yang Li</a> at <a
                   href="https://ecds.emory.edu/" class="ap-inline-link">Emory Center for Digital Scholarship. </a>
+                  Thank you to Dina Thornton for the Command Module and Lunar Module graphics.
               </p>
               <a href="https://ecds.emory.edu/" class=""><img class="margin-v2" data-aos="fade-in" width="300px"
                   src="/themes/bigpicture/images/lits-ecds-hz-grey.svg"></a>
