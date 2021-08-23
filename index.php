@@ -624,7 +624,7 @@
                     and observed that they struck the ground at the same time (NASA 1971, Apollo 15 Mission Report). Commander Scott describes how he conducted
                     the experiment:
                   <blockquote data-aos="fade-in">
-                      I wanted to prove the law, proposed more than there centuries before by the Italian astronomer and
+                      I wanted to prove the law, proposed more than three centuries before by the Italian astronomer and
                       mathematician Galileo Galilei, that all objects fall with equal speed in a vacuum. Taking into one
                       hand a falcon feather I had brought along for the purpose and in the other my trusty aluminium
                       geology hammer, I positioned myself in front of the cameras, raised my arms and let both objects
@@ -656,7 +656,7 @@
               <p data-aos="fade-in">
                 On August 2, the Lunar Module fired its ascent stage engine and lifted off the Moon for its rendezvous with
                 Command Module, or CM, Endeavor. For the first time, the lunar liftoff was seen on Earth via the LRV
-                television camera. The two spacecraftsdocked as Endeavor began its 50th lunar orbit. On the 74th
+                television camera. The two spacecrafts docked as Endeavor began its 50th lunar orbit. On the 74th
                 revolution, the Particles and Fields sub satellite was spring-launched from the service module bay. On the
                 next revolution, on August 4, a two-minute, 21-second propulsion system burn put Apollo 15 on its path back to
                 Earth (NASA 1971, Apollo 15 Mission Report).
