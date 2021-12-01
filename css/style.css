@@ -432,17 +432,19 @@
     padding-bottom: 0 !important; }
   .count-1 ul#itemfiles {
     height: 100% !important; }
+  ul#itemfiles > li {
+    height: 100%; }
   .lSSlideWrapper,
   .lSSlideWrapper .lSFade > * {
     height: 100%; }
-  .lSSlideOuter .media-render {
+  #itemfiles .media-render {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center; }
-  .lSSlideOuter .media-render img {
+  #itemfiles .media-render img {
     max-height: 100%;
-    width: auto; }
+    max-width: 100%; }
   .lSSlideOuter .lSPager.lSGallery {
     position: absolute;
     bottom: 0;
