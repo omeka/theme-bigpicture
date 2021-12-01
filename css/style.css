@@ -404,11 +404,12 @@
     border-bottom: 1px solid #eee; }
   .admin-bar.items.show.gallery #content {
     margin-top: calc(-41px - 73.5px); }
+  .items.show .flex {
+    background: #333; }
   .items.show div#itemfiles,
   .items.show .lSSlideOuter {
     width: 75%;
     height: 100%;
-    background: #333;
     position: relative; }
   .items.show div#itemfiles {
     margin-left: 21px; }
@@ -463,6 +464,8 @@
     display: none; }
   .count-1.lSSlideOuter .lSPager.lSGallery {
     display: none; }
+  .items.show .item-metadata {
+    background: #fff; }
   .items.show.gallery .item-metadata {
     width: 25%;
     padding: 0 21px;
