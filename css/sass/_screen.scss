@@ -657,6 +657,7 @@ ul#itemfiles > li {
 
 .items.show .item-metadata {
     background: #fff;
+    width: 100%;
 }
 
 .items.show.gallery .item-metadata {
@@ -791,7 +792,7 @@ ul.item-pagination.navigation {
 #item-filters > ul ul,
 #item-filters li,
 #search-filters > ul ul,
-#search-filters li, {
+#search-filters li {
     display: inline-block;
     margin: 0;
 }
@@ -1164,7 +1165,7 @@ font-size: 240%;
 
 .exhibits.summary #primary, 
 #exhibit-blocks,
-#exhibit-pages, {
+#exhibit-pages {
     width: 70%;
     margin: auto;
 }

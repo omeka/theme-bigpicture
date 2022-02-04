@@ -465,7 +465,8 @@
   .count-1.lSSlideOuter .lSPager.lSGallery {
     display: none; }
   .items.show .item-metadata {
-    background: #fff; }
+    background: #fff;
+    width: 100%; }
   .items.show.gallery .item-metadata {
     width: 25%;
     padding: 0 21px;
