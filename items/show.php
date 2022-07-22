@@ -4,87 +4,27 @@ $title = metadata('item', 'display_title');
 $itemFiles = $item->Files;
 $visualMedia = array();
 $otherFiles = array();
-foreach ($itemFiles as $itemFile) {
-    $mimeType = $itemFile->mime_type;
-    if ((strpos($mimeType, 'image') !== false) || (strpos($mimeType, 'video') !== false)) {
-        $visualMedia[] = $itemFile;
-    } else {
-        $otherFiles[] = $itemFile;
-    }
-}
+$sortedMedia = bigpicture_sort_files($itemFiles);
+$visualMedia = (isset($sortedMedia['lightMedia'])) ? $sortedMedia['lightMedia'] : null;
+$otherMedia = (isset($sortedMedia['otherMedia'])) ? $sortedMedia['otherMedia'] : null;
 $hasVisualMedia = (count($visualMedia) > 0);
-$mediaFileViewer = get_theme_option('image_viewer');
 if ($hasVisualMedia) {
-    queue_js_file('items-show', 'js');
-    queue_css_file('lightslider.min');
-    queue_css_file('lightgallery.min');
-    queue_js_file('lightslider.min', 'js');
-    queue_js_file('lightgallery-all.min', 'js');
-    queue_js_string('
-        jQuery(document).ready(function() {
-            BigPicture.useLightslider(' . count($visualMedia) . ');
-        });
-    ');
+    queue_css_file('lightgallery.min', 'all', false, 'vendor/lightgallery/css');
+    queue_js_file('lightgallery.min', 'vendor/lightgallery/js');
+    queue_js_file('lg-thumbnail', 'vendor/lightgallery/js/plugins/thumbnail');
+    queue_js_file('lg-zoom', 'vendor/lightgallery/js/plugins/zoom');
+    queue_js_file('lg-video', 'vendor/lightgallery/js/plugins/video');
+    queue_js_file('lg-rotate', 'vendor/lightgallery/js/plugins/rotate');
+    queue_js_file('lg-hash', 'vendor/lightgallery/js/plugins/hash');
+    queue_js_file('lg-itemfiles-config', 'js');
 }
 echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasVisualMedia) ? ' gallery' : '')));
 ?>
 
 <div class="flex">
-<!-- The following returns all of the files associated with an item. -->
+
 <?php if ($hasVisualMedia): ?>
-    <ul id="itemfiles" <?php echo (count($visualMedia) == 1) ? 'class="solo"' : ''; ?>>
-        <?php $visualMediaCount = 0; ?>
-        <?php foreach ($visualMedia as $mediaFile): ?> 
-        <?php $visualMediaCount++; ?>
-        <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($mediaFile) : $mediaFile->getWebPath('original'); ?>
-	<?php $squareThumbnail = bigpicture_get_square_thumbnail_url($mediaFile, $this); ?>
-        <?php if (strpos($mediaFile->mime_type, 'image') !== false): ?>
-            <li 
-                data-src="<?php echo $mediaFile->getWebPath('original'); ?>" 
-                data-thumb="<?php echo $squareThumbnail; ?>" 
-                data-sub-html=".media-link"
-                class="media resource"
-            >
-                <div class="media-render">
-                <?php echo file_image('original', array(), $mediaFile); ?>
-                </div>
-                <div class="media-link">
-                <a href="<?php echo $fileUrl; ?>"><?php echo metadata($mediaFile, 'rich_title', array('no_escape' => true)); ?></a>
-                </div>
-            </li>
-        <?php else: ?>
-            <li 
-                data-thumb="<?php echo $squareThumbnail; ?>" 
-                data-html="#video-<?php echo $visualMediaCount; ?>"
-                data-sub-html=".media-link" 
-                class="media resource"
-            >
-                <div style="display: none;" id="video-<?php echo $visualMediaCount; ?>">
-                    <?php $tracksPresent = bigpicture_check_for_tracks($otherFiles); ?>
-                    <video class="lg-video-object lg-html5" controls preload="none" <?php echo ($tracksPresent) ? 'crossorigin="anonymous"' : ''; ?>>
-                        <source src="<?php echo file_display_url($mediaFile, 'original'); ?>" type="<?php echo $mediaFile->mime_type; ?>">
-                        <?php echo __('Your browser does not support HTML5 video.'); ?>
-                        <?php $mediaName = pathinfo($mediaFile->original_filename, PATHINFO_FILENAME); ?>
-                        <?php if ($tracksPresent): ?>
-                        <?php foreach ($otherFiles as $key => $otherFile): ?>
-                            <?php if ($otherFile->original_filename == "$mediaName.vtt"): ?>
-                                <?php echo bigpicture_output_text_track_file($otherFile); ?>
-                                <?php unset($otherFiles[$key]); ?>
-                            <?php endif; ?>
-                        <?php endforeach; ?>
-                        <?php endif; ?>
-                    </video>
-                </div>
-                <div class="media-render">
-                    <?php echo file_image('fullsize', array(), $mediaFile); ?>
-                </div>
-                <div class="media-link">
-                    <a href="<?php echo $fileUrl; ?>"><?php echo metadata($mediaFile, 'rich_title', array('no_escape' => true)); ?></a>
-                </div>
-            </li>
-        <?php endif; ?>
-        <?php endforeach; ?>
-    </ul>
+<?php echo bigpicture_output_lightgallery($visualMedia); ?>
 <?php endif; ?>
 
 <div class="item-metadata">
@@ -116,15 +56,15 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasVisualMe
     </div>
     <?php endif;?>
 
-    <?php if (count($otherFiles) > 0): ?>
-    <div id="other-media" class="element">
-        <h3><?php echo __('Files'); ?></h3>
-        <?php foreach ($otherFiles as $otherFile): ?>
-        <?php $fileUrl = ($linkToFileMetadata == '1') ? record_url($otherFile) : $otherFile->getWebPath('original'); ?>
-        <div class="element-text"><a href="<?php echo $fileUrl; ?>"><?php echo metadata($otherFile, 'rich_title', array('no_escape' => true)); ?> - <?php echo $otherFile->mime_type; ?></a></div>
-        <?php endforeach; ?>
-    </div>
-    <?php endif; ?>
+<?php if (count($otherFiles) > 0): ?>
+<div id="other-media" class="element">
+    <h3><?php echo __('Files'); ?></h3>
+    <?php foreach ($otherFiles as $nonImage): ?>
+    <?php $fileLink = ($linkToFileMetadata == '1') ? record_url($nonImage) : $nonImage->getWebPath('original'); ?>
+    <div class="element-text"><a href="<?php echo $fileLink; ?>"><?php echo metadata($nonImage, 'rich_title', array('no_escape' => true)); ?> - <?php echo $nonImage->mime_type; ?></a></div>
+    <?php endforeach; ?>
+</div>
+<?php endif; ?>
     
     <!-- The following prints a citation for this item. -->
     <div id="item-citation" class="element">

@@ -139,8 +139,9 @@ header {
     max-width: 100%;
 }
 
-.items.show div#itemfiles {
-    margin: (-1.5 * $spacing-l) (-$spacing-l) 0;
+.items.show #itemfiles {
+    margin: 0 (-1 * $spacing-l);
+    width: calc(100% + #{2 * $spacing-l});
 }
 
 .items.show #itemfiles-stage {
