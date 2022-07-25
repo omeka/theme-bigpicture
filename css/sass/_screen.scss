@@ -238,8 +238,8 @@ header {
     content: $lnr-cog;
 }
 
-#top-nav {
-    z-index: 10;
+.mm-listitem::after {
+    inset-inline-start: 0;
 }
 
 #search-container,

@@ -27,14 +27,14 @@
 
     <!-- Stylesheets -->
     <?php
-    queue_css_file(array('normalize','jquery.mmenu', 'jquery.mmenu.positioning','style'));
+    queue_css_file(array('normalize','mmenu','style'));
     queue_css_url('https://fonts.googleapis.com/css?family=Hind|Caudex:400,400i,700,700i');
     echo head_css();
     ?>
 
     <!-- JavaScripts -->
     <?php 
-    queue_js_file(array('jquery.mmenu.min','bigpicture'), 'js');
+    queue_js_file(array('mmenu','bigpicture'), 'js');
     echo head_js(); 
     ?>
 </head>

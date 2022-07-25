@@ -247,8 +247,8 @@ input[type=checkbox] {
     content: "";
   }
 
-  #top-nav {
-    z-index: 10;
+  .mm-listitem::after {
+    inset-inline-start: 0;
   }
 
   #search-container,
