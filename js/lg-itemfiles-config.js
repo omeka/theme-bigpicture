@@ -29,9 +29,7 @@
 
         inlineGallery.openGallery();
 
-        $(document).on('fullscreenchange.lg.global', function() {
-            console.log('fullscreen');
-        });
+        $('.lg-thumb-item img').attr('alt', '');
     });
 })(jQuery)
 
