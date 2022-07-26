@@ -897,7 +897,6 @@ input[type=checkbox] {
   }
 
   .pagination-nav {
-    color: #999;
     margin-left: 42px;
     float: right;
   }
@@ -1024,7 +1023,7 @@ input[type=checkbox] {
   .browse.collections .record-meta:before,
 .browse.exhibits .record-meta:before {
     content: "";
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     top: 0;
     right: 0;
@@ -1043,13 +1042,18 @@ input[type=checkbox] {
     display: flex;
     align-items: center;
     align-content: center;
-    background-color: #eee;
+    background-color: #a2a2a2;
   }
 
   .browse .record h2 {
     margin: 0;
     position: relative;
     font-size: 24.5px;
+  }
+  .browse .record h2 a {
+    display: inline-block;
+    padding: 5.25px 10.5px;
+    background-color: #000;
   }
 
   .browse .record .image {

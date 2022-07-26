@@ -876,7 +876,6 @@ ul.item-pagination.navigation {
 }
 
 .pagination-nav {
-    color: #999;
     margin-left: 2 * $spacing-l;
     float: right;
 }
@@ -996,7 +995,7 @@ font-size: 240%;
 .browse.collections .record-meta:before,
 .browse.exhibits .record-meta:before {
     content: "";
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0,0,0,.6);
     position: absolute;
     top: 0;
     right: 0;
@@ -1016,13 +1015,19 @@ font-size: 240%;
     display: flex;
     align-items: center;
     align-content: center;
-    background-color: $border-gray;
+    background-color: darken($border-gray, 30%);
 }
 
 .browse .record h2 {
     margin: 0;
     position: relative;
     font-size: 1.75 * $base-font-size;
+
+    a {
+        display: inline-block;
+        padding: $spacing-s $spacing-m;
+        background-color: #000;
+    }
 }
 
 .browse .record .image{
