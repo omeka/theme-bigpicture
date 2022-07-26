@@ -1133,6 +1133,7 @@ font-size: 240%;
     position: relative;
     width: 70%;
     margin: auto;
+    padding: (2* $spacing-l) $spacing-l;
 
     &:before {
         content: "";
@@ -1147,7 +1148,9 @@ font-size: 240%;
     h1 {
         position: relative;
         z-index: 1;
-        padding: (2* $spacing-l) $spacing-l;
+        background-color: #000;
+        display: inline-block;
+        padding: $spacing-s $spacing-m;
     }
 }
 

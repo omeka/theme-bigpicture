@@ -1154,6 +1154,7 @@ input[type=checkbox] {
     position: relative;
     width: 70%;
     margin: auto;
+    padding: 42px 21px;
   }
   .exhibits.summary .summary-header:before {
     content: "";
@@ -1167,7 +1168,9 @@ input[type=checkbox] {
   .exhibits.summary .summary-header h1 {
     position: relative;
     z-index: 1;
-    padding: 42px 21px;
+    background-color: #000;
+    display: inline-block;
+    padding: 5.25px 10.5px;
   }
 
   .exhibits.show #content > h1 {
