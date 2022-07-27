@@ -3,32 +3,27 @@ $featuredHtml = bigpicture_featured_html();
 if ($featuredHtml !== '') {
     queue_css_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css');
     queue_js_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js');
-    queue_js_string('
-        jQuery(document).ready(function(){
-          jQuery("#featured").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            arrows: false,
-            centerMode: true,
-            fade: true,
-            dots: false
-          });
-        });
-    ');
+    queue_js_file(array('slick-home-featured'), 'js');
 }
 ?>
 
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<div id="featured"><?php echo bigpicture_featured_html(); ?></div>
-
-<div id="intro">
-    <?php if (get_theme_option('Homepage Text')): ?>
-    <?php echo get_theme_option('Homepage Text'); ?>
-    <?php endif; ?>
+<div id="featured">
+    <div id="featured-slides">
+        <?php echo bigpicture_featured_html(); ?>
+    </div>
+    <div id="featured-controls">
+        <button type="button" class="slick-pause active" aria-label="<?php echo __("Pause slides"); ?>">
+        <button type="button" class="slick-play" aria-label="<?php echo __("Play slides"); ?>">
+    </div>
 </div>
+
+<?php if (get_theme_option('Homepage Text')): ?>
+<div id="intro">
+    <?php echo get_theme_option('Homepage Text'); ?>
+</div>
+<?php endif; ?>
 
 <?php
 $recentItems = get_theme_option('Homepage Recent Items');
