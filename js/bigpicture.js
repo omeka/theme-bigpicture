@@ -1,5 +1,9 @@
 (function($) {
     $(document).ready(function() {
+        $('.menu-toggle').click(function() {
+            $('#top-nav').focus();
+        });
+
         $('.search-toggle').click(function() {
             $('#search-form').toggleClass('closed').toggleClass('open');
             if ($('#search-form').hasClass('open')) {
