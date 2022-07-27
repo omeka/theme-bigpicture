@@ -1233,7 +1233,7 @@ input[type=checkbox] {
 
   .exhibit-item-caption {
     font-size: 12.25px;
-    margin-bottom: 42px !important;
+    margin-bottom: 42px;
   }
 
   #exhibit-page-navigation #exhibit-nav-prev,
