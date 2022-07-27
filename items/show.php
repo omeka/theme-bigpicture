@@ -7,7 +7,7 @@ $otherFiles = array();
 $sortedMedia = bigpicture_sort_files($itemFiles);
 $visualMedia = (isset($sortedMedia['lightMedia'])) ? $sortedMedia['lightMedia'] : null;
 $otherMedia = (isset($sortedMedia['otherMedia'])) ? $sortedMedia['otherMedia'] : null;
-$hasVisualMedia = (count($visualMedia) > 0);
+$hasVisualMedia = (isset($visualMedia) && (count($visualMedia) > 0));
 if ($hasVisualMedia) {
     queue_css_file('lightgallery.min', 'all', false, 'vendor/lightgallery/css');
     queue_js_file('lightgallery.min', 'vendor/lightgallery/js');
