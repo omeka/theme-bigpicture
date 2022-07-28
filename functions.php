@@ -129,7 +129,7 @@ function bigpicture_output_lightgallery($files = null) {
         } else {
             $html .=  '<div data-src="' . $source . '" ' . $mediaCaptionAttribute . 'data-thumb="' . html_escape(metadata($media, 'thumbnail_uri')) . '" data-download-url="' . $source . '" class="media resource">';
         }
-        $html .= file_markup($media);
+        $html .= file_markup($media, array('linkAttributes' => array('tabindex' => '-1')));
         $html .= '</div>';
     }
     $html .= '</div>';
