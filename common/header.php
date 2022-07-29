@@ -49,7 +49,7 @@
 
             <?php echo theme_header_image(); ?>
 
-            <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
+            <div id="site-title"><?php echo link_to_home_page(theme_logo(), array('title' => __('Return to home page'))); ?></div>
             
             <a href="#" class="search-toggle" aria-label="<?php echo __('Search'); ?>"></a>
             <div id="search-container">
