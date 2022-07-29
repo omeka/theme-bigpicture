@@ -21,6 +21,7 @@
             }
             $('#featured-controls button').addClass('active');
             activeButton.removeClass('active');
+            $('#featured-controls button.active').focus();
         });
 
         var listboxTitle = $('#featured').data('listbox-title');
