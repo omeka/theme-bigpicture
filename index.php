@@ -9,7 +9,7 @@ if ($featuredHtml !== '') {
 
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<div id="featured">
+<div id="featured" data-listbox-title="<?php echo __('Featured'); ?>">
     <div id="featured-slides">
         <?php echo bigpicture_featured_html(); ?>
     </div>

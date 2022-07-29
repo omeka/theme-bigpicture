@@ -22,5 +22,8 @@
             $('#featured-controls button').addClass('active');
             activeButton.removeClass('active');
         });
+
+        var listboxTitle = $('#featured').data('listbox-title');
+        $('.slick-track').attr('title', listboxTitle);
     });
  })(jQuery);
