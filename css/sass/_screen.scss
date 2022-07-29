@@ -611,10 +611,6 @@ footer {
     margin-top: calc(-41px - #{3.5 * $spacing-l});
 }
 
-.items.show .flex {
-    background: #333;
-}
-
 .items.show div#itemfiles,
 .items.show .lSSlideOuter {
     width: 75%;
@@ -705,11 +701,6 @@ footer {
     font-weight: 900;
     font-size: 18px;
     vertical-align: top;
-}
-
-.items.show .item-metadata {
-    background: #fff;
-    width: 100%;
 }
 
 .items.show.gallery .item-metadata {
@@ -904,10 +895,6 @@ ul.item-pagination.navigation {
 
 #sort-links-list li {
     margin-right: $spacing-l;
-}
-
-#sort-links-list li a {
-    opacity: .6;
 }
 
 #sort-links-list li a:before {
