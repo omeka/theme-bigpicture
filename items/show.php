@@ -10,6 +10,7 @@ $otherMedia = (isset($sortedMedia['otherMedia'])) ? $sortedMedia['otherMedia'] :
 $hasVisualMedia = (isset($visualMedia) && (count($visualMedia) > 0));
 if ($hasVisualMedia) {
     queue_css_file('lightgallery.min', 'all', false, 'vendor/lightgallery/css');
+    queue_css_file('iconfonts');
     queue_js_file('lightgallery.min', 'vendor/lightgallery/js');
     queue_js_file('lg-thumbnail', 'vendor/lightgallery/js/plugins/thumbnail');
     queue_js_file('lg-zoom', 'vendor/lightgallery/js/plugins/zoom');

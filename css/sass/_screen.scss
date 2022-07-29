@@ -110,6 +110,11 @@ input[type="month"]  {
     border: 1px solid darken($border-gray, 25%);
     padding: $spacing-s;
     vertical-align: bottom;
+    height: 1.5 * $spacing-l;
+}
+
+textarea {
+    height: auto;
 }
 
 .button,
@@ -689,6 +694,19 @@ footer {
     color: #fff;
 }
 
+.lg-container button:focus,
+.lg-container .lg-download:focus {
+    box-shadow: 0 0 0 1px #fff;
+}
+
+.o-icon-undo:after {
+    content: "\f78c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    vertical-align: top;
+}
+
 .items.show .item-metadata {
     background: #fff;
     width: 100%;
@@ -768,10 +786,17 @@ ul.item-pagination.navigation {
 
 .search-entry > * {
     margin-top: 0;
+    padding-right: $spacing-s;
 }
 
 .search-entry select {
-    margin-right: $spacing-s;
+    margin: 0 $spacing-s $spacing-s 0;
+    width: 100%;
+}
+
+.search-entry input[type="text"] {
+    margin-bottom: $spacing-s;
+    width: 100%;
 }
 
 .add_search {
