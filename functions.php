@@ -83,7 +83,7 @@ function bigpicture_sort_files($files = null) {
 }
 
 function bigpicture_output_lightgallery($files = null) {
-    $html = '<div id="itemfiles" class="media-list">';
+    $html = '<div id="itemfiles" class="media-list" data-dialog-title="' . __('Media') . '">';
     $mediaCaption = get_theme_option('media_caption');
 
     foreach ($files as $file) {

@@ -30,6 +30,9 @@
         inlineGallery.openGallery();
 
         $('.lg-thumb-item img').attr('alt', '');
+
+        var dialogTitle = $('#itemfiles').data('dialog-title');
+        $('#itemfiles .lg-container').first().attr('aria-label', dialogTitle);
     });
 })(jQuery)
 
