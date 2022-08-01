@@ -688,7 +688,9 @@ input[type=checkbox] {
   }
 
   .lg-counter,
-.lg-video-object {
+.lg-video-object,
+.lg-toolbar .lg-icon,
+.lg-icon {
     color: #fff;
   }
 
