@@ -193,6 +193,22 @@ input[type=checkbox] {
 
   /* @end */
   /* @group ----- Header ----- */
+  #skipnav {
+    text-align: center;
+    display: block;
+    padding: 5.25px;
+    border: 2px solid #0076df;
+  }
+
+  #skipnav:not(:focus) {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
   #admin-bar {
     z-index: 9999;
     position: relative;

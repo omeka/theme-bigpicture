@@ -189,6 +189,22 @@ a.image img {
 
 /* @group ----- Header ----- */
 
+#skipnav {
+    text-align: center;
+    display: block;
+    padding: $spacing-s;
+    border: 2px solid $blue;
+}
+
+#skipnav:not(:focus) {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
 #admin-bar {
     z-index: 9999;
     position: relative;
