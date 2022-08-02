@@ -22,7 +22,8 @@
             }
             $('#featured-controls button').addClass('active');
             activeButton.removeClass('active');
-            $('#featured-controls button.active').focus();
+            $('#featured-controls .slick-status').toggleClass('active');
+            $('#featured-controls .slick-status.active').focus();
         });
 
         var listboxTitle = $('#featured').data('listbox-title');

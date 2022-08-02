@@ -486,6 +486,9 @@ input[type=checkbox] {
     right: 21px;
     z-index: 999;
   }
+  #featured-controls .slick-status:not(.active) {
+    display: none;
+  }
   #featured-controls button {
     -webkit-appearance: none;
             appearance: none;

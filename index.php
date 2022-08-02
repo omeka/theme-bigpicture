@@ -12,6 +12,8 @@ if ($featuredHtml !== '') {
 
 <div id="featured" data-listbox-title="<?php echo __('Featured'); ?>" data-play-speed="<?php echo ($playSpeed) ? $playSpeed : '5000'; ?>">
     <div id="featured-controls">
+        <div class="sr-only slick-status active" role="status" tabindex="-1"><?php echo __('Featured carousel slider is playing.'); ?></div>
+        <div class="sr-only slick-status" role="status" tabindex="-1"><?php echo __('Featured carousel slider is stopped.'); ?></div>
         <button type="button" class="slick-pause active" aria-label="<?php echo __("Pause featured slides"); ?>">
         <button type="button" class="slick-play" aria-label="<?php echo __("Play featured slides"); ?>">
     </div>
