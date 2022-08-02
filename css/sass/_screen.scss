@@ -2,6 +2,15 @@
     box-sizing: border-box;
 }
 
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
 html {
     font-family: $body-font;
     font-weight: 400;
@@ -424,15 +433,16 @@ footer {
     }
 }
 
-#featured h3 {
+#featured .resource-title {
     margin-bottom: $spacing-m;
     padding-bottom: $spacing-m - 1px;
     font-size: 2 * $base-font-size;
     line-height: 2 * $base-line-height;
+    font-family: $heading-font;
     text-transform: none;
     width: 100%;
 
-    &:not(:only-child) {
+    &:not(:last-child) {
         border-bottom: 1px solid #fff;
     }
 }
@@ -443,7 +453,7 @@ footer {
 
 #featured-controls {
     position: absolute;
-    bottom: $spacing-l;
+    top: $spacing-l;
     right: $spacing-l;
     z-index: 999;
 

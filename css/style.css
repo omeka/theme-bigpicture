@@ -11,6 +11,15 @@
     box-sizing: border-box;
   }
 
+  .sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
   html {
     font-family: "Hind", sans-serif;
     font-weight: 400;
@@ -438,15 +447,16 @@ input[type=checkbox] {
     z-index: 2;
   }
 
-  #featured h3 {
+  #featured .resource-title {
     margin-bottom: 10.5px;
     padding-bottom: 9.5px;
     font-size: 28px;
     line-height: 42px;
+    font-family: "Caudex", serif;
     text-transform: none;
     width: 100%;
   }
-  #featured h3:not(:only-child) {
+  #featured .resource-title:not(:last-child) {
     border-bottom: 1px solid #fff;
   }
 
@@ -456,7 +466,7 @@ input[type=checkbox] {
 
   #featured-controls {
     position: absolute;
-    bottom: 21px;
+    top: 21px;
     right: 21px;
     z-index: 999;
   }

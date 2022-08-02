@@ -1,5 +1,6 @@
 <?php
 $featuredHtml = bigpicture_featured_html();
+$playSpeed = get_theme_option('homepage_play_speed');
 if ($featuredHtml !== '') {
     queue_css_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css');
     queue_js_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js');
@@ -9,13 +10,13 @@ if ($featuredHtml !== '') {
 
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<div id="featured" data-listbox-title="<?php echo __('Featured'); ?>">
+<div id="featured" data-listbox-title="<?php echo __('Featured'); ?>" data-play-speed="<?php echo ($playSpeed) ? $playSpeed : '5000'; ?>">
+    <div id="featured-controls">
+        <button type="button" class="slick-pause active" aria-label="<?php echo __("Pause featured slides"); ?>">
+        <button type="button" class="slick-play" aria-label="<?php echo __("Play featured slides"); ?>">
+    </div>
     <div id="featured-slides">
         <?php echo bigpicture_featured_html(); ?>
-    </div>
-    <div id="featured-controls">
-        <button type="button" class="slick-pause active" aria-label="<?php echo __("Pause slides"); ?>">
-        <button type="button" class="slick-play" aria-label="<?php echo __("Play slides"); ?>">
     </div>
 </div>
 

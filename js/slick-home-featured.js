@@ -1,10 +1,11 @@
 (function($) {
     $(document).ready(function(){
+        var playSpeed = $('#featured').data('play-speed');
         $("#featured-slides").slick({
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 4000,
+            autoplaySpeed: playSpeed,
             arrows: false,
             centerMode: true,
             fade: true,
