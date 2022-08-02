@@ -9,7 +9,7 @@
         ); ?>
         </div>
     <?php endif; ?>
-    <h3><?php echo link_to($item, 'show',  metadata($item, 'rich_title', array('no_escape' => true))); ?></h3>
+    <span class="resource-title"><?php echo link_to($item, 'show',  metadata($item, 'rich_title', array('no_escape' => true))); ?></span>
     <?php if ($creator = metadata($item, array('Dublin Core', 'Creator'))): ?>
     <span class="creator"><?php echo $creator; ?></span>
     <?php endif; ?>

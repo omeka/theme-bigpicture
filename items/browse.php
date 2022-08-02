@@ -45,7 +45,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
         </div>
         <?php endif; ?>
 
-        <h3><?php echo link_to_item(null, array('class'=>'permalink')); ?></h3>
+        <span class="resource-title"><?php echo link_to_item(null, array('class'=>'permalink')); ?></span>
 
         <?php if ($creator = metadata('item', array('Dublin Core', 'Creator'))): ?>
         <span class="creator"><?php echo $creator; ?></span>

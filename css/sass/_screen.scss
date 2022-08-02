@@ -539,16 +539,19 @@ footer {
     }
 }
 
-.records h3 {
-    margin-bottom: $spacing-m;
+.records h3,
+.records .resource-title {
+    margin: $spacing-m 0;
     font-size: 1.25 * $base-font-size;
+    font-family: $heading-font;
     text-transform: none;
     font-weight: 400;
     padding-bottom: $spacing-m - 1px;
     position: relative;
     width: 100%;
+    display: block;
 
-    &:after {
+    &:not(:last-child):after {
         content: "";
         position: absolute;
         bottom: 0;
