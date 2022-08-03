@@ -44,7 +44,7 @@
     <div id="wrap">
         <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
-        <header role="banner">
+        <header>
 
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
