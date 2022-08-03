@@ -81,7 +81,7 @@
     content: "";
     width: 50%;
     display: block;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #cecece;
     margin: auto;
   }
 
@@ -94,7 +94,7 @@
   }
 
   tr {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #cecece;
   }
 
   /* @group ----- Form ----- */
@@ -123,7 +123,7 @@ input[type=month] {
     line-height: 21px;
     font-size: 14px;
     border-radius: 0px;
-    border: 1px solid #aeaeae;
+    border: 1px solid #8e8e8e;
     padding: 5.25px;
     vertical-align: bottom;
     height: 31.5px;
@@ -136,7 +136,7 @@ input[type=month] {
   .button,
 button,
 [type=submit] {
-    background-color: #eee;
+    background-color: #cecece;
     border: 1px solid #ccc;
   }
 
@@ -216,7 +216,7 @@ input[type=checkbox] {
 
   header {
     padding: 21px 21px 20px 21px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #cecece;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -291,7 +291,7 @@ input[type=checkbox] {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #cecece;
   }
 
   #search-container legend {
@@ -571,7 +571,7 @@ input[type=checkbox] {
     height: 1px;
     width: 50%;
     left: 25%;
-    background-color: #eee;
+    background-color: #cecece;
   }
 
   .records .item-meta {
@@ -644,7 +644,7 @@ input[type=checkbox] {
   .items.show.gallery #content {
     margin-top: -73.5px;
     min-height: 100vh;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #cecece;
   }
 
   .admin-bar.items.show.gallery #content {
@@ -766,7 +766,7 @@ input[type=checkbox] {
 
   .item-metadata nav {
     margin: 0 -21px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #cecece;
   }
 
   ul.item-pagination.navigation {
@@ -782,7 +782,7 @@ input[type=checkbox] {
     top: 0;
     left: 50%;
     width: 1px;
-    background-color: #eee;
+    background-color: #cecece;
     position: absolute;
   }
   ul.item-pagination.navigation a {
@@ -874,7 +874,7 @@ input[type=checkbox] {
 
   #item-filters > ul > li,
 #search-filters > ul > li {
-    background-color: #eee;
+    background-color: #cecece;
     padding: 5.25px;
     font-family: "Caudex", serif;
     text-transform: uppercase;
@@ -1036,14 +1036,18 @@ input[type=checkbox] {
   }
 
   .pagination input[type=text] {
-    border: 0;
-    border-bottom: 1px solid #eee;
+    border: 1px solid #cecece;
     width: 31.5px;
     text-align: right;
     color: #555;
-    padding: 0;
+    padding: 0 10.5px;
     line-height: 21px;
-    margin: 0;
+    margin: 0 5.25px 0 0;
+  }
+
+  .page-input form {
+    display: flex;
+    align-items: center;
   }
 
   .browse .records {
@@ -1062,7 +1066,7 @@ input[type=checkbox] {
   }
 
   .hTagcloud li {
-    background-color: #eee;
+    background-color: #cecece;
     padding: 5.25px;
     margin: 0 5.25px 5.25px 0;
     list-style-type: none;
@@ -1146,7 +1150,7 @@ input[type=checkbox] {
     display: flex;
     align-items: center;
     align-content: center;
-    background-color: #a2a2a2;
+    background-color: #828282;
   }
 
   .browse .record h2 {
@@ -1196,14 +1200,14 @@ input[type=checkbox] {
   /* @group ----- Collections/Show ----- */
   .items.browse .flex,
 .collections.show .flex {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #cecece;
     margin: 0 -21px;
   }
 
   .collection-meta {
     width: 25%;
     order: 2;
-    border-left: 1px solid #eee;
+    border-left: 1px solid #cecece;
     padding: 0 21px;
     margin-left: 21px;
   }
@@ -1238,7 +1242,7 @@ input[type=checkbox] {
     content: "";
     width: 50%;
     margin: auto;
-    border-top: 1px solid #eee;
+    border-top: 1px solid #cecece;
     display: block;
     padding-bottom: 20px;
   }
@@ -1311,7 +1315,7 @@ input[type=checkbox] {
 
   .exhibit-items .download-file {
     text-align: center;
-    background-color: #eee;
+    background-color: #cecece;
   }
   .exhibit-items .download-file:last-child {
     margin-bottom: 42px;
@@ -1319,7 +1323,7 @@ input[type=checkbox] {
 
   .exhibit-items .download-file + .download-file {
     text-align: center;
-    background-color: #eee;
+    background-color: #cecece;
     margin-top: 21px;
   }
 
@@ -1347,8 +1351,8 @@ input[type=checkbox] {
     transform: translateY(-50%);
     width: 10%;
     font-family: "Caudex", serif;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
     padding: 20px 0;
     text-align: center;
     opacity: 0.6;
@@ -1390,7 +1394,7 @@ input[type=checkbox] {
     font-weight: 400;
     text-align: center;
     font-size: 17.5px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #cecece;
     padding-bottom: 20px;
   }
 
@@ -1426,7 +1430,7 @@ input[type=checkbox] {
   }
 
   #geolocation-browse #map-links li {
-    background-color: #eee;
+    background-color: #cecece;
   }
 
   /* @end */
@@ -1465,8 +1469,8 @@ input[type=checkbox] {
 .pagination-nav {
     width: 50%;
     margin: 10.5px 0;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
     height: 42px;
   }
   #sort-links:only-child,
@@ -1624,7 +1628,7 @@ input[type=checkbox] {
     text-transform: uppercase;
     font-family: "Caudex", serif;
     padding: 9.5px 0;
-    border: solid #eee;
+    border: solid #cecece;
     border-width: 1px 0;
   }
   .collection-meta .mobile-toggle:after {
@@ -1685,8 +1689,8 @@ input[type=checkbox] {
   /* @group ----- Exhibits/Page ----- */
   #exhibit-page-navigation {
     display: flex;
-    border-top: 1px solid #eee;
-    border-bottom: 1px solid #eee;
+    border-top: 1px solid #cecece;
+    border-bottom: 1px solid #cecece;
   }
 
   #exhibit-page-navigation #exhibit-nav-prev,
@@ -1710,8 +1714,8 @@ input[type=checkbox] {
   #exhibit-page-navigation #exhibit-nav-up {
     order: 2;
     padding: 9.5px 0;
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
+    border-left: 1px solid #cecece;
+    border-right: 1px solid #cecece;
     display: flex;
     align-items: center;
     justify-content: center;

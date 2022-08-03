@@ -892,6 +892,7 @@ ul.item-pagination.navigation {
     align-items: center;
 }
 
+
 .items-nav {
     max-width: 50%;
     float: left;
@@ -1002,14 +1003,18 @@ ul.pagination {
 }
 
 .pagination input[type="text"] {
-    border: 0;
-    border-bottom: 1px solid $border-gray;
+    border: 1px solid $border-gray;
     width: 1.5 * $spacing-l;
     text-align: right;
     color: #555;
-    padding: 0;
+    padding: 0 $spacing-m;
     line-height: $base-line-height;
-    margin: 0;
+    margin: 0 $spacing-s 0 0;
+}
+
+.page-input form {
+    display: flex;
+    align-items: center;
 }
 
 .browse .records {
