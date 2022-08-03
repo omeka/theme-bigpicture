@@ -14,8 +14,8 @@ if ($featuredHtml !== '') {
     <div id="featured-controls">
         <div class="sr-only slick-status active" role="status" tabindex="-1"><?php echo __('Featured carousel slider is playing.'); ?></div>
         <div class="sr-only slick-status" role="status" tabindex="-1"><?php echo __('Featured carousel slider is stopped.'); ?></div>
-        <button type="button" class="slick-pause active" aria-label="<?php echo __("Pause featured slides"); ?>">
-        <button type="button" class="slick-play" aria-label="<?php echo __("Play featured slides"); ?>">
+        <button type="button" class="slick-pause active" aria-label="<?php echo __("Pause featured slides"); ?>"></button>
+        <button type="button" class="slick-play" aria-label="<?php echo __("Play featured slides"); ?>"></button>
     </div>
     <div id="featured-slides">
         <?php echo bigpicture_featured_html(); ?>
