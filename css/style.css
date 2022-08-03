@@ -912,7 +912,8 @@ input[type=checkbox] {
 
   .browse-header li,
 .items-nav li,
-#sort-links-list {
+#sort-links-list,
+.sort-links-list {
     display: inline-block;
   }
 
@@ -927,17 +928,20 @@ input[type=checkbox] {
     margin-right: auto;
   }
 
-  #sort-links-list {
+  #sort-links-list,
+.sort-links-list {
     list-style-type: none;
     padding-left: 0;
     margin-left: 10.5px;
   }
 
-  #sort-links-list li {
+  #sort-links-list li,
+.sort-links-list li {
     margin-right: 21px;
   }
 
-  #sort-links-list li a:before {
+  #sort-links-list li a:before,
+.sort-links-list li a:before {
     font-family: "Linearicons-Free";
     speak: none;
     font-style: normal;
@@ -952,24 +956,29 @@ input[type=checkbox] {
     margin-right: 5.25px;
   }
 
-  #sort-links-list li:first-child a:before {
+  #sort-links-list li:first-child a:before,
+.sort-links-list li:first-child a:before {
     content: "";
   }
 
-  #sort-links-list li:nth-child(2) a:before {
+  #sort-links-list li:nth-child(2) a:before,
+.sort-links-list li:nth-child(2) a:before {
     content: "";
   }
 
-  #sort-links-list li:nth-child(3) a:before {
+  #sort-links-list li:nth-child(3) a:before,
+.sort-links-list li:nth-child(3) a:before {
     content: "";
   }
 
-  #sort-links-list .sorting a {
+  #sort-links-list .sorting a,
+.sort-links-list .sorting a {
     font-weight: bold;
     opacity: 1;
   }
 
-  #sort-links-list .sorting a:after {
+  #sort-links-list .sorting a span:after,
+.sort-links-list .sorting a span:after {
     font-family: "Linearicons-Free";
     speak: none;
     font-style: normal;
@@ -986,7 +995,8 @@ input[type=checkbox] {
     display: inline-block;
   }
 
-  #sort-links-list .sorting.desc a:after {
+  #sort-links-list .sorting.desc a:after,
+.sort-links-list .sorting.desc a:after {
     transform: scaleY(-1);
   }
 

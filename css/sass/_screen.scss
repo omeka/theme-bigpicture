@@ -904,8 +904,8 @@ ul.item-pagination.navigation {
 
 .browse-header li,
 .items-nav li,
-#sort-links-list 
- {
+#sort-links-list,
+.sort-links-list {
     display: inline-block;
 }
 
@@ -921,40 +921,48 @@ ul.item-pagination.navigation {
     margin-right: auto;
 }
 
-#sort-links-list {
+#sort-links-list,
+.sort-links-list {
     list-style-type: none;
     padding-left: 0;
     margin-left: $spacing-m;
 }
 
-#sort-links-list li {
+#sort-links-list li,
+.sort-links-list li {
     margin-right: $spacing-l;
 }
 
-#sort-links-list li a:before {
+#sort-links-list li a:before,
+.sort-links-list li a:before {
     @include lnr;
     display: inline-block;
     margin-right: $spacing-s;
 }
 
-#sort-links-list li:first-child a:before {
+#sort-links-list li:first-child a:before,
+.sort-links-list li:first-child a:before {
     content: $lnr-book;
 }
 
-#sort-links-list li:nth-child(2) a:before {
+#sort-links-list li:nth-child(2) a:before,
+.sort-links-list li:nth-child(2) a:before {
     content: $lnr-user;
 }
 
-#sort-links-list li:nth-child(3) a:before {
+#sort-links-list li:nth-child(3) a:before,
+.sort-links-list li:nth-child(3) a:before {
     content: $lnr-calendar-full;
 }
 
-#sort-links-list .sorting a {
+#sort-links-list .sorting a,
+.sort-links-list .sorting a {
     font-weight: bold;
     opacity: 1;
 }
 
-#sort-links-list .sorting a:after {
+#sort-links-list .sorting a span:after,
+.sort-links-list .sorting a span:after {
     @include lnr;
     content: $lnr-sort-amount-asc;
     margin-left: $spacing-s;
@@ -962,7 +970,8 @@ ul.item-pagination.navigation {
     display: inline-block;
 }
 
-#sort-links-list .sorting.desc a:after {
+#sort-links-list .sorting.desc a:after,
+.sort-links-list .sorting.desc a:after {
     transform: scaleY(-1);
 }
 

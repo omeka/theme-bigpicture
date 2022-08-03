@@ -25,7 +25,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
     $sortLinks[__('Creator')] = 'Dublin Core,Creator';
     $sortLinks[__('Date Added')] = 'added';
     ?>
-    <div id="sort-links">
+    <div class="sort-links">
         <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
 
@@ -68,7 +68,7 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
     $sortLinks[__('Creator')] = 'Dublin Core,Creator';
     $sortLinks[__('Date Added')] = 'added';
     ?>
-    <div id="sort-links">
+    <div class="sort-links">
         <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
     </div>
 
