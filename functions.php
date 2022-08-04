@@ -60,7 +60,7 @@ function bigpicture_sort_files($files = null) {
         if (in_array($mediaType, $whitelist)) {
             $sortedMedia['lightMedia'][$mediaCount]['media'] = $media;
             if (strpos($mediaType,'video') !== false) {
-                $html5videos[$mediaCount] = pathinfo($media->filename, PATHINFO_FILENAME);
+                $html5videos[$mediaCount] = pathinfo($media->original_filename, PATHINFO_FILENAME);
                 $sortedMedia['lightMedia'][$mediaCount]['tracks'] = [];
             }
             $mediaCount++;
@@ -71,7 +71,7 @@ function bigpicture_sort_files($files = null) {
     if ((count($html5videos) > 0) && isset($sortedMedia['otherMedia'])) {
         foreach ($html5videos as $fileId => $filename) {
             foreach ($sortedMedia['otherMedia'] as $key => $otherMedia) {
-                if ($otherMedia->filename == "$filename.vtt") {
+                if ($otherMedia->original_filename == "$filename.vtt") {
                     $sortedMedia['lightMedia'][$fileId]['tracks'][] = $otherMedia;
                     unset($sortedMedia['otherMedia'][$key]);
                 }
@@ -83,7 +83,7 @@ function bigpicture_sort_files($files = null) {
 }
 
 function bigpicture_output_lightgallery($files = null) {
-    $html = '<div id="itemfiles" class="media-list" data-dialog-title="' . __('Media') . '">';
+    $html = '<div id="itemfiles" class="media-list" data-dialog-title="' . __('Media') . '" data-track-test="' . count($files) . '">';
     $mediaCaption = get_theme_option('media_caption');
 
     foreach ($files as $file) {
@@ -113,8 +113,8 @@ function bigpicture_output_lightgallery($files = null) {
             if (isset($file['tracks'])) {
                 foreach ($file['tracks'] as $key => $track) {
                     $label = metadata($track, 'display_title');
-                    $srclang = (metadata($track, 'dcterms:language')) ? metadata($track, 'dcterms:language') : '';
-                    $type = (metadata($track, 'dcterms:type')) ? metadata($track, 'dcterms:type') : 'captions';
+                    $srclang = (metadata($track, array('Dublin Core', 'Language'))) ? metadata($track, array('Dublin Core', 'Language')) : '';
+                    $type = (metadata($track, array('Dublin Core', 'Type'))) ? metadata($track, array('Dublin Core', 'Type')) : 'captions';
                     $videoSrcObject['tracks'][$key]['src'] = $track->getWebPath();
                     $videoSrcObject['tracks'][$key]['label'] = $label;
                     $videoSrcObject['tracks'][$key]['srclang'] = $srclang;
@@ -123,7 +123,7 @@ function bigpicture_output_lightgallery($files = null) {
             }
             $videoSrcJson = json_encode($videoSrcObject);
             $videoThumbnail = ($media->hasThumbnail()) ? metadata($media, 'thumbnail_uri') : img('fallback-video.png');
-            $html .=  '<div data-video="' . html_escape($videoSrcJson) . '" ' . $mediaCaptionAttribute . 'data-thumb="' . html_escape($videoThumbnail) . '" data-download-url="' . $source . '" class="media resource">';
+            $html .=  '<div data-video="' . html_escape($videoSrcJson) . '" ' . $mediaCaptionAttribute . 'data-thumb="' . html_escape($videoThumbnail) . '" data-download-url="' . $source . '" class="media resource" data-track-count="' . count($file['tracks']) . '">';
         } else if ($mediaType == 'application/pdf') {
             $html .=  '<div data-iframe="' . html_escape($source) . '" '. $mediaCaptionAttribute . 'data-src="' . $source . '" data-thumb="' . html_escape(metadata($media, 'thumbnail_uri')) . '" data-download-url="' . $source . '" class="media resource">';
         } else {
