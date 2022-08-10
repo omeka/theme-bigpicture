@@ -651,8 +651,7 @@ input[type=checkbox] {
     margin-top: calc(-41px - 73.5px);
   }
 
-  .items.show div#itemfiles,
-.items.show .lSSlideOuter {
+  .items.show div#itemfiles {
     width: 75%;
     height: 100%;
     position: relative;
@@ -677,7 +676,7 @@ input[type=checkbox] {
     height: 100%;
   }
 
-  .items.show .lSSlideOuter .media-link {
+  #itemfiles > .media.resource {
     display: none;
   }
 

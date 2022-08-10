@@ -644,8 +644,7 @@ footer {
     margin-top: calc(-41px - #{3.5 * $spacing-l});
 }
 
-.items.show div#itemfiles,
-.items.show .lSSlideOuter {
+.items.show div#itemfiles {
     width: 75%;
     height: 100%;
     position: relative;
@@ -670,7 +669,7 @@ footer {
     height: 100%;
 }
 
-.items.show .lSSlideOuter .media-link {
+#itemfiles > .media.resource {
     display: none;
 }
 
