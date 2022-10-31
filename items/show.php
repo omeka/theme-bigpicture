@@ -2,31 +2,14 @@
 $linkToFileMetadata = get_option('link_to_file_metadata');
 $title = metadata('item', 'display_title');
 $itemFiles = $item->Files;
-$visualMedia = array();
-$otherFiles = array();
-$sortedMedia = bigpicture_sort_files($itemFiles);
-$visualMedia = (isset($sortedMedia['lightMedia'])) ? $sortedMedia['lightMedia'] : null;
-$otherMedia = (isset($sortedMedia['otherMedia'])) ? $sortedMedia['otherMedia'] : null;
-$hasVisualMedia = (isset($visualMedia) && (count($visualMedia) > 0));
-if ($hasVisualMedia) {
-    queue_css_file('lightgallery.min', 'all', false, 'vendor/lightgallery/css');
-    queue_css_file('iconfonts');
-    queue_js_file('lightgallery.min', 'vendor/lightgallery/js');
-    queue_js_file('lg-thumbnail', 'vendor/lightgallery/js/plugins/thumbnail');
-    queue_js_file('lg-zoom', 'vendor/lightgallery/js/plugins/zoom');
-    queue_js_file('lg-video', 'vendor/lightgallery/js/plugins/video');
-    queue_js_file('lg-rotate', 'vendor/lightgallery/js/plugins/rotate');
-    queue_js_file('lg-hash', 'vendor/lightgallery/js/plugins/hash');
-    queue_js_file('lg-itemfiles-config', 'js');
-}
-echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasVisualMedia) ? ' gallery' : '')));
+$lightGallery = $this->lightgallery($itemFiles);
+queue_lightgallery_assets();
+echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($lightGallery !== '') ? ' gallery' : '')));
 ?>
 
 <div class="flex">
 
-<?php if ($hasVisualMedia): ?>
-<?php echo bigpicture_output_lightgallery($visualMedia); ?>
-<?php endif; ?>
+<?php echo $lightGallery; ?>
 
 <div class="item-metadata">
     <nav>
@@ -57,16 +40,8 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($hasVisualMe
     </div>
     <?php endif;?>
 
-<?php if (count($otherFiles) > 0): ?>
-<div id="other-media" class="element">
-    <h3><?php echo __('Files'); ?></h3>
-    <?php foreach ($otherFiles as $nonImage): ?>
-    <?php $fileLink = ($linkToFileMetadata == '1') ? record_url($nonImage) : $nonImage->getWebPath('original'); ?>
-    <div class="element-text"><a href="<?php echo $fileLink; ?>"><?php echo metadata($nonImage, 'rich_title', array('no_escape' => true)); ?> - <?php echo $nonImage->mime_type; ?></a></div>
-    <?php endforeach; ?>
-</div>
-<?php endif; ?>
-    
+    <?php echo $this->lightGallery($itemFiles, false); ?>
+
     <!-- The following prints a citation for this item. -->
     <div id="item-citation" class="element">
         <h3><?php echo __('Citation'); ?></h3>
