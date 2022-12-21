@@ -2,8 +2,12 @@
 $linkToFileMetadata = get_option('link_to_file_metadata');
 $title = metadata('item', 'display_title');
 $itemFiles = $item->Files;
-$lightGallery = $this->lightgallery($itemFiles);
-queue_lightgallery_assets();
+if ($itemFiles) {
+    $lightGallery = $this->lightgallery($itemFiles);
+    queue_lightgallery_assets();
+} else {
+    $lightGallery = '';
+}
 echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($lightGallery !== '') ? ' gallery' : '')));
 ?>
 
@@ -24,6 +28,10 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($lightGaller
     <div class="item-metadata-content">
       
     <?php echo all_element_texts('item'); ?>
+
+    <?php if ($itemFiles): ?>
+    <?php echo lightgallery_other_files($itemFiles); ?>
+    <?php endif; ?>
     
     <?php if (metadata('item', 'Collection Name')): ?>
     <div id="collection" class="element">
@@ -39,8 +47,6 @@ echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($lightGaller
         <div class="element-text"><?php echo tag_string('item'); ?></div>
     </div>
     <?php endif;?>
-
-    <?php echo $this->lightGallery($itemFiles, false); ?>
 
     <!-- The following prints a citation for this item. -->
     <div id="item-citation" class="element">
