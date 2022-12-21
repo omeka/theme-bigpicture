@@ -210,8 +210,8 @@ input[type=checkbox] {
   }
 
   #admin-bar {
-    z-index: 9999;
     position: relative;
+    z-index: 1;
   }
 
   header {
@@ -221,8 +221,8 @@ input[type=checkbox] {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 9998;
     background-color: #fff;
+    z-index: 1;
   }
 
   #wrap {
@@ -634,11 +634,11 @@ input[type=checkbox] {
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 73.5px;
+    z-index: 2;
   }
 
   .admin-bar.items.show.gallery .flex {
-    padding-top: calc(41px + 73.5px);
+    margin-top: calc(41px + 73.5px);
   }
 
   .items.show.gallery #content {

@@ -206,8 +206,8 @@ a.image img {
 }
 
 #admin-bar {
-    z-index: 9999;
     position: relative;
+    z-index: 1;
 }
 
 header {
@@ -217,8 +217,8 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    z-index: 9998;
     background-color: #fff;
+    z-index: 1;
 }
 
 #wrap {
@@ -627,11 +627,11 @@ footer {
     top: 0;
     left: 0;
     right: 0;
-    padding-top: (3.5 * $spacing-l);
+    z-index: 2;
 }
 
 .admin-bar.items.show.gallery .flex {
-    padding-top: calc(41px + #{3.5 * $spacing-l});
+    margin-top: calc(41px + #{3.5 * $spacing-l});
 }
 
 .items.show.gallery #content {
