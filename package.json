@@ -1,6 +1,6 @@
 {
   "name": "bigpicture",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "\"An image-centric theme geared towards art historians and students.\"",
   "main": "gulpfile.js",
   "dependencies": {
