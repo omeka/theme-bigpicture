@@ -3,7 +3,7 @@ $linkToFileMetadata = get_option('link_to_file_metadata');
 $title = metadata('item', 'display_title');
 $itemFiles = $item->Files;
 if ($itemFiles) {
-    $lightGallery = $this->lightgallery($itemFiles);
+    $lightGallery = lightgallery($itemFiles);
     queue_lightgallery_assets();
 } else {
     $lightGallery = '';
