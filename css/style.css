@@ -793,12 +793,18 @@ input[type=checkbox] {
     margin: 0 0 21px 30%;
   }
 
+  #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
+    width: calc(100% - 42px);
+  }
+
   .remove_search {
     border: 0;
-    width: 0;
+    width: 31.5px;
+    height: 31.5px;
     text-indent: -9999px;
     position: relative;
     padding: 0;
+    margin: 23.625px 0 0 10.5px;
   }
   .remove_search:after {
     font-family: "Linearicons-Free";
@@ -813,13 +819,12 @@ input[type=checkbox] {
     -moz-osx-font-smoothing: grayscale;
     content: "";
     position: absolute;
-    left: 100%;
-    width: 31.5px;
-    height: 31.5px;
+    width: 100%;
+    left: 0;
+    color: #000;
     text-indent: 0;
     top: 0;
     line-height: 31.5px;
-    margin: 0 10.5px;
   }
 
   /* @end */
