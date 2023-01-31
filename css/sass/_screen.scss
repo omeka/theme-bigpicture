@@ -218,7 +218,6 @@ header {
     align-items: center;
     position: relative;
     background-color: #fff;
-    z-index: 1;
 }
 
 #wrap {
@@ -274,6 +273,7 @@ header {
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 1000;
     background-color: #fff;
     display: flex;
     flex-wrap: wrap;
