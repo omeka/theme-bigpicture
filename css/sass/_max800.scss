@@ -134,6 +134,10 @@ header {
     overflow: visible;
 }
 
+.items.show div#itemfiles.lightgallery {
+    height: 50vh;
+}
+
 .items.show.gallery .item-metadata {
     padding: 0;
     max-width: 100%;
