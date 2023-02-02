@@ -48,6 +48,25 @@ function bigpicture_featured_html() {
     return $html;
 }
 
+function bigpicture_check_for_featured_records() {
+    $recordTypes = ['Exhibit', 'Collection', 'Item'];
+    $featuredPresent = false;
+
+    foreach ($recordTypes as $recordType) {
+        if ($recordType == 'Exhibit' && !plugin_is_active('ExhibitBuilder')) {
+            continue;
+        }
+        $randomRecords = bigpicture_get_random_featured_records($recordType);
+
+        if (count($randomRecords) > 0) {
+            $featuredPresent = true;
+            break;
+        }
+    }
+
+    return $featuredPresent;
+}
+
 function bigpicture_get_square_thumbnail_url($file, $view) {
     if ($file->hasThumbnail()) {
         $squareThumbnail = file_display_url($file, 'square_thumbnail');

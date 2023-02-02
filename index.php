@@ -10,6 +10,7 @@ if ($featuredHtml !== '') {
 
 <?php echo head(array('bodyid'=>'home')); ?>
 
+<?php if (bigpicture_check_for_featured_records()): ?>
 <div id="featured" data-listbox-title="<?php echo __('Featured'); ?>" data-play-speed="<?php echo ($playSpeed) ? $playSpeed : '5000'; ?>">
     <div id="featured-controls">
         <div class="sr-only slick-status active" role="status" tabindex="-1"><?php echo __('Featured carousel slider is playing.'); ?></div>
@@ -21,6 +22,7 @@ if ($featuredHtml !== '') {
         <?php echo bigpicture_featured_html(); ?>
     </div>
 </div>
+<?php endif; ?>
 
 <?php if (get_theme_option('Homepage Text')): ?>
 <div id="intro">
