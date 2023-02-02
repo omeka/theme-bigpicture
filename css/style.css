@@ -235,11 +235,13 @@ input[type=checkbox] {
     font-size: 17.5px;
     font-family: "Caudex", serif;
     margin-right: auto;
+    max-width: 70%;
   }
 
   #site-title img {
     max-height: 31.5px;
     width: auto;
+    max-width: 100%;
     vertical-align: top;
   }
 

@@ -231,11 +231,13 @@ header {
     font-size: 1.25 * $base-font-size;
     font-family: $heading-font;
     margin-right: auto;
+    max-width: 70%;
 }
 
 #site-title img {
     max-height: 1.5 * $spacing-l;
     width: auto;
+    max-width: 100%;
     vertical-align: top;
 }
 
