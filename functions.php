@@ -53,14 +53,16 @@ function bigpicture_check_for_featured_records() {
     $featuredPresent = false;
 
     foreach ($recordTypes as $recordType) {
-        if ($recordType == 'Exhibit' && !plugin_is_active('ExhibitBuilder')) {
-            continue;
-        }
-        $randomRecords = bigpicture_get_random_featured_records($recordType);
+        if (get_theme_option('display_featured_' . strtolower($recordType)) == '1') {
+            if ($recordType == 'Exhibit' && !plugin_is_active('ExhibitBuilder')) {
+                continue;
+            }
+            $randomRecords = bigpicture_get_random_featured_records($recordType);
 
-        if (count($randomRecords) > 0) {
-            $featuredPresent = true;
-            break;
+            if (count($randomRecords) > 0) {
+                $featuredPresent = true;
+                break;
+            }
         }
     }
 
