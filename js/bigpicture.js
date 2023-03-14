@@ -34,6 +34,9 @@ document.addEventListener(
                     use: 800,
                 },
             },
+            offCanvas: {
+                page:{selector:"#wrap"},
+            },
         });
     }
 );
