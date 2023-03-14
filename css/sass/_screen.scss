@@ -770,8 +770,16 @@ ul.item-pagination.navigation {
     margin-bottom: $spacing-m;
 }
 
+.search-entry .advanced-search-joiner {
+    width: 100%;
+}
+
 .search-entry:first-child .advanced-search-joiner {
     display: none;
+}
+
+.search-entry .advanced-search-joiner select {
+    width: auto;
 }
 
 .search-entry > * {
@@ -791,10 +799,6 @@ ul.item-pagination.navigation {
 
 .add_search {
     margin: 0 0 $spacing-l 30%;
-}
-
-#search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
-    width: calc(100% - #{2 * $base-line-height});
 }
 
 .remove_search {
