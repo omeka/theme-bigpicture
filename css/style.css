@@ -772,8 +772,8 @@ input[type=checkbox] {
     margin-bottom: 10.5px;
   }
 
-  .search-entry .advanced-search-joiner {
-    width: 100%;
+  .search-entry .advanced-search-terms {
+    flex-grow: 1;
   }
 
   .search-entry:first-child .advanced-search-joiner {
@@ -790,7 +790,6 @@ input[type=checkbox] {
   }
 
   .search-entry select {
-    margin: 0 5.25px 5.25px 0;
     width: 100%;
   }
 
@@ -810,7 +809,7 @@ input[type=checkbox] {
     text-indent: -9999px;
     position: relative;
     padding: 0;
-    margin: 23.625px 0 0 10.5px;
+    margin: 23.625px 0 0 0;
   }
   .remove_search:after {
     font-family: "Linearicons-Free";

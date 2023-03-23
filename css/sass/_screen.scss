@@ -770,8 +770,8 @@ ul.item-pagination.navigation {
     margin-bottom: $spacing-m;
 }
 
-.search-entry .advanced-search-joiner {
-    width: 100%;
+.search-entry .advanced-search-terms {
+    flex-grow: 1;
 }
 
 .search-entry:first-child .advanced-search-joiner {
@@ -788,7 +788,6 @@ ul.item-pagination.navigation {
 }
 
 .search-entry select {
-    margin: 0 $spacing-s $spacing-s 0;
     width: 100%;
 }
 
@@ -808,7 +807,7 @@ ul.item-pagination.navigation {
     text-indent: -9999px;
     position: relative;
     padding: 0;
-    margin: (1.125 * $spacing-l) 0 0 $spacing-m;
+    margin: (1.125 * $spacing-l) 0 0 0;
 
     &:after {
         @include lnr;
