@@ -772,8 +772,16 @@ input[type=checkbox] {
     margin-bottom: 10.5px;
   }
 
+  .search-entry .advanced-search-joiner {
+    width: 100%;
+  }
+
   .search-entry:first-child .advanced-search-joiner {
     display: none;
+  }
+
+  .search-entry .advanced-search-joiner select {
+    width: auto;
   }
 
   .search-entry > * {
@@ -793,10 +801,6 @@ input[type=checkbox] {
 
   .add_search {
     margin: 0 0 21px 30%;
-  }
-
-  #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
-    width: calc(100% - 42px);
   }
 
   .remove_search {
