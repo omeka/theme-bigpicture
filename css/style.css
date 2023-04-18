@@ -557,16 +557,20 @@ input[type=checkbox] {
     font-family: "Caudex", serif;
     text-transform: none;
     font-weight: 400;
-    padding-bottom: 9.5px;
     position: relative;
     width: 100%;
     display: block;
   }
-  .records h3:not(:last-child):after,
-.records .resource-title:not(:last-child):after {
+
+  .records .resource-body {
+    position: relative;
+    padding-top: 10.5px;
+  }
+
+  .records .resource-body:before {
     content: "";
     position: absolute;
-    bottom: 0;
+    top: 0;
     height: 1px;
     width: 50%;
     left: 25%;
@@ -579,15 +583,13 @@ input[type=checkbox] {
     color: #757575;
   }
 
-  .records .creator:not(:last-child):after {
-    content: ",";
-  }
-
   .records .resource-link {
     display: block;
   }
 
   .records .resource-link img {
+    display: block;
+    margin: auto;
     margin-bottom: 10.5px;
   }
 

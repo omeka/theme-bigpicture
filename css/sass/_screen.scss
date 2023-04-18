@@ -548,20 +548,24 @@ footer {
     font-family: $heading-font;
     text-transform: none;
     font-weight: 400;
-    padding-bottom: $spacing-m - 1px;
     position: relative;
     width: 100%;
     display: block;
+}
 
-    &:not(:last-child):after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        height: 1px;
-        width: 50%;
-        left: 25%;
-        background-color: $border-gray;
-    }
+.records .resource-body {
+    position: relative;
+    padding-top: $spacing-m;
+}
+
+.records .resource-body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 50%;
+    left: 25%;
+    background-color: $border-gray;
 }
 
 .records .item-meta {
@@ -570,15 +574,13 @@ footer {
     color: #757575;
 }
 
-.records .creator:not(:last-child):after {
-    content: ",";
-}
-
 .records .resource-link {
     display: block;
 }
 
 .records .resource-link img {
+    display: block;
+    margin: auto;
     margin-bottom: $spacing-m;
 }
 

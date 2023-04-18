@@ -39,29 +39,7 @@ echo $this->partial('items/collection-items.php', array('collection' => $collect
 
 <div class="records">
     <?php foreach (loop('items') as $item): ?>
-    <div class="item hentry">
-        <div class="item-meta">
-        <?php 
-        $linkContent = '';
-        if (metadata($item, 'has files')) {
-            $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize';
-            $linkContent .= item_image($imageSize, array(), 0, $item);
-        } 
-        $linkContent .= metadata($item, 'rich_title', array('no_escape' => true));
-        ?>
-        <span class="resource-title"><?php echo link_to($item, 'show', $linkContent, array('class' => 'resource-link')); ?></span>
-
-        <?php if ($creator = metadata('item', array('Dublin Core', 'Creator'))): ?>
-        <span class="creator"><?php echo $creator; ?></span>
-        <?php endif; ?>
-        <?php if ($date = metadata('item', array('Dublin Core', 'Date'))): ?>
-        <span class="date"><?php echo $date; ?></span>
-        <?php endif; ?>
-
-        <?php fire_plugin_hook('public_items_browse_each', array('view' => $this, 'item' =>$item)); ?>
-
-        </div>
-    </div>
+    <?php echo $this->partial('items/single.php', array('item' => $item)); ?>
     <?php endforeach; ?>
 </div>
 
