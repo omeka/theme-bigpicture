@@ -574,6 +574,14 @@ footer {
     content: ",";
 }
 
+.records .resource-link {
+    display: block;
+}
+
+.records .resource-link img {
+    margin-bottom: $spacing-m;
+}
+
 /* @end */
 
 /* @group ----- Search Results ----- */

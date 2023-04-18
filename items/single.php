@@ -1,15 +1,14 @@
 <div class="item hentry">
     <div class="item-meta">
-    <?php if (metadata($item, 'has files')): ?>
-        <div class="item-img">
-        <?php $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize'; ?>
-        <?php echo link_to_item(
-            item_image($imageSize, array(), 0, $item),
-            array('class' => 'image'), 'show', $item
-        ); ?>
-        </div>
-    <?php endif; ?>
-    <span class="resource-title"><?php echo link_to($item, 'show',  metadata($item, 'rich_title', array('no_escape' => true))); ?></span>
+    <?php 
+    $linkContent = '';
+    if (metadata($item, 'has files')) {
+        $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize';
+        $linkContent .= item_image($imageSize, array(), 0, $item);
+    } 
+    $linkContent .= metadata($item, 'rich_title', array('no_escape' => true));
+    ?>
+    <span class="resource-title"><?php echo link_to($item, 'show', $linkContent, array('class' => 'resource-link')); ?></span>
     <?php if ($creator = metadata($item, array('Dublin Core', 'Creator'))): ?>
     <span class="creator"><?php echo $creator; ?></span>
     <?php endif; ?>
