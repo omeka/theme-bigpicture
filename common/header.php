@@ -40,9 +40,9 @@
 </head>
 
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
+    <div id="wrap">
     <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
-    <div id="wrap">
         
 
         <header>
