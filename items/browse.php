@@ -4,9 +4,12 @@ echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
 <?php if (isset($_GET['collection']) && ($_GET['collection'] !== '')): ?>
 
-<?php $collectionID = $_GET['collection']; ?>
-
-<?php include('collection-items.php'); ?>
+<?php 
+$collectionID = $_GET['collection']; 
+$collection = get_record_by_id('collection', $collectionID); 
+set_current_record('collection', $collection);
+echo $this->partial('items/collection-items.php', array('collection' => $collection, 'total_results' => $total_results)); 
+?>
 
 <?php else: ?>
 
