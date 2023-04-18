@@ -13,6 +13,8 @@
             pauseOnHover: false
         });
 
+        $('#featured-slides .slick-list').removeAttr('aria-live');
+
         $('#featured-controls button').on('click', function() {
             var activeButton = $(this);
             if (activeButton.hasClass('slick-pause')) {
