@@ -5,7 +5,9 @@
     $linkContent = '';
     if (metadata($item, 'has files')) {
         $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize';
-        $linkContent .= item_image($imageSize, array(), 0, $item);
+        $imageFile = $item->getFile(0);
+        $imageTitle = metadata($imageFile, 'rich_title', array('no_escape' => true));
+        $linkContent .= item_image($imageSize, array('alt' => '', 'title' => $imageTitle), 0, $item);
     } 
     $linkContent .= metadata($item, 'rich_title', array('no_escape' => true));
     ?>
