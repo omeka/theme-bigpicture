@@ -715,6 +715,10 @@ input[type=checkbox] {
     word-wrap: break-word;
   }
 
+  .items.show:not(.gallery) .item-metadata {
+    width: 100%;
+  }
+
   button.lg-icon {
     height: auto;
   }
