@@ -636,7 +636,7 @@ input[type=checkbox] {
   }
 
   .items.show.gallery .flex {
-    height: 100vh;
+    height: calc(100vh - 73.5px);
     margin: 0;
     justify-content: space-between;
     position: absolute;
@@ -646,18 +646,10 @@ input[type=checkbox] {
     z-index: 2;
   }
 
-  .admin-bar.items.show.gallery .flex {
-    margin-top: calc(41px + 73.5px);
-  }
-
   .items.show.gallery #content {
-    margin-top: -73.5px;
-    min-height: 100vh;
+    height: calc(100vh - 73.5px);
     border-bottom: 1px solid #cecece;
-  }
-
-  .admin-bar.items.show.gallery #content {
-    margin-top: calc(-41px - 73.5px);
+    position: relative;
   }
 
   .items.show div#itemfiles {
@@ -721,6 +713,10 @@ input[type=checkbox] {
     padding: 0 21px;
     overflow-y: scroll;
     word-wrap: break-word;
+  }
+
+  button.lg-icon {
+    height: auto;
   }
 
   .item-metadata h3 {
