@@ -162,6 +162,10 @@ header {
     margin: 0;
 }
 
+.items.show.gallery #content {
+    height:auto;
+}
+
 .items.show .lSSlideOuter {
   height: 70vh;
   width: calc(100% + #{2 * $spacing-l});

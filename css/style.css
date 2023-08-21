@@ -117,7 +117,8 @@ input[type=email],
 input[type=search],
 input[type=number],
 input[type=month] {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     background-color: #fff;
     line-height: 21px;
     font-size: 14px;
@@ -149,7 +150,8 @@ input[type=checkbox] {
     padding: 5.25px 42px 5.25px 5.25px;
     background: #fff url("../img/chevron-down.svg") right 10.5px center no-repeat;
     background-size: 10.5px;
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     max-width: 100%;
   }
 
@@ -490,7 +492,8 @@ input[type=checkbox] {
     display: none;
   }
   #featured-controls button {
-    appearance: none;
+    -webkit-appearance: none;
+            appearance: none;
     background-color: #000;
     color: #fff;
     width: 31.5px;
@@ -1569,6 +1572,10 @@ input[type=checkbox] {
   .items.show.gallery .flex {
     position: relative;
     margin: 0;
+  }
+
+  .items.show.gallery #content {
+    height: auto;
   }
 
   .items.show .lSSlideOuter {
