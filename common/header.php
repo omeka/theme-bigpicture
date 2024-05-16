@@ -62,7 +62,7 @@
                 <?php endif; ?>
             </div><!-- end search -->
 
-            <a href="#top-nav" class="menu-toggle" aria-label="<?php echo __('Menu'); ?>"></a>
+            <a href="#top-nav" class="menu-toggle" aria-label="<?php echo __('Menu'); ?>" aria-controls="top-nav"></a>
             <nav id="top-nav">
                 <?php echo public_nav_main(); ?>
             </nav>

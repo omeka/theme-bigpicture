@@ -1,7 +1,7 @@
 (function($) {
     $(document).ready(function() {
         $('.menu-toggle').click(function() {
-            $('#top-nav').focus();
+            $(this).attr('aria-expanded', 'true');
         });
 
         $('.search-toggle').click(function() {
@@ -24,19 +24,27 @@
 
 document.addEventListener(
     "DOMContentLoaded", () => {
-        new Mmenu( "#top-nav", {
-            offCanvas: {
-                position: "right"
-            },
-        }, {
-            sidebar: {
-                expanded: {
-                    use: 800,
+        const menuToggle = document.querySelector('.menu-toggle');
+        const menuPanel = document.querySelector('#top-nav');
+        const menu = new Mmenu( "#top-nav", {
+            hooks: {
+                'open:after': () =>{
+                    console.log('open panel');
+                    menuToggle.setAttribute('aria-expanded', 'true');
+                    menuPanel.setAttribute('aria-expanded', 'true');
+                },
+                'close:after': () =>{
+                    console.log('close panel');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                    menuPanel.setAttribute('aria-expanded', 'false');
                 },
             },
             offCanvas: {
-                page:{selector:"#wrap"},
+                position: "right"
             },
         });
+
+        const api = menu.API;
+
     }
 );
