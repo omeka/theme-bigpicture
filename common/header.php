@@ -45,7 +45,7 @@
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
         
 
-        <header>
+        <header aria-label="Site header">
 
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
 
@@ -69,6 +69,6 @@
 
         </header>
         
-        <article id="content" role="main">
+        <article id="content" role="main" aria-label="Content">
         
             <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
