@@ -32,7 +32,7 @@ function bigpicture_featured_html() {
     $countStart = 0;
     
     foreach ($recordTypes as $recordType) {
-        if ($recordType == 'Exhibit' && !plugin_is_active('ExhibitBuilder')) {
+        if ($recordType == 'Exhibit' && plugin_is_active('ExhibitBuilder')) {
             continue;
         }
 
@@ -54,7 +54,7 @@ function bigpicture_check_for_featured_records() {
 
     foreach ($recordTypes as $recordType) {
         if (get_theme_option('display_featured_' . strtolower($recordType)) == '1') {
-            if ($recordType == 'Exhibit' && !plugin_is_active('ExhibitBuilder')) {
+            if ($recordType == 'Exhibit' && plugin_is_active('ExhibitBuilder')) {
                 continue;
             }
             $randomRecords = bigpicture_get_random_featured_records($recordType);
