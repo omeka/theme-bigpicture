@@ -4,7 +4,7 @@ $playSpeed = get_theme_option('homepage_play_speed');
 if ($featuredHtml !== '') {
     queue_css_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css');
     queue_js_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js');
-    queue_js_file(array('slick-home-featured'), 'js');
+    queue_js_file(array('slick-home-featured'), 'javascripts');
 }
 ?>
 

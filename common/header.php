@@ -34,7 +34,7 @@
 
     <!-- JavaScripts -->
     <?php 
-    queue_js_file(array('mmenu','bigpicture'), 'js');
+    queue_js_file(array('mmenu','bigpicture'), 'javascripts');
     echo head_js(); 
     ?>
 </head>
