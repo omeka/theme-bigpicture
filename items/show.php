@@ -5,13 +5,14 @@ $itemFiles = $item->Files;
 if ($itemFiles) {
     $lightGallery = lightgallery($itemFiles);
     queue_lightgallery_assets();
+    $zoomScale = get_theme_option('lightgallery_zoom_scale');
 } else {
     $lightGallery = '';
 }
 echo head(array('title' => $title, 'bodyclass' => 'items show' .  (($lightGallery !== '') ? ' gallery' : '')));
 ?>
 
-<div class="flex">
+<div class="flex" <?php echo (isset($zoomScale)) ? 'data-lg-zoomscale="' . $zoomScale . '"' : ''; ?>>
 
 <?php echo $lightGallery; ?>
 
