@@ -29,19 +29,26 @@ document.addEventListener(
         const menu = new Mmenu( "#top-nav", {
             hooks: {
                 'open:after': () =>{
-                    console.log('open panel');
                     menuToggle.setAttribute('aria-expanded', 'true');
                     menuPanel.setAttribute('aria-expanded', 'true');
                 },
                 'close:after': () =>{
-                    console.log('close panel');
                     menuToggle.setAttribute('aria-expanded', 'false');
                     menuPanel.setAttribute('aria-expanded', 'false');
                 },
             },
-            offCanvas: {
+            "offCanvas": {
                 position: "right"
             },
+            "navbars": [
+                {
+                    "position": "top",
+                    "content": [
+                    "breadcrumbs",
+                    "close"
+                    ]
+                }
+            ]
         });
 
         const api = menu.API;
