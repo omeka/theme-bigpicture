@@ -38,7 +38,7 @@
 
   a {
     text-decoration: none;
-    color: #0076df;
+    color: #0066c1;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -195,7 +195,7 @@ input[type=checkbox] {
     text-align: center;
     display: block;
     padding: 5.25px;
-    border: 2px solid #0076df;
+    border: 2px solid #0066c1;
   }
 
   #skipnav:not(:focus) {
@@ -320,7 +320,7 @@ input[type=checkbox] {
     border: 0;
     background-color: #fff;
     text-indent: -9999px;
-    color: #0076df;
+    color: #0066c1;
     position: relative;
     display: inline-block;
     padding: 0;
@@ -885,8 +885,7 @@ input[type=checkbox] {
   }
 
   .items-nav {
-    max-width: 50%;
-    float: left;
+    margin-right: auto;
   }
 
   .browse-header ul,
@@ -912,16 +911,26 @@ input[type=checkbox] {
     margin-right: auto;
   }
 
+  #sort-links,
+.sort-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .sort-label {
+    margin-right: 5.25px;
+  }
+
   #sort-links-list,
 .sort-links-list {
     list-style-type: none;
     padding-left: 0;
-    margin-left: 10.5px;
   }
 
-  #sort-links-list li,
-.sort-links-list li {
-    margin-right: 21px;
+  #sort-links-list li:not(:last-child),
+.sort-links-list li:not(:last-child) {
+    margin-right: 10.5px;
   }
 
   #sort-links-list li a:before,
@@ -974,7 +983,6 @@ input[type=checkbox] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     content: "";
-    margin-left: 5.25px;
     font-size: 12.25px;
     display: inline-block;
   }
@@ -985,17 +993,24 @@ input[type=checkbox] {
   }
 
   .pagination-nav {
-    margin-left: 42px;
-    float: right;
+    margin-left: 21px;
   }
 
   ul.pagination {
     margin: 0;
+    display: flex;
+    align-items: center;
+    width: max-content;
   }
 
   .pagination li {
     margin-left: 10.5px;
     display: inline-block;
+  }
+
+  .pagination .page-input form label {
+    display: flex;
+    align-items: center;
   }
 
   .pagination a:before {
@@ -1026,7 +1041,7 @@ input[type=checkbox] {
     color: #555;
     padding: 0 10.5px;
     line-height: 21px;
-    margin: 0 5.25px 0 0;
+    margin: 0 5.25px;
   }
 
   .page-input form {
@@ -1446,18 +1461,22 @@ input[type=checkbox] {
 
   .secondary-nav {
     width: 100%;
-    margin: 10.5px 0 0;
+    max-width: none;
+    margin: 10.5px auto 0 0;
   }
 
   #sort-links,
+.sort-links,
 .pagination-nav {
     width: 50%;
     margin: 10.5px 0;
     border-top: 1px solid #cecece;
     border-bottom: 1px solid #cecece;
     height: 42px;
+    line-height: 1;
   }
   #sort-links:only-child,
+.sort-links:only-child,
 .pagination-nav:only-child {
     width: 100%;
   }
@@ -1467,20 +1486,25 @@ input[type=checkbox] {
     width: 100%;
   }
 
-  #sort-links-list,
-.page-input {
-    padding: 10.5px 0;
+  .sort-links .sort-label {
+    margin-right: 10.5px;
   }
 
   #sort-links-list {
-    margin-left: 5.25px;
+    padding: 5.25px 0;
   }
 
   #sort-links-list li {
     margin-right: 0;
+    padding: 5.25px 0;
   }
-  #sort-links-list li:not(:first-child) {
-    margin-left: 10.5px;
+  #sort-links-list li.desc, #sort-links-list li.asc {
+    background-color: #eee;
+    width: 45px;
+    padding: 5.25px;
+  }
+  #sort-links-list li:not(:last-child) {
+    margin-right: 10.5px;
   }
 
   #sort-links-list li a {
@@ -1496,15 +1520,10 @@ input[type=checkbox] {
     top: 0;
     text-align: center;
     width: 15.75px;
+    line-height: 1;
   }
   #sort-links-list li a:before {
     left: 0;
-    line-height: 21px;
-  }
-
-  #sort-links-list .sorting a {
-    padding-right: 15.75px;
-    width: 31.5px;
   }
 
   #sort-links-list .sorting a:after {
@@ -1512,8 +1531,27 @@ input[type=checkbox] {
     line-height: 21px;
   }
 
+  #sort-links-list .sorting .sort-icon {
+    position: absolute;
+    right: -20.5px;
+    width: 15.5px;
+    text-indent: 0;
+    height: 14px;
+    top: 1px;
+  }
+
   .pagination-nav {
     text-align: right;
+  }
+  .pagination-nav .pagination {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+  .pagination-nav input[type=text] {
+    height: auto;
   }
 
   .records .item {

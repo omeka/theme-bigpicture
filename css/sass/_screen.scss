@@ -879,8 +879,7 @@ ul.item-pagination.navigation {
 }
 
 .items-nav {
-    max-width: 50%;
-    float: left;
+    margin-right: auto;
 }
 
 .browse-header ul,
@@ -907,16 +906,25 @@ ul.item-pagination.navigation {
     margin-right: auto;
 }
 
+#sort-links,
+.sort-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sort-label {
+    margin-right: $spacing-s;
+}
+
 #sort-links-list,
 .sort-links-list {
     list-style-type: none;
     padding-left: 0;
-    margin-left: $spacing-m;
 }
 
-#sort-links-list li,
-.sort-links-list li {
-    margin-right: $spacing-l;
+#sort-links-list li:not(:last-child),
+.sort-links-list li:not(:last-child) {
+    margin-right: $spacing-m;
 }
 
 #sort-links-list li a:before,
@@ -951,7 +959,6 @@ ul.item-pagination.navigation {
 .sort-links-list .sorting a span:after {
     @include lnr;
     content: $lnr-sort-amount-asc;
-    margin-left: $spacing-s;
     font-size: .875 * $base-font-size;
     display: inline-block;
 }
@@ -962,17 +969,24 @@ ul.item-pagination.navigation {
 }
 
 .pagination-nav {
-    margin-left: 2 * $spacing-l;
-    float: right;
+    margin-left: $spacing-l;
 }
 
 ul.pagination {
     margin: 0;
+    display: flex;
+    align-items: center;
+    width: max-content;
 }
 
 .pagination li {
     margin-left: $spacing-m;
     display: inline-block;
+}
+
+.pagination .page-input form label {
+    display: flex;
+    align-items: center;
 }
 
 .pagination a:before {
@@ -994,7 +1008,7 @@ ul.pagination {
     color: #555;
     padding: 0 $spacing-m;
     line-height: $base-line-height;
-    margin: 0 $spacing-s 0 0;
+    margin: 0 $spacing-s;
 }
 
 .page-input form {

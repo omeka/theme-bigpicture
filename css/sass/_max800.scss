@@ -27,16 +27,19 @@ header {
 
 .secondary-nav {
     width: 100%;
-    margin: $spacing-m 0 0;
+    max-width: none;
+    margin: $spacing-m auto 0 0;
 }
 
 #sort-links,
+.sort-links,
 .pagination-nav {
     width: 50%;
     margin: $spacing-m 0;
     border-top: 1px solid $border-gray;
     border-bottom: 1px solid $border-gray;
     height: 2 * $spacing-l;
+    line-height: 1;
 
     &:only-child {
         width: 100%;
@@ -48,20 +51,27 @@ header {
     width: 100%;
 }
 
-#sort-links-list,
-.page-input {
-    padding: $spacing-m 0;
+.sort-links .sort-label {
+    margin-right: $spacing-m;
 }
 
 #sort-links-list {
-    margin-left: $spacing-s;
+    padding: $spacing-s 0;
 }
 
 #sort-links-list li {
     margin-right: 0;
+    padding: $spacing-s 0;
+    
+    &.desc,
+    &.asc {
+        background-color: #eee;
+        width: 45px;
+        padding: $spacing-s;
+    }
 
-    &:not(:first-child) {
-        margin-left: $spacing-m;
+    &:not(:last-child) {
+        margin-right: $spacing-m;
     }
 }
 
@@ -79,17 +89,12 @@ header {
         top: 0;
         text-align: center;
         width: .75 * $spacing-l;
+        line-height: 1;
     }
 
     &:before {
         left: 0;
-        line-height: $base-line-height;
     }
-}
-
-#sort-links-list .sorting a {
-    padding-right: .75 * $spacing-l;
-    width: 1.5 * $spacing-l;
 }
 
 #sort-links-list .sorting a:after {
@@ -97,8 +102,29 @@ header {
     line-height: $base-line-height;
 }
 
+#sort-links-list .sorting .sort-icon {
+    position: absolute;
+    right: -20.5px;
+    width: 15.5px;
+    text-indent: 0;
+    height: 14px;
+    top: 1px;
+}
+
 .pagination-nav {
     text-align: right;
+
+    .pagination {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    input[type="text"] {
+        height: auto;
+    }
 }
 
 .records .item {

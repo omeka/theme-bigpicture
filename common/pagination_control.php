@@ -10,25 +10,28 @@ if ($this->pageCount > 1):
         $hiddenParams = array();
         $entries = explode('&', http_build_query($getParams));
         foreach ($entries as $entry) {
-            if(!$entry) {
+            if (!$entry) {
                 continue;
             }
             list($key, $value) = explode('=', $entry);
             $hiddenParams[urldecode($key)] = urldecode($value);
         }
 
-        foreach($hiddenParams as $key => $value) {
-            if($key != 'page') {
-                echo $this->formHidden($key,$value);
+        foreach ($hiddenParams as $key => $value) {
+            if ($key != 'page') {
+                echo $this->formHidden($key, $value, array('id' => ''));
             }
         }
 
         // Manually create this input to allow an omitted ID
-        $pageInput = '<input type="text" name="page" title="'
+        $pageInput = '<label>'
+                    . __('Page') 
+                    . '<input type="text" name="page" title="'
                     . html_escape(__('Current Page'))
                     . '" value="'
-                    . html_escape($this->current) . '">';
-        echo __('%s / %s pages', $pageInput, $this->last);
+                    . html_escape($this->current) . '">'
+                    . '</label>';
+        echo __('%s of %s', $pageInput, $this->last);
         ?>
         </form>
         </li>
@@ -37,7 +40,7 @@ if ($this->pageCount > 1):
         <!-- Previous page link -->
         <li class="pagination_previous">
             <?php $getParams['page'] = $previous; ?>
-            <a rel="prev" href="<?php echo html_escape($this->url(array(), null, $getParams)); ?>" aria-label="<?php echo __('Previous Page'); ?>"></a>
+            <a rel="prev" href="<?php echo html_escape($this->url(array(), null, $getParams)); ?>" title="<?php echo __('Previous Page'); ?>"></a>
         </li>
         <?php endif; ?>
 
@@ -45,7 +48,7 @@ if ($this->pageCount > 1):
         <!-- Next page link -->
         <li class="pagination_next">
             <?php $getParams['page'] = $next; ?>
-            <a rel="next" href="<?php echo html_escape($this->url(array(), null, $getParams)); ?>" aria-label="<?php echo __('Next Page'); ?>"></a>
+            <a rel="next" href="<?php echo html_escape($this->url(array(), null, $getParams)); ?>" title="<?php echo __('Next Page'); ?>"></a>
         </li>
         <?php endif; ?>
     </ul>
