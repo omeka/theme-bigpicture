@@ -7,7 +7,7 @@
         $imageSize = (get_option('use_square_thumbnail') == 1) ? 'square_thumbnail' : 'fullsize';
         $imageFile = $item->getFile(0);
         $imageTitle = metadata($imageFile, 'rich_title', array('no_escape' => true));
-        $linkContent .= item_image($imageSize, array('alt' => '', 'title' => $imageTitle), 0, $item);
+        $linkContent .= item_image($imageSize);
     } 
     $linkContent .= metadata($item, 'rich_title', array('no_escape' => true));
     ?>
