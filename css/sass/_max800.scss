@@ -234,9 +234,15 @@ ul#itemfiles {
     display: block;
     text-transform: uppercase;
     font-family: $heading-font;
-    padding: ($spacing-m - 1px) 0;
+    padding: ($spacing-m - 1px) $spacing-m;
     border: solid $border-gray;
     border-width: 1px 0;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    cursor: pointer;
+    color: $blue;
 
     &:after {
         @include lnr;

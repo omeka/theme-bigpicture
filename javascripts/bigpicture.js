@@ -1,23 +1,30 @@
 (function($) {
+    var manageToggle = function(toggleButton, targetSelector) {
+        var targetElement = $(targetSelector);
+        targetElement.toggleClass('closed').toggleClass('open');
+        if (targetElement.hasClass('open')) {
+            toggleButton.attr('aria-expanded', 'true');
+        } else {
+            toggleButton.attr('aria-expanded', 'false');
+        }
+        targetElement.find(':focusable').first().focus();
+    };
+
     $(document).ready(function() {
-        $('.menu-toggle').click(function() {
-            $(this).attr('aria-expanded', 'true');
+        $(document).on('click', '.menu-toggle', function() {
+            manageToggle($(this), '#top-nav');
         });
 
-        $('.search-toggle').click(function() {
-            $('#search-form').toggleClass('closed').toggleClass('open');
-            if ($('#search-form').hasClass('open')) {
-                $('#query').focus();
-            }
+        $(document).on('click', '.search-toggle', function() {
+            manageToggle($(this), '#search-form');
         });
 
-        $('.advanced-toggle').click(function() {
-            $('#advanced-form').toggleClass('closed').toggleClass('open');
+        $(document).on('click', '.advanced-toggle', function() {
+            manageToggle($(this), '#advanced-form');
         });
 
-        $('.collection-meta .mobile-toggle').click(function(e) {
-            e.preventDefault();
-            $('.collection-meta .closed, .collection-meta .open').toggleClass('closed').toggleClass('open');
+        $(document).on('click', '.mobile-toggle', function() {
+            manageToggle($(this), '#collection-metadata');
         });
     });
 })(jQuery)

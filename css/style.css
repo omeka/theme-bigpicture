@@ -1657,9 +1657,15 @@ input[type=checkbox] {
     display: block;
     text-transform: uppercase;
     font-family: "Caudex", serif;
-    padding: 9.5px 0;
+    padding: 9.5px 10.5px;
     border: solid #cecece;
     border-width: 1px 0;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    cursor: pointer;
+    color: #0066c1;
   }
   .collection-meta .mobile-toggle:after {
     font-family: "Linearicons-Free";
