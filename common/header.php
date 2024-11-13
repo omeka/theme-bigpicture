@@ -53,16 +53,12 @@
 
             <div id="site-title"><?php echo link_to_home_page(theme_logo(), array('title' => __('Return to home page'))); ?></div>
             
-            <a href="#" class="search-toggle" aria-label="<?php echo __('Search'); ?>"></a>
+            <a href="#" class="search-toggle" aria-expanded="false" aria-controls="search-form" aria-label="<?php echo __('Search'); ?>"></a>
             <div id="search-container">
-                <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
-                <?php echo search_form(array('show_advanced' => true, 'form_attributes' => array('role' => 'search', 'class' => 'closed'))); ?>
-                <?php else: ?>
-                <?php echo search_form(array('form_attributes' => array('role' => 'search', 'class' => 'closed'))); ?>
-                <?php endif; ?>
+                <?php echo search_form(array('show_advanced' => get_theme_option('use_advanced_search'), 'form_attributes' => array('role' => 'search', 'class' => 'closed'))); ?>
             </div><!-- end search -->
 
-            <a href="#top-nav" class="menu-toggle" aria-label="<?php echo __('Menu'); ?>" aria-controls="top-nav"></a>
+            <a href="#top-nav" class="menu-toggle" aria-expanded="false" aria-controls="top-nav" aria-label="<?php echo __('Menu'); ?>" aria-controls="top-nav"></a>
             <nav id="top-nav">
                 <?php echo public_nav_main(); ?>
             </nav>
