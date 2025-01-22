@@ -34,5 +34,20 @@
             echo link_to_items_browse(__(plural('View item', 'View all %s items', $total_results), $total_results), array('collection' => metadata('collection', 'id')), array('class' => 'view-items-link'));
         }
         ?>
+        <?php if ($total_results > 0): ?>    
+        <div class="browse-header">
+            <?php
+            $sortLinks[__('Title')] = 'Dublin Core,Title';
+            $sortLinks[__('Creator')] = 'Dublin Core,Creator';
+            $sortLinks[__('Date Added')] = 'added';
+            ?>
+            <div id="sort-links">
+                <span class="sort-label"><?php echo __('Sort by: '); ?></span><?php echo browse_sort_links($sortLinks); ?>
+            </div>
+        
+            <?php echo pagination_links(); ?>
+        
+        </div>
+        <?php endif; ?>
     </div>
 </div>
