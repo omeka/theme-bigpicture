@@ -1,5 +1,7 @@
 <?php
-$featuredHtml = bigpicture_featured_html();
+$recordTypes =  ['item', 'collection', 'exhibit'];
+$overrides = array_fill_keys($recordTypes, 'common/featured.php');
+$featuredHtml = random_featured_records($recordTypes, 0, $overrides);
 $playSpeed = get_theme_option('homepage_play_speed');
 if ($featuredHtml !== '') {
     queue_css_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css');
@@ -10,7 +12,7 @@ if ($featuredHtml !== '') {
 
 <?php echo head(array('bodyid'=>'home')); ?>
 
-<?php if (bigpicture_check_for_featured_records()): ?>
+<?php if ($featuredHtml !== ''): ?>
 <div id="featured" data-listbox-title="<?php echo __('Featured'); ?>" data-play-speed="<?php echo ($playSpeed) ? $playSpeed : '5000'; ?>">
     <div id="featured-controls">
         <div class="sr-only slick-status active" role="status" tabindex="-1"><?php echo __('Featured carousel slider is playing.'); ?></div>
@@ -19,7 +21,7 @@ if ($featuredHtml !== '') {
         <button type="button" class="slick-play" aria-label="<?php echo __("Play featured slides"); ?>"></button>
     </div>
     <div id="featured-slides">
-        <?php echo bigpicture_featured_html(); ?>
+        <?php echo $featuredHtml; ?>
     </div>
 </div>
 <?php endif; ?>
