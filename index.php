@@ -1,7 +1,5 @@
 <?php
-$recordTypes =  ['item', 'collection', 'exhibit'];
-$overrides = array_fill_keys($recordTypes, 'common/featured.php');
-$featuredHtml = random_featured_records($recordTypes, 0, $overrides);
+$featuredHtml = bigpicture_featured_html();
 $playSpeed = get_theme_option('homepage_play_speed');
 if ($featuredHtml !== '') {
     queue_css_url('//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css');
