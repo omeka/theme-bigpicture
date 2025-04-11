@@ -1,6 +1,6 @@
 <?php
 $backgroundFile = $record->getFile(0);
-$displayTitle = ($recordType == 'exhibit') ? metadata($record, 'title') : metadata($record, 'display_title');
+$displayTitle = ($recordType == 'Exhibit') ? metadata($record, 'title') : metadata($record, 'display_title');
 if ($backgroundFile) {
   $background = "background-image:url(" . file_display_url($backgroundFile, 'fullsize') . ")";
 } else {
@@ -11,7 +11,7 @@ if ($backgroundFile) {
 <div class="<?php echo $recordType; ?> record" style="<?php echo $background; ?>">
     <div class="record-meta">
         <span class="sr-only"><?php echo __('Featured'); ?></span>
-        <?php if ($recordType == 'exhibit'): ?>
+        <?php if ($recordType == 'Exhibit'): ?>
             <?php set_current_record('exhibit', $record); ?>
             <span id="slick-slide0<?php echo $slideCount; ?>" class="resource-title"><?php echo link_to_exhibit(); ?></span>
         <?php else: ?>
