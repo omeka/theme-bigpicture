@@ -1,11 +1,14 @@
 <?php
 function bigpicture_featured_html() {
     $html = '';
-    $recordTypes = ['Exhibit', 'Collection', 'Item'];
+    $recordTypes = ['Collection', 'Item'];
+    if (plugin_is_active('ExhibitBuilder')) {
+        array_unshift($recordTypes, 'Exhibit');
+    }
 
     foreach ($recordTypes as $recordType) {
         if (get_theme_option('display_featured_' . $recordType) == '1') {
-            $html .= display_records($recordType, 0, array(), 'common/featured.php');
+            $html .= display_records($recordType, 0, 'common/featured.php');
         }
     }
            
