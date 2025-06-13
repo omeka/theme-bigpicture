@@ -1,6 +1,6 @@
 (function($) {
     $(document).ready(function() {
-        const lgContainer = document.getElementById('itemfiles');
+        const lgContainer = document.getElementById('omeka-lightgallery');
         var zoomScale = "1";
         if ($('.flex').data('lgZoomscale')) {
             zoomScale = Number($('.flex').data('lg-zoomscale'));

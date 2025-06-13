@@ -652,20 +652,20 @@ input[type=checkbox] {
     position: relative;
   }
 
-  .items.show div#itemfiles {
+  .items.show div#omeka-lightgallery {
     width: 75%;
     height: 100%;
     position: relative;
   }
 
-  .items.show #itemfiles-stage {
+  .items.show #omeka-lightgallery-stage {
     width: 100%;
     height: 80%;
     background: #E0E0E0;
     margin: auto;
   }
 
-  .items.show #itemfiles-nav {
+  .items.show #omeka-lightgallery-nav {
     height: 20%;
     text-align: center;
     padding: 21px;
@@ -673,37 +673,37 @@ input[type=checkbox] {
     border-top: 1px solid #333;
   }
 
-  .items.show .solo #itemfiles-stage {
+  .items.show .solo #omeka-lightgallery-stage {
     height: 100%;
   }
 
-  #itemfiles > .media.resource {
+  #omeka-lightgallery > .media.resource {
     display: none;
   }
 
-  #itemfiles {
+  #omeka-lightgallery {
     height: 100%;
     margin: 0;
     width: 100%;
     padding-bottom: 0 !important;
   }
 
-  .count-1 #itemfiles {
+  .count-1 #omeka-lightgallery {
     height: 100% !important;
   }
 
-  #itemfiles > li {
+  #omeka-lightgallery > li {
     height: 100%;
   }
 
-  #itemfiles .media-render {
+  #omeka-lightgallery .media-render {
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  #itemfiles .media-render img {
+  #omeka-lightgallery .media-render img {
     max-height: 100%;
     max-width: 100%;
   }
