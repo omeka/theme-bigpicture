@@ -1,10 +1,7 @@
 <?php
 function bigpicture_featured_html() {
     $html = '';
-    $recordTypes = ['Collection', 'Item'];
-    if (plugin_is_active('ExhibitBuilder')) {
-        array_unshift($recordTypes, 'Exhibit');
-    }
+    $recordTypes = ['Exhibit', 'Collection', 'Item'];
 
     foreach ($recordTypes as $recordType) {
         if (get_theme_option('display_featured_' . $recordType) == '1') {
