@@ -8,7 +8,7 @@ if ($backgroundFile) {
 }
 ?>
 
-<div class="<?php echo $recordType; ?> record" style="<?php echo $background; ?>">
+<div class="<?php echo strtolower($recordType); ?> record" style="<?php echo $background; ?>">
     <div class="record-meta">
         <span class="sr-only"><?php echo __('Featured'); ?></span>
         <?php if ($recordType == 'Exhibit'): ?>
