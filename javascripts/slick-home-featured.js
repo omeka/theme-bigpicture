@@ -13,6 +13,10 @@
             pauseOnHover: false
         });
 
+        if ($('.slick-slide.record').length == 1) {
+            $('#featured-controls').hide();
+        }
+
         $('#featured-slides .slick-list').removeAttr('aria-live');
 
         $('#featured-controls button').on('click', function() {
