@@ -192,27 +192,10 @@ header {
     height:auto;
 }
 
-.items.show .lSSlideOuter {
-  height: 70vh;
-  width: calc(100% + #{2 * $spacing-l});
-  margin: 0 (-1 * $spacing-l);
-}
-
-.lSSlideWrapper, 
-.lSSlideWrapper .lSFade {
-  position: static;
-}
-
-.lSSlideWrapper, .lSSlideWrapper .lSFade > * {
-  height: calc(100% - #{2 * $spacing-l}) !important;  
-}
-
-ul#itemfiles {
-  padding-bottom: 0 !important;
-}
-
-.lSSlideOuter .lSPager.lSGallery {
-  height: 2 * $spacing-l;
+.items.show div#omeka-lightgallery {
+    min-height: 50vh;
+    width: calc(100% + #{2 * $spacing-l});
+    margin: 0 (-1 * $spacing-l);
 }
 
 /* @end */
