@@ -19,6 +19,7 @@
             showZoomInOutIcons: true,
             captions: true,
             allowMediaOverlap: false,
+            getCaptionFromTitleOrAlt: false,
             scale: zoomScale
         });
 
