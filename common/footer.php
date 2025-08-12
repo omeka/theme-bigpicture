@@ -1,4 +1,4 @@
-        </article>
+        </main>
 
         <footer aria-label="<?php echo $this->translate('Footer'); ?>">
             <div id="footer-text">

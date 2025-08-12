@@ -65,6 +65,6 @@
 
         </header>
         
-        <article id="content" role="main" aria-label="Content">
+        <main id="content" aria-label="Content">
         
             <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
