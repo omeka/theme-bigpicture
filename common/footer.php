@@ -14,5 +14,11 @@
         </footer>
 
     </div><!-- end wrap -->
+    <script type="text/javascript">
+    jQuery(document).ready(function () {
+        Omeka.skipNav();
+    });
+    </script>
+
 </body>
 </html>

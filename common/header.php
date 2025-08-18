@@ -34,7 +34,7 @@
 
     <!-- JavaScripts -->
     <?php 
-    queue_js_file(array('mmenu','bigpicture'), 'javascripts');
+    queue_js_file(array('globals','mmenu','bigpicture'), 'javascripts');
     echo head_js(); 
     ?>
 </head>
@@ -65,6 +65,6 @@
 
         </header>
         
-        <main id="content" aria-label="Content">
+        <main id="content">
         
             <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
