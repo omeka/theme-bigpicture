@@ -719,6 +719,21 @@ button.lg-icon {
     height: auto;
 }
 
+.item-metadata {
+    container-type: size;
+    container-name: item-metadata;
+}
+
+@container item-metadata (width < 400px) {
+    .item-metadata .local-contexts-project {
+        justify-content: flex-start;
+    }
+
+    .item-metadata .local-contexts-notice {
+        display: block;
+    }
+}
+
 .item-metadata h3 {
     margin: 0 0 $spacing-s;
 }
