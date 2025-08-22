@@ -1606,6 +1606,7 @@ input[type=checkbox] {
   .items.show.gallery .item-metadata {
     padding: 0;
     max-width: 100%;
+    container-type: normal;
   }
 
   .items.show #itemfiles {
