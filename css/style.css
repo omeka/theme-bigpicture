@@ -325,6 +325,8 @@ input[type=checkbox] {
     display: inline-block;
     padding: 0;
     vertical-align: top;
+    width: 31.5px;
+    height: 31.5px;
   }
   #search-container button[type=submit]:after {
     font-family: "Linearicons-Free";
@@ -344,8 +346,9 @@ input[type=checkbox] {
     position: absolute;
     top: 0;
     left: 0;
-    width: 31.5px;
-    height: 31.5px;
+    bottom: 0;
+    right: 0;
+    text-align: center;
     line-height: 31.5px;
   }
 

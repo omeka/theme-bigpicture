@@ -314,6 +314,8 @@ header {
     display: inline-block;
     padding: 0;
     vertical-align: top;
+    width: 1.5 * $base-line-height;
+    height: 1.5 * $base-line-height;
 
     &:after {
         @include lnr;
@@ -324,8 +326,9 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        width: 1.5 * $base-line-height;
-        height: 1.5 * $base-line-height;
+        bottom: 0;
+        right: 0;
+        text-align: center;
         line-height: 1.5 * $base-line-height;
     }
 }
