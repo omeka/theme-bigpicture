@@ -2,10 +2,12 @@
 function bigpicture_featured_html() {
     $html = '';
     $recordTypes = ['Exhibit', 'Collection', 'Item'];
+    $slideCount = 1;
 
-    foreach ($recordTypes as $recordType) {
+    foreach ($recordTypes as $recordType) { 
         if (get_theme_option('display_featured_' . $recordType) == '1') {
-            $html .= display_records($recordType, 0, 'common/featured.php');
+            $html .= display_records($recordType, 0, 'common/featured.php', ['slideCount' => $slideCount]);
+            $slideCount++;
         }
     }
            
