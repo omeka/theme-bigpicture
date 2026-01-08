@@ -276,6 +276,11 @@ input[type=checkbox] {
     content: "";
   }
 
+  .mm-navbar {
+    color: inherit;
+    font-weight: bold;
+  }
+
   .mm-listitem::after {
     inset-inline-start: 0;
   }
