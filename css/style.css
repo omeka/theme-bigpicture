@@ -291,11 +291,14 @@ input[type=checkbox] {
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  #search-container .open {
+    z-index: 1000;
+    background-color: #fff;
     border-bottom: 1px solid #cecece;
   }
 
@@ -306,7 +309,7 @@ input[type=checkbox] {
   }
 
   #search-form {
-    border-top: 1px solid #eee;
+    border-top: 1px solid #cecece;
     padding: 10.5px 21px;
   }
 
@@ -625,25 +628,25 @@ input[type=checkbox] {
     height: auto;
   }
 
-  .items.show:not(.gallery) .item-metadata-content {
+  .show:not(.gallery) .item-metadata-content {
     columns: 2;
     column-gap: 21px;
   }
 
-  .items.show:not(.gallery) .item-metadata h1 {
+  .show:not(.gallery) .item-metadata h1 {
     column-span: all;
   }
 
-  .items.show h1 + .item-metadata {
+  .show h1 + .item-metadata {
     columns: 2;
     column-gap: 21px;
   }
 
-  .items.show h1 + .item-metadata > * {
+  .show h1 + .item-metadata > * {
     break-inside: avoid;
   }
 
-  .items.show.gallery .flex {
+  .show.gallery .flex {
     height: calc(100vh - 73.5px);
     margin: 0;
     justify-content: space-between;
@@ -654,26 +657,26 @@ input[type=checkbox] {
     z-index: 2;
   }
 
-  .items.show.gallery #content {
+  .show.gallery #content {
     height: calc(100vh - 73.5px);
     border-bottom: 1px solid #cecece;
     position: relative;
   }
 
-  .items.show div#omeka-lightgallery {
+  .show div#omeka-lightgallery {
     width: 75%;
     height: 100%;
     position: relative;
   }
 
-  .items.show #omeka-lightgallery-stage {
+  .show #omeka-lightgallery-stage {
     width: 100%;
     height: 80%;
     background: #E0E0E0;
     margin: auto;
   }
 
-  .items.show #omeka-lightgallery-nav {
+  .show #omeka-lightgallery-nav {
     height: 20%;
     text-align: center;
     padding: 21px;
@@ -681,7 +684,7 @@ input[type=checkbox] {
     border-top: 1px solid #333;
   }
 
-  .items.show .solo #omeka-lightgallery-stage {
+  .show .solo #omeka-lightgallery-stage {
     height: 100%;
   }
 
@@ -716,14 +719,14 @@ input[type=checkbox] {
     max-width: 100%;
   }
 
-  .items.show.gallery .item-metadata {
+  .show.gallery .item-metadata {
     width: 25%;
     padding: 0 21px;
-    overflow-y: scroll;
+    overflow-y: auto;
     word-wrap: break-word;
   }
 
-  .items.show:not(.gallery) .item-metadata {
+  .show:not(.gallery) .item-metadata {
     width: 100%;
   }
 
@@ -759,16 +762,17 @@ input[type=checkbox] {
   }
 
   .item-metadata nav {
-    margin: 0 -21px;
+    margin: 0 -21px -1px;
     border-bottom: 1px solid #cecece;
+    column-span: all;
   }
 
   ul.item-pagination.navigation {
-    column-span: all;
     display: flex;
     justify-content: space-between;
     position: relative;
     margin: 0;
+    border-top: 1px solid #cecece;
   }
   ul.item-pagination.navigation:after {
     content: "";
@@ -782,6 +786,7 @@ input[type=checkbox] {
   ul.item-pagination.navigation a {
     padding: 10.5px;
     display: inline-block;
+    line-height: 1.5;
   }
 
   .element-set {
@@ -1587,60 +1592,60 @@ input[type=checkbox] {
 
   /* @end */
   /* @group ----- Items/Show ----- */
-  .items.show:not(.gallery) .item-metadata {
+  .show:not(.gallery) .item-metadata {
     columns: 1;
   }
 
-  .items.show.gallery .flex {
+  .show.gallery .flex {
     display: block;
     margin-right: 0;
     height: auto;
   }
 
-  .items.show #itemfiles-nav {
+  .show #itemfiles-nav {
     display: none;
   }
 
-  .items.show div#itemfiles,
-.items.show.gallery .item-metadata {
+  .show div#itemfiles,
+.show.gallery .item-metadata {
     width: calc(100% + 42px);
     overflow: visible;
   }
 
-  .items.show div#itemfiles.lightgallery {
+  .show div#itemfiles.lightgallery {
     height: 50vh;
   }
 
-  .items.show.gallery .item-metadata {
+  .show.gallery .item-metadata {
     padding: 0;
     max-width: 100%;
     container-type: normal;
   }
 
-  .items.show #itemfiles {
+  .show #itemfiles {
     margin: 0 -21px;
     width: calc(100% + 42px);
   }
 
-  .items.show #itemfiles-stage {
+  .show #itemfiles-stage {
     min-height: 500px;
   }
 
-  .admin-bar.items.show.gallery .flex {
+  .admin-bar.show.gallery .flex {
     height: auto;
     min-height: 75vh;
   }
 
-  .items.show.gallery .flex {
+  .show.gallery .flex {
     position: relative;
     margin: 0;
   }
 
-  .items.show.gallery #content {
+  .show.gallery #content {
     height: auto;
   }
 
-  .items.show div#omeka-lightgallery {
+  .show div#omeka-lightgallery {
     min-height: 50vh;
     width: calc(100% + 42px);
     margin: 0 -21px;

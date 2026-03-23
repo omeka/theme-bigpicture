@@ -140,60 +140,60 @@ header {
 
 /* @group ----- Items/Show ----- */
 
-.items.show:not(.gallery) .item-metadata {
+.show:not(.gallery) .item-metadata {
     columns: 1;
 }
 
-.items.show.gallery .flex {
+.show.gallery .flex {
     display: block;
     margin-right: 0;
     height: auto;
 }
 
-.items.show #itemfiles-nav {
+.show #itemfiles-nav {
     display: none;
 }
 
-.items.show div#itemfiles,
-.items.show.gallery .item-metadata {
+.show div#itemfiles,
+.show.gallery .item-metadata {
     width: calc(100% + #{2 * $spacing-l});
     overflow: visible;
 }
 
-.items.show div#itemfiles.lightgallery {
+.show div#itemfiles.lightgallery {
     height: 50vh;
 }
 
-.items.show.gallery .item-metadata {
+.show.gallery .item-metadata {
     padding: 0;
     max-width: 100%;
     container-type: normal;
 }
 
-.items.show #itemfiles {
+.show #itemfiles {
     margin: 0 (-1 * $spacing-l);
     width: calc(100% + #{2 * $spacing-l});
 }
 
-.items.show #itemfiles-stage {
+.show #itemfiles-stage {
     min-height: 500px;
 }
 
-.admin-bar.items.show.gallery .flex {
+.admin-bar.show.gallery .flex {
     height: auto;
     min-height: 75vh;
 }
 
-.items.show.gallery .flex {
+.show.gallery .flex {
     position: relative;
     margin: 0;
 }
 
-.items.show.gallery #content {
+.show.gallery #content {
     height:auto;
 }
 
-.items.show div#omeka-lightgallery {
+.show div#omeka-lightgallery {
     min-height: 50vh;
     width: calc(100% + #{2 * $spacing-l});
     margin: 0 (-1 * $spacing-l);

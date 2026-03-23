@@ -1,0 +1,70 @@
+<?php
+$fileTitle = metadata('file', 'display_title');
+
+if ($fileTitle != '') {
+    $fileTitle = ': &quot;' . $fileTitle . '&quot; ';
+} else {
+    $fileTitle = '';
+}
+$fileTitle = __('File #%s', metadata('file', 'id')) . $fileTitle;
+if ($file) {
+    $lightGallery = lightgallery([$file]);
+    queue_lightgallery_assets();
+    $zoomScale = get_theme_option('lightgallery_zoom_scale');
+} else {
+    $lightGallery = '';
+}
+
+echo head(array('title' => $fileTitle, 'bodyclass' => 'files show' .  (($lightGallery !== '') ? ' gallery' : '')));
+?>
+
+<div class="flex" <?php echo (isset($zoomScale)) ? 'data-lg-zoomscale="' . $zoomScale . '"' : ''; ?>>
+
+    <?php echo $lightGallery; ?>
+
+    <div class="item-metadata" id="sidebar">
+
+        <h1><?php echo $fileTitle; ?></h1>
+
+        <div class="item-metadata-content">
+
+            <?php echo all_element_texts('file'); ?>
+
+            <div id="item-metadata">
+                <h2><?php echo __('Item'); ?></h2>
+                <?php echo link_to_item(null, [], 'show', $file->getItem()); ?>
+            </div><!-- end item-metadata -->
+
+            <div id="format-metadata">
+                <h2><?php echo __('Format Metadata'); ?></h2>
+                <div id="original-filename" class="element">
+                    <h3><?php echo __('Original Filename'); ?></h3>
+                    <div class="element-text"><?php echo metadata('file', 'Original Filename'); ?></div>
+                </div>
+            
+                <div id="file-size" class="element">
+                    <h3><?php echo __('File Size'); ?></h3>
+                    <div class="element-text"><?php echo __('%s bytes', metadata('file', 'Size')); ?></div>
+                </div>
+
+                <div id="authentication" class="element">
+                    <h3><?php echo __('Authentication'); ?></h3>
+                    <div class="element-text"><?php echo metadata('file', 'Authentication'); ?></div>
+                </div>
+            </div><!-- end format-metadata -->
+            
+            <div id="type-metadata">
+                <h2><?php echo __('Type Metadata'); ?></h2>
+                <div id="mime-type-browser" class="element">
+                    <h3><?php echo __('Mime Type'); ?></h3>
+                    <div class="element-text"><?php echo metadata('file', 'MIME Type'); ?></div>
+                </div>
+                <div id="file-type-os" class="element">
+                    <h3><?php echo __('File Type / OS'); ?></h3>
+                    <div class="element-text"><?php echo metadata('file', 'Type OS'); ?></div>
+                </div>
+            </div><!-- end type-metadata -->
+        </div>
+    </div>
+</div>
+<?php echo foot();?>

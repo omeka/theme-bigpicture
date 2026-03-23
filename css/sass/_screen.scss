@@ -280,11 +280,14 @@ header {
     top: 100%;
     left: 0;
     width: 100%;
-    z-index: 1000;
-    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+#search-container .open {
+    z-index: 1000;
+    background-color: #fff;
     border-bottom: 1px solid $border-gray;
 }
 
@@ -295,7 +298,7 @@ header {
 }
 
 #search-form {
-    border-top: 1px solid #eee;
+    border-top: 1px solid $border-gray;
     padding: $spacing-m $spacing-l;
 }
 
@@ -621,25 +624,25 @@ footer {
     height: auto;
 }
 
-.items.show:not(.gallery) .item-metadata-content {
+.show:not(.gallery) .item-metadata-content {
     columns: 2;
     column-gap: $spacing-l;
 }
 
-.items.show:not(.gallery) .item-metadata h1 {
+.show:not(.gallery) .item-metadata h1 {
     column-span: all;
 }
 
-.items.show h1 + .item-metadata {
+.show h1 + .item-metadata {
     columns: 2;
     column-gap: $spacing-l;
 }
 
-.items.show h1 + .item-metadata > * {
+.show h1 + .item-metadata > * {
     break-inside: avoid;
 }
 
-.items.show.gallery .flex {
+.show.gallery .flex {
     height: calc(100vh - #{3.5 * $spacing-l});
     margin: 0;
     justify-content: space-between;
@@ -650,26 +653,26 @@ footer {
     z-index: 2;
 }
 
-.items.show.gallery #content {
+.show.gallery #content {
     height: calc(100vh - #{3.5 * $spacing-l});
     border-bottom: 1px solid $border-gray;
     position: relative;
 }
 
-.items.show div#omeka-lightgallery {
+.show div#omeka-lightgallery {
     width: 75%;
     height: 100%;
     position: relative;
 }
 
-.items.show #omeka-lightgallery-stage {
+.show #omeka-lightgallery-stage {
     width: 100%; 
     height: 80%;
     background: #E0E0E0; 
     margin:auto;
 }
 
-.items.show #omeka-lightgallery-nav {
+.show #omeka-lightgallery-nav {
     height: 20%;
     text-align: center;
     padding: $spacing-l;
@@ -677,7 +680,7 @@ footer {
     border-top: 1px solid #333;
 }
 
-.items.show .solo #omeka-lightgallery-stage {
+.show .solo #omeka-lightgallery-stage {
     height: 100%;
 }
 
@@ -712,14 +715,14 @@ footer {
     max-width: 100%;
 }
 
-.items.show.gallery .item-metadata {
+.show.gallery .item-metadata {
     width: 25%;
     padding: 0 $spacing-l;
-    overflow-y: scroll;
+    overflow-y: auto;
     word-wrap: break-word;
 }
 
-.items.show:not(.gallery) .item-metadata {
+.show:not(.gallery) .item-metadata {
     width: 100%;
 }
 
@@ -756,16 +759,17 @@ button.lg-icon {
 }
 
 .item-metadata nav {
-    margin: 0 (-$spacing-l);
+    margin: 0 (-$spacing-l) -1px;
     border-bottom: 1px solid $border-gray;
+    column-span: all;
 }
 
 ul.item-pagination.navigation {
-    column-span: all;
     display: flex;
     justify-content: space-between;
     position: relative;
     margin: 0;
+    border-top: 1px solid $border-gray;
 
     &:after {
         content: "";
@@ -780,6 +784,7 @@ ul.item-pagination.navigation {
     a {
         padding: $spacing-m;
         display: inline-block;
+        line-height: 1.5;
     }
 }
 
