@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Linearicons-Free";
-  src: url("../fonts/Linearicons-Free.eot?w118d");
-  src: url("../fonts/Linearicons-Free.eot?#iefixw118d") format("embedded-opentype"), url("../fonts/Linearicons-Free.woff2?w118d") format("woff2"), url("../fonts/Linearicons-Free.woff?w118d") format("woff"), url("../fonts/Linearicons-Free.ttf?w118d") format("truetype"), url("../fonts/Linearicons-Free.svg?w118d#Linearicons-Free") format("svg");
+  src: url("../fonts/Linearicons-Free.woff2?w118d") format("woff2"), url("../fonts/Linearicons-Free.woff?w118d") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @media screen {
   * {
@@ -265,15 +265,15 @@ input[type=checkbox] {
   }
 
   .menu-toggle:before {
-    content: "";
+    content: ""/"";
   }
 
   .search-toggle:before {
-    content: "";
+    content: ""/"";
   }
 
   .advanced-toggle:before {
-    content: "";
+    content: ""/"";
   }
 
   .mm-navbar {
@@ -348,7 +348,7 @@ input[type=checkbox] {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-indent: 0;
-    content: "";
+    content: ""/"";
     display: block;
     font-size: 21px;
     position: absolute;
@@ -856,7 +856,7 @@ input[type=checkbox] {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "";
+    content: ""/"";
     position: absolute;
     width: 100%;
     left: 0;
@@ -978,17 +978,17 @@ input[type=checkbox] {
 
   #sort-links-list li:first-child a:before,
 .sort-links-list li:first-child a:before {
-    content: "";
+    content: ""/"";
   }
 
   #sort-links-list li:nth-child(2) a:before,
 .sort-links-list li:nth-child(2) a:before {
-    content: "";
+    content: ""/"";
   }
 
   #sort-links-list li:nth-child(3) a:before,
 .sort-links-list li:nth-child(3) a:before {
-    content: "";
+    content: ""/"";
   }
 
   #sort-links-list .sorting a,
@@ -1009,7 +1009,7 @@ input[type=checkbox] {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "";
+    content: ""/"";
     font-size: 12.25px;
     display: inline-block;
   }
@@ -1054,11 +1054,11 @@ input[type=checkbox] {
   }
 
   .pagination [rel=prev]:before {
-    content: "";
+    content: ""/"";
   }
 
   .pagination [rel=next]:before {
-    content: "";
+    content: ""/"";
   }
 
   .pagination input[type=text] {
@@ -1689,7 +1689,7 @@ input[type=checkbox] {
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    content: "";
+    content: ""/"";
     display: block;
     float: right;
     line-height: 21px;
@@ -1698,7 +1698,7 @@ input[type=checkbox] {
     text-align: center;
   }
   .collection-meta .mobile-toggle.open:after {
-    content: "";
+    content: ""/"";
   }
 
   .collection-meta .mobile-toggle + .closed {
