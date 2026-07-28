@@ -1,7 +1,7 @@
 <?php echo $this->form('search-form', $options['form_attributes']); ?>
     <?php echo $this->formText('query', $filters['query'], array('title' => __('Search'))); ?>
     <?php if ($options['show_advanced']): ?>
-    <a href="#" class="advanced-toggle" aria-label="<?php __('Advanced Search'); ?>"></a>
+    <button type="button" class="advanced-toggle" aria-label="<?php echo __('Advanced options'); ?>" aria-expanded="false" aria-controls="advanced-form"></button>
     <div id="advanced-form" class="closed">
         <fieldset id="query-types">
             <legend><?php echo __('Search using this query type:'); ?></legend>

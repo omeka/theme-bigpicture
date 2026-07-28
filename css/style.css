@@ -243,6 +243,16 @@ input[type=checkbox] {
     vertical-align: top;
   }
 
+  button.search-toggle,
+button.menu-toggle,
+button.advanced-toggle {
+    appearance: none;
+    background: #fff;
+    color: #0066c1;
+    padding: 0;
+    border: 0;
+  }
+
   .search-toggle:before,
 .menu-toggle:before,
 .advanced-toggle:before {

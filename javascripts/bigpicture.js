@@ -59,6 +59,8 @@ document.addEventListener(
         });
 
         const api = menu.API;
-
+        menuToggle.addEventListener('click', () => {
+            api.open();
+        });
     }
 );
