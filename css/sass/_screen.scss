@@ -910,6 +910,7 @@ ul.item-pagination.navigation {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: $spacing-m $spacing-l;
 }
 
 .browse-header #sort-links {
@@ -1006,20 +1007,12 @@ ul.item-pagination.navigation {
     transform: scaleY(-1);
 }
 
-.pagination-nav {
-    margin-left: $spacing-l;
-}
-
 ul.pagination {
     margin: 0;
     display: flex;
     align-items: center;
     width: max-content;
-}
-
-.pagination li {
-    margin-left: $spacing-m;
-    display: inline-block;
+    gap: $spacing-m;
 }
 
 .pagination .page-input form label {
@@ -1443,12 +1436,23 @@ font-size: 240%;
 /* @group ----- Plugins ----- */
 
 #geolocation-browse {
-    margin-top: 3 * $spacing-l;
     clear: both;
 }
 
 #geolocation-browse #map-links li {
-    background-color: $border-gray;
+    border: 1px solid $border-gray;
+}
+
+.map.browse .secondary-nav {
+    float: left;
+    width: 70%;
+}
+
+.map.browse .pagination-nav {
+    float: left;
+    width: 30%;
+    padding: $spacing-m;
+    margin-top: -1 * $spacing-l;
 }
 
 /* @end */

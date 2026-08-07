@@ -23,6 +23,7 @@ header {
 .browse-header {
     flex-wrap: wrap;
     margin-top: -($spacing-m);
+    gap: 0;
 }
 
 .secondary-nav {
@@ -340,3 +341,16 @@ header {
 }
 
 /* @end */
+
+.map.browse .secondary-nav,
+.map.browse .pagination-nav {
+    float: none;
+    width: 100%;
+    margin: 0 0 $spacing-m;
+    padding: 0;
+}
+
+.map.browse .pagination-nav .pagination li,
+.map.browse .pagination-nav .pagination {
+    margin-left: 0;
+}

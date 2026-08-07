@@ -915,6 +915,7 @@ button.advanced-toggle {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    gap: 10.5px 21px;
   }
 
   .browse-header #sort-links {
@@ -1029,20 +1030,12 @@ button.advanced-toggle {
     transform: scaleY(-1);
   }
 
-  .pagination-nav {
-    margin-left: 21px;
-  }
-
   ul.pagination {
     margin: 0;
     display: flex;
     align-items: center;
     width: max-content;
-  }
-
-  .pagination li {
-    margin-left: 10.5px;
-    display: inline-block;
+    gap: 10.5px;
   }
 
   .pagination .page-input form label {
@@ -1461,12 +1454,23 @@ button.advanced-toggle {
   /* @end */
   /* @group ----- Plugins ----- */
   #geolocation-browse {
-    margin-top: 63px;
     clear: both;
   }
 
   #geolocation-browse #map-links li {
-    background-color: #cecece;
+    border: 1px solid #cecece;
+  }
+
+  .map.browse .secondary-nav {
+    float: left;
+    width: 70%;
+  }
+
+  .map.browse .pagination-nav {
+    float: left;
+    width: 30%;
+    padding: 10.5px;
+    margin-top: -21px;
   }
 
   /* @end */
@@ -1494,6 +1498,7 @@ button.advanced-toggle {
   .browse-header {
     flex-wrap: wrap;
     margin-top: -10.5px;
+    gap: 0;
   }
 
   .secondary-nav {
@@ -1803,4 +1808,16 @@ button.advanced-toggle {
   }
 
   /* @end */
+  .map.browse .secondary-nav,
+.map.browse .pagination-nav {
+    float: none;
+    width: 100%;
+    margin: 0 0 10.5px;
+    padding: 0;
+  }
+
+  .map.browse .pagination-nav .pagination li,
+.map.browse .pagination-nav .pagination {
+    margin-left: 0;
+  }
 }
