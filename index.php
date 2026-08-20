@@ -10,6 +10,8 @@ if ($featuredHtml !== '') {
 
 <?php echo head(array('bodyid'=>'home')); ?>
 
+<h1 class="sr-only"><?php echo __('Home'); ?></h1>
+
 <?php if ($featuredHtml !== ''): ?>
 <div id="featured" data-listbox-title="<?php echo __('Featured'); ?>" data-play-speed="<?php echo ($playSpeed) ? $playSpeed : '5000'; ?>">
     <div id="featured-controls">
