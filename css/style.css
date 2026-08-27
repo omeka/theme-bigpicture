@@ -60,10 +60,6 @@
     font-size: 17.5px;
   }
 
-  p, ol, ul, dl, blockquote {
-    margin: 21px 0;
-  }
-
   img {
     image-orientation: from-image;
   }
