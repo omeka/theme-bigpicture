@@ -772,7 +772,7 @@ button.advanced-toggle {
   }
 
   .item-metadata nav {
-    margin: 0 -21px -1px;
+    margin: 21px -21px -1px;
     border-bottom: 1px solid #cecece;
     column-span: all;
   }

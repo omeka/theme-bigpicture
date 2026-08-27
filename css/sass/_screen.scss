@@ -769,7 +769,7 @@ button.lg-icon {
 }
 
 .item-metadata nav {
-    margin: 0 (-$spacing-l) -1px;
+    margin: $spacing-l (-$spacing-l) -1px;
     border-bottom: 1px solid $border-gray;
     column-span: all;
 }
