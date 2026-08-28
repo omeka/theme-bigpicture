@@ -1016,6 +1016,12 @@ ul.pagination {
     align-items: center;
 }
 
+.pagination a {
+    min-width: $spacing-l;
+    display: inline-block;
+    text-align: center;
+}
+
 .pagination a:before {
     @include lnr;
 }
