@@ -1018,6 +1018,7 @@ ul.pagination {
 
 .pagination a {
     min-width: $spacing-l;
+    min-height: $spacing-l;
     display: inline-block;
     text-align: center;
 }
