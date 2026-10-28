@@ -1,13 +1,28 @@
 (function($) {
     var manageToggle = function(toggleButton, targetSelector) {
         var targetElement = $(targetSelector);
-        targetElement.toggleClass('closed').toggleClass('open');
-        if (targetElement.hasClass('open')) {
+        if (toggleButton.attr('aria-expanded') == 'false') {
             toggleButton.attr('aria-expanded', 'true');
         } else {
             toggleButton.attr('aria-expanded', 'false');
         }
         targetElement.find(':focusable').first().focus();
+        $(document).on('keydown', function(e) {
+            if (e.key == 'Escape') {
+                toggleButton.removeClass('open').attr('aria-expanded', 'false');
+                toggleButton.focus();
+                $(document).off(e);
+            };
+        });
+        $(document).on('click focusin', function(e) {
+            var activeElement = targetElement.get(0);
+            if (!$.contains(activeElement, e.target)) {
+                if (e.target !== toggleButton[0]) {
+                    toggleButton.removeClass('open').attr('aria-expanded', 'false');
+                    $(document).off(e);
+                }
+            }
+        });
     };
 
     $(document).ready(function() {
@@ -16,11 +31,7 @@
         });
 
         $(document).on('click', '.search-toggle', function() {
-            manageToggle($(this), '#search-form');
-        });
-
-        $(document).on('click', '.advanced-toggle', function() {
-            manageToggle($(this), '#advanced-form');
+            manageToggle($(this), '#search-container');
         });
 
         $(document).on('click', '.mobile-toggle', function() {
