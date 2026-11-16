@@ -1,8 +1,8 @@
 <div class="flex">
     <div class="collection-meta">
         <h1><?php echo metadata('collection', 'rich_title', array('no_escape' => true)); ?></h1>
-        <button type="button" aria-expanded="false" aria-controls="collection-metadata" class="mobile-toggle closed">Collection Metadata</button>
-        <div id="collection-metadata" class="closed">
+        <button type="button" aria-expanded="false" aria-controls="collection-metadata" class="mobile-toggle">Collection Metadata</button>
+        <div id="collection-metadata">
             <?php echo all_element_texts($collection); ?>
         </div>
     </div>

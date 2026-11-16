@@ -240,12 +240,12 @@ header {
         text-align: center;
     }
 
-    &.open:after {
+    &[aria-expanded="true"]:after {
         content: $lnr-chevron-down;
     }
 }
 
-.collection-meta .mobile-toggle + .closed {
+.collection-meta [aria-expanded="false"] + #collection-metadata {
     display: none;
 }
 

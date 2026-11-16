@@ -210,6 +210,7 @@ header {
     padding: $spacing-l $spacing-l ($spacing-l - 1px) $spacing-l;
     border-bottom: 1px solid $border-gray;
     display: flex;
+    gap: $spacing-s;
     justify-content: space-between;
     align-items: center;
     position: relative;
@@ -280,23 +281,22 @@ button.advanced-toggle {
     inset-inline-start: 0;
 }
 
-#search-container,
-#advanced-form {
+#search-container {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#search-container .open {
+[aria-expanded="true"] + #search-container {
+    display: flex;
     z-index: 1000;
     background-color: #fff;
     border-bottom: 1px solid $border-gray;
 }
-
 #search-container legend {
     font-family: $heading-font;
     font-size: 1.125 * $base-font-size;
@@ -308,17 +308,22 @@ button.advanced-toggle {
     padding: $spacing-m $spacing-l;
 }
 
-.advanced-toggle {
-    display: inline-block;
-}
-
 #search-container input[type="text"] {
     border-width: 0 0 1px 0;
     margin: 0;
-    width: calc(100% - #{4 * $base-line-height});
+    width: 100%;
 }
 
-#search-container button[type="submit"] {
+#search-container.simple form {
+    display: flex;
+    gap: $spacing-m;
+}
+
+#search-container.simple input[type="text"] {
+    width: 100%;
+}
+
+#search-container.simple button[type="submit"] {
     margin: 0;
     border: 0;
     background-color: #fff;
@@ -347,7 +352,7 @@ button.advanced-toggle {
     }
 }
 
-#search-container .closed {
+#search-container {
     display: none;
 }
 
@@ -356,18 +361,16 @@ button.advanced-toggle {
 }
 
 #advanced-form {
-    padding: $spacing-l;
-    border-top: 1px solid #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $spacing-l (2 * $spacing-l);
+    margin-top: $spacing-s;
+    padding: $spacing-l 0;
+    align-items: center;
 }
 
-#advanced-form fieldset {
-    margin: 0 $spacing-l;
-}
-
-#record-types + p {
-    width: 100%;
-    margin-bottom: 0;
-    text-align: center;
+#advanced-form [type="submit"] {
+    margin-left: auto;
 }
 
 /* @end */
